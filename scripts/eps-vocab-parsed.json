@@ -1,0 +1,6842 @@
+[
+  {
+    "num": 0,
+    "korean": "obj",
+    "lesson": 1
+  },
+  {
+    "num": 1,
+    "korean": "�",
+    "lesson": 1
+  },
+  {
+    "num": 2,
+    "korean": "q\u0001\u0013�",
+    "lesson": 1
+  },
+  {
+    "num": 3,
+    "korean": "$l�\u0001���m`ؘ�ų�ܘ�$k\b��K�\u0018�j�#��x�L��S�",
+    "lesson": 1
+  },
+  {
+    "num": 4,
+    "korean": "��\b�\u0005�r�g�E�Q\u0002�p�",
+    "lesson": 1
+  },
+  {
+    "num": 5,
+    "korean": "_%��\u001c\\\u0018�r}u�H�r,�ă~�^pi\u0012�����裥�",
+    "lesson": 1
+  },
+  {
+    "num": 6,
+    "korean": "��\u0013`�Ը�w.:Q�(#�ִ��\u001c",
+    "lesson": 1
+  },
+  {
+    "num": 7,
+    "korean": "/���Zڏ�p\u001b��T�Jp�\\M:�U��",
+    "lesson": 1
+  },
+  {
+    "num": 8,
+    "korean": "g�,ک�p\u0001~��޳��",
+    "lesson": 1
+  },
+  {
+    "num": 9,
+    "korean": "��\u0017�x*\u001awP���g���",
+    "lesson": 1
+  },
+  {
+    "num": 10,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 11,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 12,
+    "korean": "dict begin",
+    "lesson": 1
+  },
+  {
+    "num": 13,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 14,
+    "korean": "beginbfchar",
+    "lesson": 1
+  },
+  {
+    "num": 15,
+    "korean": "beginbfchar",
+    "lesson": 1
+  },
+  {
+    "num": 16,
+    "korean": "m",
+    "lesson": 1
+  },
+  {
+    "num": 17,
+    "korean": "c  f",
+    "lesson": 1
+  },
+  {
+    "num": 18,
+    "korean": "m",
+    "lesson": 1
+  },
+  {
+    "num": 19,
+    "korean": "l",
+    "lesson": 1
+  },
+  {
+    "num": 20,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 21,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 22,
+    "korean": "l  f",
+    "lesson": 1
+  },
+  {
+    "num": 23,
+    "korean": "l  f",
+    "lesson": 1
+  },
+  {
+    "num": 24,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 25,
+    "korean": "l",
+    "lesson": 1
+  },
+  {
+    "num": 26,
+    "korean": "l  f",
+    "lesson": 1
+  },
+  {
+    "num": 27,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 28,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 29,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 30,
+    "korean": "Б����;�b\u0019������\b",
+    "lesson": 1
+  },
+  {
+    "num": 31,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 32,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 33,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 34,
+    "korean": "c",
+    "lesson": 1
+  },
+  {
+    "num": 35,
+    "korean": "c  f",
+    "lesson": 1
+  },
+  {
+    "num": 36,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 37,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 38,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 40,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 41,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 42,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 43,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 44,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 45,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 46,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 47,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 48,
+    "korean": "m",
+    "lesson": 2
+  },
+  {
+    "num": 49,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 50,
+    "korean": "m",
+    "lesson": 2
+  },
+  {
+    "num": 51,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 53,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 54,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 55,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 56,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 57,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 58,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 59,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 61,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 62,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 63,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 64,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 65,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 66,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 67,
+    "korean": "c",
+    "lesson": 2
+  },
+  {
+    "num": 68,
+    "korean": "l",
+    "lesson": 2
+  },
+  {
+    "num": 70,
+    "korean": "m",
+    "lesson": 2
+  },
+  {
+    "num": 71,
+    "korean": "��.��DL������\u0001&c",
+    "lesson": 3
+  },
+  {
+    "num": 72,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 73,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 74,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 76,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 77,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 78,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 79,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 80,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 81,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 82,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 83,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 85,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 86,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 88,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 89,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 90,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 91,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 92,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 93,
+    "korean": "\u001f�͹\"a�R��J�",
+    "lesson": 3
+  },
+  {
+    "num": 94,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 95,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 96,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 97,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 98,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 99,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 100,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 101,
+    "korean": "l",
+    "lesson": 3
+  },
+  {
+    "num": 102,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 103,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 104,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 106,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 108,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 109,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 110,
+    "korean": "c",
+    "lesson": 3
+  },
+  {
+    "num": 112,
+    "korean": "l",
+    "lesson": 4
+  },
+  {
+    "num": 113,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 114,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 116,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 118,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 119,
+    "korean": "l",
+    "lesson": 4
+  },
+  {
+    "num": 121,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 123,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 126,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 127,
+    "korean": "l",
+    "lesson": 4
+  },
+  {
+    "num": 128,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 129,
+    "korean": "m",
+    "lesson": 4
+  },
+  {
+    "num": 130,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 133,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 134,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 135,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 136,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 137,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 138,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 139,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 141,
+    "korean": "m",
+    "lesson": 4
+  },
+  {
+    "num": 142,
+    "korean": "l",
+    "lesson": 4
+  },
+  {
+    "num": 144,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 145,
+    "korean": "c  f",
+    "lesson": 4
+  },
+  {
+    "num": 146,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 147,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 149,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 150,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 151,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 152,
+    "korean": "m",
+    "lesson": 4
+  },
+  {
+    "num": 153,
+    "korean": "c",
+    "lesson": 4
+  },
+  {
+    "num": 156,
+    "korean": "m",
+    "lesson": 5
+  },
+  {
+    "num": 157,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 158,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 160,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 161,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 162,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 163,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 164,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 166,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 167,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 170,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 171,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 172,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 173,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 174,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 175,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 176,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 177,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 178,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 179,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 180,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 181,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 182,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 183,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 184,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 185,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 186,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 188,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 189,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 190,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 191,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 192,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 194,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 195,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 196,
+    "korean": "c",
+    "lesson": 5
+  },
+  {
+    "num": 199,
+    "korean": "l",
+    "lesson": 5
+  },
+  {
+    "num": 200,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 201,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 203,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 204,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 205,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 206,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 207,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 208,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 209,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 210,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 211,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 212,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 214,
+    "korean": "m",
+    "lesson": 6
+  },
+  {
+    "num": 215,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 217,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 219,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 220,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 221,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 222,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 223,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 224,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 225,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 226,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 227,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 229,
+    "korean": "m",
+    "lesson": 6
+  },
+  {
+    "num": 230,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 232,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 233,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 234,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 235,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 236,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 237,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 238,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 239,
+    "korean": "l",
+    "lesson": 6
+  },
+  {
+    "num": 240,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 241,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 242,
+    "korean": "c",
+    "lesson": 6
+  },
+  {
+    "num": 244,
+    "korean": "c  f",
+    "lesson": 6
+  },
+  {
+    "num": 245,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 246,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 247,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 248,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 249,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 250,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 251,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 252,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 253,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 254,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 255,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 256,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 257,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 258,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 259,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 260,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 261,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 262,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 263,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 264,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 265,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 266,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 267,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 268,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 269,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 270,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 271,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 272,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 273,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 274,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 275,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 276,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 277,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 278,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 279,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 280,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 281,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 282,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 283,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 284,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 285,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 286,
+    "korean": "l",
+    "lesson": 7
+  },
+  {
+    "num": 288,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 289,
+    "korean": "c",
+    "lesson": 7
+  },
+  {
+    "num": 290,
+    "korean": "c  f",
+    "lesson": 7
+  },
+  {
+    "num": 291,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 292,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 293,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 294,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 295,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 296,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 297,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 298,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 299,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 300,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 301,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 302,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 303,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 304,
+    "korean": "m",
+    "lesson": 8
+  },
+  {
+    "num": 305,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 306,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 307,
+    "korean": "l",
+    "lesson": 8
+  },
+  {
+    "num": 308,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 309,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 310,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 311,
+    "korean": "m",
+    "lesson": 8
+  },
+  {
+    "num": 312,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 313,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 314,
+    "korean": "l",
+    "lesson": 8
+  },
+  {
+    "num": 315,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 316,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 317,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 318,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 319,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 320,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 321,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 322,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 323,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 325,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 326,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 327,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 328,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 329,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 331,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 332,
+    "korean": "m",
+    "lesson": 8
+  },
+  {
+    "num": 333,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 334,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 335,
+    "korean": "l  f",
+    "lesson": 8
+  },
+  {
+    "num": 336,
+    "korean": "c",
+    "lesson": 8
+  },
+  {
+    "num": 338,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 339,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 340,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 341,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 342,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 343,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 344,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 346,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 347,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 348,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 349,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 350,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 351,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 352,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 353,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 355,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 356,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 357,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 358,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 359,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 360,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 361,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 362,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 364,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 365,
+    "korean": "l",
+    "lesson": 9
+  },
+  {
+    "num": 368,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 369,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 370,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 371,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 372,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 373,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 374,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 375,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 376,
+    "korean": "l  f",
+    "lesson": 9
+  },
+  {
+    "num": 377,
+    "korean": "c",
+    "lesson": 9
+  },
+  {
+    "num": 379,
+    "korean": "l",
+    "lesson": 9
+  },
+  {
+    "num": 380,
+    "korean": "l",
+    "lesson": 9
+  },
+  {
+    "num": 382,
+    "korean": "l",
+    "lesson": 9
+  },
+  {
+    "num": 383,
+    "korean": "l",
+    "lesson": 9
+  },
+  {
+    "num": 384,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 385,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 386,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 387,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 388,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 389,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 390,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 391,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 392,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 393,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 394,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 395,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 396,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 397,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 398,
+    "korean": "m",
+    "lesson": 10
+  },
+  {
+    "num": 399,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 400,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 401,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 402,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 403,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 404,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 405,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 406,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 407,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 408,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 410,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 411,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 412,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 413,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 414,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 415,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 416,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 417,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 418,
+    "korean": "c  f",
+    "lesson": 10
+  },
+  {
+    "num": 419,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 421,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 422,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 424,
+    "korean": "c",
+    "lesson": 10
+  },
+  {
+    "num": 425,
+    "korean": "m",
+    "lesson": 10
+  },
+  {
+    "num": 428,
+    "korean": "l",
+    "lesson": 10
+  },
+  {
+    "num": 430,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 431,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 432,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 433,
+    "korean": "c",
+    "lesson": 11
+  },
+  {
+    "num": 434,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 436,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 438,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 440,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 442,
+    "korean": "m",
+    "lesson": 11
+  },
+  {
+    "num": 443,
+    "korean": "c",
+    "lesson": 11
+  },
+  {
+    "num": 444,
+    "korean": "c",
+    "lesson": 11
+  },
+  {
+    "num": 447,
+    "korean": "c",
+    "lesson": 11
+  },
+  {
+    "num": 448,
+    "korean": "c",
+    "lesson": 11
+  },
+  {
+    "num": 449,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 452,
+    "korean": "l",
+    "lesson": 11
+  },
+  {
+    "num": 454,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 455,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 456,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 457,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 461,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 463,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 465,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 467,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 469,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 470,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 471,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 472,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 473,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 477,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 478,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 479,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 481,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 482,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 483,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 484,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 485,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 487,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 488,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 490,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 491,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 492,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 493,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 495,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 496,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 498,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 499,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 500,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 502,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 503,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 504,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 506,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 507,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 508,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 509,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 510,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 511,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 513,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 514,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 516,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 517,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 518,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 519,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 520,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 521,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 522,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 524,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 525,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 527,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 530,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 533,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 534,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 535,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 536,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 537,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 538,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 539,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 540,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 541,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 542,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 543,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 545,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 546,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 547,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 548,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 549,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 550,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 551,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 552,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 555,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 556,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 557,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 558,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 559,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 560,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 562,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 563,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 565,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 566,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 568,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 569,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 570,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 573,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 574,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 575,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 576,
+    "korean": "re",
+    "lesson": 12
+  },
+  {
+    "num": 577,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 578,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 579,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 580,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 581,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 583,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 584,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 585,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 586,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 587,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 588,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 589,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 590,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 593,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 594,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 596,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 598,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 599,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 601,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 602,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 603,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 605,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 608,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 610,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 611,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 613,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 615,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 616,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 618,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 620,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 624,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 625,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 626,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 627,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 629,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 630,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 631,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 632,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 635,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 636,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 637,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 638,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 640,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 641,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 644,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 645,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 646,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 647,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 648,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 649,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 651,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 652,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 655,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 656,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 657,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 658,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 659,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 660,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 661,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 662,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 664,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 665,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 667,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 668,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 669,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 670,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 672,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 674,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 675,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 676,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 677,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 679,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 680,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 681,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 682,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 683,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 686,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 687,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 689,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 690,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 691,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 694,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 695,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 696,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 700,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 701,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 703,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 705,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 706,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 707,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 709,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 710,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 712,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 715,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 716,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 719,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 721,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 723,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 727,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 728,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 729,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 731,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 733,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 734,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 735,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 736,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 737,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 740,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 744,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 745,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 746,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 747,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 748,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 749,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 750,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 751,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 755,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 756,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 757,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 758,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 759,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 760,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 763,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 765,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 766,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 767,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 769,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 770,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 772,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 773,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 774,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 775,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 776,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 778,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 781,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 783,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 784,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 786,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 788,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 789,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 792,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 793,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 794,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 795,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 796,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 797,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 799,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 802,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 804,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 805,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 806,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 807,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 808,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 809,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 811,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 812,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 813,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 814,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 818,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 819,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 820,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 823,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 824,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 825,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 826,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 827,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 828,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 830,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 832,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 834,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 835,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 836,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 837,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 840,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 845,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 846,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 847,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 848,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 849,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 850,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 851,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 853,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 854,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 855,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 856,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 857,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 858,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 861,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 862,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 864,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 866,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 867,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 868,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 869,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 870,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 871,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 872,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 874,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 875,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 876,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 877,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 878,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 879,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 881,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 882,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 884,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 886,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 887,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 889,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 891,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 892,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 895,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 896,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 897,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 898,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 901,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 902,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 903,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 904,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 905,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 906,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 907,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 908,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 910,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 911,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 912,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 913,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 915,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 918,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 919,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 920,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 922,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 923,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 924,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 926,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 927,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 928,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 929,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 930,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 931,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 933,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 934,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 935,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 936,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 937,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 938,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 940,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 941,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 942,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 943,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 944,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 946,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 947,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 948,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 949,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 950,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 951,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 952,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 953,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 954,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 955,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 956,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 958,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 959,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 961,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 965,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 966,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 967,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 968,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 970,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 973,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 974,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 975,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 976,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 977,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 979,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 982,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 983,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 984,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 985,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 986,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 988,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 990,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 991,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 992,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 994,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 995,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 996,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 997,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 998,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 999,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1000,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1001,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1002,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1003,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1004,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1005,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1006,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1007,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1008,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1010,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1011,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1012,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1014,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1016,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1017,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1019,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1020,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1022,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1024,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1025,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1026,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1027,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1028,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1029,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1030,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1031,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1033,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1034,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1035,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1036,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1037,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1038,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1039,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1040,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1042,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1043,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1045,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1046,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1047,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1048,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1049,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1050,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1051,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1052,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1053,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1054,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1055,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1056,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1057,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1058,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1060,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1061,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1062,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1064,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1065,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1066,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1067,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1068,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1069,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1070,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1071,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1072,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1073,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1074,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1075,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1076,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1077,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1078,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1079,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1080,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1081,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1082,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1083,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1084,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1085,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1086,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1087,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1088,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1089,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1090,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1091,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1092,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1093,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1094,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1095,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1096,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1097,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1098,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1099,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1100,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1101,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1102,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1103,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1104,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1105,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1106,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1107,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1108,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1109,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1110,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1111,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1112,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1116,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1117,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1118,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1119,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1120,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1121,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1122,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1123,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1124,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1125,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1126,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1127,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1130,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1132,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1133,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1134,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1135,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1136,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1139,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1141,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1142,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1143,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1144,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1146,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1147,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1148,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1150,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1151,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1154,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1155,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1156,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1157,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1158,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1159,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1160,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1161,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1162,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1163,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1164,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1165,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1166,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1168,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1169,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1170,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1171,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1172,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1173,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1174,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1175,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1176,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1177,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1178,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1179,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1180,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1181,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1182,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1183,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1184,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1185,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1186,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1187,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1188,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1189,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1190,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1191,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1192,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1193,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1195,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1196,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1198,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1199,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1202,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1203,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1204,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1205,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1206,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1207,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1208,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1209,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1210,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1211,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1212,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1213,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1214,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1215,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1216,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1217,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1218,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1219,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1220,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1221,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1222,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1223,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1224,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1225,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1226,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1227,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1228,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1229,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1230,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1231,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1232,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1233,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1234,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1235,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1236,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1238,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1239,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1240,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1241,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1242,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1243,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1244,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1246,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1247,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1248,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1249,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1253,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1255,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1257,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1258,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1259,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1261,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1262,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1264,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1265,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1266,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1267,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1268,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1269,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1270,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1271,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1272,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1273,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1274,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1276,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1277,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1278,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1279,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1280,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1281,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1282,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1283,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1284,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1285,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1286,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1292,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1293,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1294,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1295,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1297,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1298,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1300,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1301,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1302,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1303,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1304,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1306,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1307,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1309,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1313,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1314,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1315,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1316,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1317,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1318,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1319,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1321,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1322,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1323,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1325,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1327,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1330,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1331,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1334,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1335,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1336,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1340,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1341,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1344,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1345,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1346,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1347,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1348,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1349,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1351,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1352,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1353,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1354,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1355,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1356,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1357,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1358,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1359,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1361,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1362,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1364,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1365,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1366,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1367,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1368,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1369,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1370,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1371,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1372,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1373,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1374,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1375,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1376,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1377,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1378,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1379,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1382,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1383,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1389,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1390,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1393,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1394,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1395,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1399,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1400,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1402,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1403,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1407,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1411,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1414,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1415,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1416,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1419,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1420,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1424,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1426,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1427,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1428,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1429,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1433,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1434,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1436,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1438,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1442,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1445,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1448,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1449,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1455,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1458,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1459,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1463,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1465,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1470,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1475,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1481,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1483,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1484,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1486,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1487,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1488,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1489,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1493,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1494,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1496,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1497,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1499,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1502,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1503,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1504,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1505,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1507,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1508,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1510,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1512,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1515,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1516,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1517,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1520,
+    "korean": "l  f",
+    "lesson": 12
+  },
+  {
+    "num": 1522,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1523,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1524,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1526,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1528,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1530,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1532,
+    "korean": "l  f",
+    "lesson": 12
+  },
+  {
+    "num": 1534,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1536,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1540,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1542,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1544,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1546,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1547,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1549,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1550,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1556,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1558,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1559,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1560,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1562,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1564,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1565,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1566,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1567,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1572,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1573,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1575,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1576,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1577,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1578,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1580,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1584,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1586,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1587,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1591,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1594,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1595,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1598,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1599,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1600,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1604,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1607,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1608,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1609,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1610,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1615,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1619,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1625,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1627,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1633,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1634,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1635,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1636,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1637,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1639,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1640,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1642,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1645,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1650,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1651,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1657,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1660,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1661,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1663,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1666,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1669,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1673,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1674,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1675,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1678,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1681,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 1683,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1684,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1685,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1686,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1687,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1688,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1690,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1691,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1695,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1696,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1697,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1698,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1700,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1705,
+    "korean": "l  f",
+    "lesson": 12
+  },
+  {
+    "num": 1706,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1707,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1710,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1713,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1714,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1720,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1721,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1726,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1729,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1730,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1731,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1732,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1733,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1734,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1735,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1739,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1740,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1741,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 1744,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 1745,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1746,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1748,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1749,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1751,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1755,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1763,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1772,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1776,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1777,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1778,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1780,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1781,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1792,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1793,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1794,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1795,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1799,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1801,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1802,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1804,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1808,
+    "korean": "l  f",
+    "lesson": 12
+  },
+  {
+    "num": 1809,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1810,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1811,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1813,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1818,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1819,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1821,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1824,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1825,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1829,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1831,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1833,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1834,
+    "korean": "l",
+    "lesson": 12
+  },
+  {
+    "num": 1835,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1838,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1840,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1846,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1847,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1852,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 1853,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1855,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 1856,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1863,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1864,
+    "korean": "m",
+    "lesson": 12
+  },
+  {
+    "num": 1865,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1866,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1870,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1873,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1876,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1877,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1879,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1880,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1882,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1883,
+    "korean": "c",
+    "lesson": 12
+  },
+  {
+    "num": 1906,
+    "korean": "c  f",
+    "lesson": 12
+  },
+  {
+    "num": 2354,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 3939,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 9499,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 26461,
+    "korean": "re",
+    "lesson": 12
+  },
+  {
+    "num": 28939,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 29867,
+    "korean": "re",
+    "lesson": 12
+  },
+  {
+    "num": 37677,
+    "korean": "re",
+    "lesson": 12
+  },
+  {
+    "num": 46228,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 52734,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 53384,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 53939,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 59412,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 65535,
+    "korean": "f",
+    "lesson": 12
+  },
+  {
+    "num": 78939,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 139282,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 146973,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 149536,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 219412,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 224121,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 267071,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 271933,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 289639,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 295673,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 307409,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 318428,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 381922,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 459434,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 499412,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 500000,
+    "korean": "Tf",
+    "lesson": 12
+  },
+  {
+    "num": 505213,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 518551,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 537617,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 580257,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 595581,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 619907,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 620916,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 658774,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 669922,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 677612,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 698177,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 709434,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 728235,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 737324,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 749412,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 777588,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 777832,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 797446,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 798171,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 816284,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 831373,
+    "korean": "rg",
+    "lesson": 12
+  },
+  {
+    "num": 869629,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 877319,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 879883,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 899368,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 933048,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 939534,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 959434,
+    "korean": "Tm",
+    "lesson": 12
+  },
+  {
+    "num": 979282,
+    "korean": "cm",
+    "lesson": 12
+  },
+  {
+    "num": 984235,
+    "korean": "Tm",
+    "lesson": 12
+  }
+]

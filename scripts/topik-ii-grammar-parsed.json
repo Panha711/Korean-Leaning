@@ -1,0 +1,1038 @@
+[
+  {
+    "num": 1,
+    "korean": "-(으)ㄴ 채(로)",
+    "english": "while~",
+    "exampleKorean": "버스 안에서 앉은 채로 잠자버렸다.",
+    "exampleEnglish": "I fell asleep while sitting on the bus."
+  },
+  {
+    "num": 2,
+    "korean": "-(으)ㄴ/는 걸 보니(까)",
+    "english": "since~",
+    "exampleKorean": "돈을 많이 쓰는 걸 보니 부자인가 봐.",
+    "exampleEnglish": "He must be rich since he is using a lot of money."
+  },
+  {
+    "num": 3,
+    "korean": "-(으)ㄴ/는 김에",
+    "english": "On the way~",
+    "exampleKorean": "마트에 가는 김에 친정에도 갔다.",
+    "exampleEnglish": "On the way to the supermarket, I visited my parent's house."
+  },
+  {
+    "num": 4,
+    "korean": "-(으)ㄴ/는 만큼",
+    "english": "as much as (doing sth.)",
+    "exampleKorean": "웃는 만큼 인생은 행복해진다.",
+    "exampleEnglish": "Life becomes more fun as much as you laugh."
+  },
+  {
+    "num": 5,
+    "korean": "-(으)ㄴ/는 반면(에)",
+    "english": "Although ~",
+    "exampleKorean": "택시는 편리한 반면에 지하철보다 비싸다.",
+    "exampleEnglish": "Although a taxi is convenient, it is more expensive than a subway."
+  },
+  {
+    "num": 6,
+    "korean": "-(으)ㄴ/는 법이다",
+    "english": "(It) will~",
+    "exampleKorean": "계속 노력한다면 개선되는 법이다.",
+    "exampleEnglish": "If you keep making an effort, you will get better."
+  },
+  {
+    "num": 7,
+    "korean": "-(으)ㄴ/는 탓에",
+    "english": "Because~ (negative)",
+    "exampleKorean": "운동 안 한 탓에 살이 많이 쪘어요.",
+    "exampleEnglish": "Because I did not work out, I gained a lot of weight."
+  },
+  {
+    "num": 8,
+    "korean": "-(으)ㄴ/는/(으)ㄹ 모양이다",
+    "english": "seems like~",
+    "exampleKorean": "비가 오는 모양이다.",
+    "exampleEnglish": "It seems like it is raining."
+  },
+  {
+    "num": 9,
+    "korean": "-(으)ㄴ/는/(으)ㄹ 셈이다",
+    "english": "going to do~",
+    "exampleKorean": "어떻게 할 셈이야?",
+    "exampleEnglish": "What are you going to do?"
+  },
+  {
+    "num": 10,
+    "korean": "-(으)ㄴ/는/(으)ㄹ 줄 몰랐다",
+    "english": "did not know~",
+    "exampleKorean": "공무원 시험에 합격할 줄 몰랐다.",
+    "exampleEnglish": "I did not know that I passed the civil servant examination."
+  },
+  {
+    "num": 11,
+    "korean": "-(으)ㄴ/는/(으)ㄹ 줄 알았다",
+    "english": "thought~",
+    "exampleKorean": "아저씨는 연예인이 된 줄 알았는데.",
+    "exampleEnglish": "I thought he became a celebrity."
+  },
+  {
+    "num": 12,
+    "korean": "-(으)ㄴ/는/(으)ㄹ지",
+    "english": "what/who/where~",
+    "exampleKorean": "지갑을 어디서 잃어버렸는지 모르겠다.",
+    "exampleEnglish": "I don't know where I lost my wallet."
+  },
+  {
+    "num": 13,
+    "korean": "-(으)ㄴ/는걸(요)",
+    "english": "~ though.",
+    "exampleKorean": "아직 졸린걸요.",
+    "exampleEnglish": "I am still sleepy though."
+  },
+  {
+    "num": 14,
+    "korean": "-(으)ㄴ/는데(요)",
+    "english": "But ~",
+    "exampleKorean": "이 요리는 생각보다 맛있는데요.",
+    "exampleEnglish": "But this dish is more delicious than I thought."
+  },
+  {
+    "num": 15,
+    "korean": "-(으)ㄴ/는들",
+    "english": "Even if~",
+    "exampleKorean": "내가 간들 소용없다.",
+    "exampleEnglish": "Even if I go, it won't help much."
+  },
+  {
+    "num": 16,
+    "korean": "-(으)ㄴ가 보다",
+    "english": "assume ~",
+    "exampleKorean": "그 사람은 선생님인가 봐요.",
+    "exampleEnglish": "I assume he is a teacher."
+  },
+  {
+    "num": 17,
+    "korean": "-(으)ㄴ가(요)?",
+    "english": "Is ~?",
+    "exampleKorean": "여자 친구는 예쁜가요?",
+    "exampleEnglish": "Is your girlfriend pretty?"
+  },
+  {
+    "num": 18,
+    "korean": "-(으)나 마나",
+    "english": "no use to-",
+    "exampleKorean": "길을 물어보나 마나예요.",
+    "exampleEnglish": "It is no use to ask him the direction."
+  },
+  {
+    "num": 19,
+    "korean": "-(으)니까(요)",
+    "english": "Because~ (neutral)",
+    "exampleKorean": "열심히 공부하니까 성적이 우수하다.",
+    "exampleEnglish": "Because he studies hard, his grades are excellent."
+  },
+  {
+    "num": 20,
+    "korean": "-(으)니만큼",
+    "english": "As~",
+    "exampleKorean": "노력하니만큼 결과가 기대된다.",
+    "exampleEnglish": "As I tried hard, I am looking forward to the result."
+  },
+  {
+    "num": 21,
+    "korean": "-(으)ㄹ 겸  (해서)",
+    "english": "And also",
+    "exampleKorean": "그에게 사과할 겸 해서 편지를 썼어요.",
+    "exampleEnglish": "I wrote a letter and also apologize."
+  },
+  {
+    "num": 22,
+    "korean": "-(으)ㄹ 리가 없다",
+    "english": "There is no way~",
+    "exampleKorean": "돈이 부족할 리가 없어요.",
+    "exampleEnglish": "There is no way the money is not enough."
+  },
+  {
+    "num": 23,
+    "korean": "-(으)ㄹ 만하다",
+    "english": "It is worth~",
+    "exampleKorean": "타개책을 시도할 만합니다.",
+    "exampleEnglish": "It is worth attempting a breakthrough."
+  },
+  {
+    "num": 24,
+    "korean": "-(으)ㄹ 뻔하다",
+    "english": "almost ~",
+    "exampleKorean": "과음해서 의식을 잃어버릴 뻔했어요.",
+    "exampleEnglish": "I almost lost consciousness from overdrinking."
+  },
+  {
+    "num": 25,
+    "korean": "-(으)ㄹ 뿐만 아니라",
+    "english": "not only",
+    "exampleKorean": "그 애기는 걸을 뿐만 아니라 잘 달린다.",
+    "exampleEnglish": "That baby not only walks well but also runs well."
+  },
+  {
+    "num": 26,
+    "korean": "-(으)ㄹ 뿐이다",
+    "english": "just~",
+    "exampleKorean": "국적이 다를 뿐이지 같은 인간이에요.",
+    "exampleEnglish": "We just have different nationalities, but we're the same human beings."
+  },
+  {
+    "num": 27,
+    "korean": "-(으)ㄹ 수밖에 (없다)",
+    "english": "no other choice than~",
+    "exampleKorean": "시간이 없으니까 뛰어갈 수밖에 없다.",
+    "exampleEnglish": "We don't have much time, so there is no other choice than running."
+  },
+  {
+    "num": 28,
+    "korean": "-(으)ㄹ 정도(로)",
+    "english": "(verb)ingly",
+    "exampleKorean": "놀라울 정도로 크게 외쳤다.",
+    "exampleEnglish": "He shouted surprisingly loud."
+  },
+  {
+    "num": 29,
+    "korean": "-(으)ㄹ 지경이다",
+    "english": "almost~",
+    "exampleKorean": "그녀가 화낼 지경이에요.",
+    "exampleEnglish": "She's almost mad."
+  },
+  {
+    "num": 30,
+    "korean": "-(으)ㄹ 테니(까)",
+    "english": "will~ so~",
+    "exampleKorean": "빨래를 널 테니까 애기를 봐줘.",
+    "exampleEnglish": "I will dry the laundry, so please look after the child."
+  },
+  {
+    "num": 31,
+    "korean": "-(으)ㄹ 텐데",
+    "english": "should be~",
+    "exampleKorean": "거기에 있을 텐데.",
+    "exampleEnglish": "It should be there."
+  },
+  {
+    "num": 32,
+    "korean": "-(으)ㄹ걸 (그랬다)",
+    "english": "should have~",
+    "exampleKorean": "우산 가져올 걸.",
+    "exampleEnglish": "I should have brought an umbrella."
+  },
+  {
+    "num": 33,
+    "korean": "-(으)ㄹ까 말까",
+    "english": "whether~ or not",
+    "exampleKorean": "길을 건널까 말까 고민했다.",
+    "exampleEnglish": "I wondered whether I should cross the street or not."
+  },
+  {
+    "num": 34,
+    "korean": "-(으)ㄹ수록",
+    "english": "(adj.)er as~",
+    "exampleKorean": "가면 갈수록 그 산길은 힘들어져요.",
+    "exampleEnglish": "The mountain road is getting harder as you go further."
+  },
+  {
+    "num": 35,
+    "korean": "-(으)ㄹ지(도) 모르다",
+    "english": "don't know~",
+    "exampleKorean": "어떻게 편집해야할지 잘 모르겠어요.",
+    "exampleEnglish": "I don't know how I should edit it."
+  },
+  {
+    "num": 36,
+    "korean": "-(으)ㄹ지라도",
+    "english": "no matter~",
+    "exampleKorean": "아무리 어려울지라도 저는 해냅니다.",
+    "exampleEnglish": "No matter how tough it is, I will complete it."
+  },
+  {
+    "num": 37,
+    "korean": "-(으)라고 하다",
+    "english": "told me to~",
+    "exampleKorean": "아버지가 빨리 손을 씻으라고 했어요.",
+    "exampleEnglish": "Dad told me to wash my hands quickly."
+  },
+  {
+    "num": 38,
+    "korean": "-(으)려다가",
+    "english": "is about to~",
+    "exampleKorean": "외출하려다가 누나가 찾아왔다.",
+    "exampleEnglish": "When I was about to go out, my sister came in."
+  },
+  {
+    "num": 39,
+    "korean": "-(으)려던 참이다",
+    "english": "is about to",
+    "exampleKorean": "학교에 가려던 참이에요.",
+    "exampleEnglish": "I was about to go to school."
+  },
+  {
+    "num": 40,
+    "korean": "-(으)려면",
+    "english": "in order to~",
+    "exampleKorean": "기념사진을 찍으려면 배경은 아름다워야한다.",
+    "exampleEnglish": "In order to take a memorial picture, the background has to be beautiful."
+  },
+  {
+    "num": 41,
+    "korean": "-(으)로 인해(서)",
+    "english": "due to~",
+    "exampleKorean": "그 이야기는 인터넷으로 인해 확산되었다.",
+    "exampleEnglish": "The story is widespread due to the Internet."
+  },
+  {
+    "num": 42,
+    "korean": "-(으)로서",
+    "english": "as a~",
+    "exampleKorean": "선배로서 충고 하나 할게.",
+    "exampleEnglish": "Let me give you some advice as a senior."
+  },
+  {
+    "num": 43,
+    "korean": "-(으)며",
+    "english": "and~",
+    "exampleKorean": "내 남자친구는 피아노도 잘 치며 노래도 잘한다.",
+    "exampleEnglish": "My boyfriend is good at playing piano and singing."
+  },
+  {
+    "num": 44,
+    "korean": "-(으)면 되다",
+    "english": "should be okay~",
+    "exampleKorean": "웹사이트에서 접수하시면 됩니다.",
+    "exampleEnglish": "It should be okay if you apply on the website."
+  },
+  {
+    "num": 45,
+    "korean": "-(으)므로",
+    "english": "as (sub.) needs to~",
+    "exampleKorean": "아침 일찍 일어나야 하므로 이제 잡니다.",
+    "exampleEnglish": "As I need to wake up early in the morning, I am going to sleep now."
+  },
+  {
+    "num": 46,
+    "korean": "-(이)나 -(이)나 할 것 없이",
+    "english": "regardless of~",
+    "exampleKorean": "아이나 어른이나 할 것 없이 건강은 중요하다.",
+    "exampleEnglish": "Regardless of whether you are a child or an adult, health is important."
+  },
+  {
+    "num": 47,
+    "korean": "-거든",
+    "english": "because",
+    "exampleKorean": "어려보여도 제가 상사거든요.",
+    "exampleEnglish": "Because I am your boss even though I look young."
+  },
+  {
+    "num": 48,
+    "korean": "-게 하다",
+    "english": "makes~",
+    "exampleKorean": "동생은 나를 짜증나게 한다.",
+    "exampleEnglish": "My younger brother makes me annoyed."
+  },
+  {
+    "num": 49,
+    "korean": "-고 나니(까)",
+    "english": "after~",
+    "exampleKorean": "푹 쉬고 나니 열이 내려갔어요.",
+    "exampleEnglish": "After resting well, the fever got better."
+  },
+  {
+    "num": 50,
+    "korean": "-고 나면",
+    "english": "after~",
+    "exampleKorean": "청소하고 나면 기분이 상쾌해진다.",
+    "exampleEnglish": "After cleaning the house, I feel refreshed."
+  },
+  {
+    "num": 51,
+    "korean": "-고 나서",
+    "english": "after~",
+    "exampleKorean": "이메일 먼저 확인하고 나서 연락드릴게요.",
+    "exampleEnglish": "After checking the e-mail first, I will contact with you."
+  },
+  {
+    "num": 52,
+    "korean": "-고 말고(요)",
+    "english": "of course~",
+    "exampleKorean": "한국여행은 재미있고 말고요.",
+    "exampleEnglish": "Of course, traveling to Korea is fun."
+  },
+  {
+    "num": 53,
+    "korean": "-고 말다",
+    "english": "ended up~",
+    "exampleKorean": "밤늦게까지 게임하고 말았어요.",
+    "exampleEnglish": "I ended up playing a game until late at night."
+  },
+  {
+    "num": 54,
+    "korean": "-고 보면",
+    "english": "actually~ once~",
+    "exampleKorean": "배우고 보면 한국어는 쉬워요.",
+    "exampleEnglish": "Korean is actually easy to learn once you start learning."
+  },
+  {
+    "num": 55,
+    "korean": "-곤 하다",
+    "english": "used to often~",
+    "exampleKorean": "우리는 분식점 앞에서 만나곤 했다.",
+    "exampleEnglish": "We used to meet often in front of the cafeteria."
+  },
+  {
+    "num": 56,
+    "korean": "-기 쉽다",
+    "english": "easy to~",
+    "exampleKorean": "저 선생님의 수업은 이해하기 쉬워요.",
+    "exampleEnglish": "That teacher's class is easy to understand."
+  },
+  {
+    "num": 57,
+    "korean": "-기 십상이다",
+    "english": "tend to~",
+    "exampleKorean": "젊은 운전자는 실수하기 십상이다.",
+    "exampleEnglish": "Young drivers tend to make mistakes."
+  },
+  {
+    "num": 58,
+    "korean": "-기 어렵다",
+    "english": "difficult to~",
+    "exampleKorean": "작은 신발로는 걷기 어렵다.",
+    "exampleEnglish": "It is difficult to walk in small shoes."
+  },
+  {
+    "num": 59,
+    "korean": "-기 위해(서)",
+    "english": "to~",
+    "exampleKorean": "문제를 해결하기 위해서 다같이 모였다.",
+    "exampleEnglish": "We gathered together to resolve the issue."
+  },
+  {
+    "num": 60,
+    "korean": "-기/게 마련이다",
+    "english": "will~",
+    "exampleKorean": "준비 안 하면 후회하기 마련이다.",
+    "exampleEnglish": "If you don't prepare, you will regret it."
+  },
+  {
+    "num": 61,
+    "korean": "-기는 하지만",
+    "english": "but~",
+    "exampleKorean": "한국어는 어렵기는 하지만 재미도 있어요.",
+    "exampleEnglish": "Korean is difficult but fun to learn."
+  },
+  {
+    "num": 62,
+    "korean": "-기는(요)",
+    "english": "no need to~",
+    "exampleKorean": "고맙기는요. 별말씀을요.",
+    "exampleEnglish": "No need to thank me. (No problem.)"
+  },
+  {
+    "num": 63,
+    "korean": "-기만 하면 (되다)",
+    "english": "as long as~",
+    "exampleKorean": "단어를 외우기만 하면 100점이다.",
+    "exampleEnglish": "As long as you memorize the vocabulary, you will get a full score."
+  },
+  {
+    "num": 64,
+    "korean": "-기에(는)",
+    "english": "not good for~",
+    "exampleKorean": "축구하기에는 날씨가 안 좋아요.",
+    "exampleEnglish": "The weather is not good for playing soccer."
+  },
+  {
+    "num": 65,
+    "korean": "-길래",
+    "english": "since~",
+    "exampleKorean": "남편이 레스토랑에 안 오길래 난 바람맞은 줄 알았다.",
+    "exampleEnglish": "Since my husband did not come to a restaurant, I thought he cancel the plan at the last minute."
+  },
+  {
+    "num": 66,
+    "korean": "-ㄴ/는 척하다",
+    "english": "pretend to~",
+    "exampleKorean": "그 후배는 착한 척한다.",
+    "exampleEnglish": "He is pretending to be nice."
+  },
+  {
+    "num": 67,
+    "korean": "-ㄴ/는다",
+    "english": "is~",
+    "exampleKorean": "후식에 딸기를 먹는다.",
+    "exampleEnglish": "I am eating strawberries for dessert."
+  },
+  {
+    "num": 68,
+    "korean": "-ㄴ/는다거나",
+    "english": "or~",
+    "exampleKorean": "독서한다거나 영화를 보러 간다.",
+    "exampleEnglish": "I read some books or go watch a movie."
+  },
+  {
+    "num": 69,
+    "korean": "-ㄴ/는다고 치다",
+    "english": "if~",
+    "exampleKorean": "일본에 간다고 치면 어디로 갈까요?",
+    "exampleEnglish": "If I go to Japan, where should I visit?"
+  },
+  {
+    "num": 70,
+    "korean": "-ㄴ/는다고 하다",
+    "english": "say~",
+    "exampleKorean": "제 친구는 병원에 안 다닌다고 했어요.",
+    "exampleEnglish": "My friend said that he didn't go to the hospital."
+  },
+  {
+    "num": 71,
+    "korean": "-ㄴ/는다고 해도",
+    "english": "even if~",
+    "exampleKorean": "금연한다고 해도 잘 안 된다.",
+    "exampleEnglish": "Even if I am trying to quit smoking, it is difficult."
+  },
+  {
+    "num": 72,
+    "korean": "-ㄴ/는다고(요)",
+    "english": "seems like~",
+    "exampleKorean": "내일은 비가 온다고 해요.",
+    "exampleEnglish": "It seems like tomorrow is going to rain."
+  },
+  {
+    "num": 73,
+    "korean": "-ㄴ/는다니",
+    "english": "that~",
+    "exampleKorean": "5개국어를 한다니 대단합니다.",
+    "exampleEnglish": "It's amazing that you can speak 5 languages."
+  },
+  {
+    "num": 74,
+    "korean": "-ㄴ/는다니까",
+    "english": "I'm telling you~",
+    "exampleKorean": "아무리 이유를 설명해도 화를 낸다니까.",
+    "exampleEnglish": "I'm telling you no matter how many times I explain the reason, he is still angry."
+  },
+  {
+    "num": 75,
+    "korean": "-ㄴ/는다더니",
+    "english": "but~",
+    "exampleKorean": "우리 남편은 일찍 돌아온다더니 아직도 집에 안 왔다.",
+    "exampleEnglish": "My husband said he will be back soon, but he was still not home."
+  },
+  {
+    "num": 76,
+    "korean": "-ㄴ/는다더라",
+    "english": "seems like~",
+    "exampleKorean": "내일은 눈이 온다더라.",
+    "exampleEnglish": "It seems like tomorrow is going to snow."
+  },
+  {
+    "num": 77,
+    "korean": "-ㄴ/는다던데",
+    "english": "heard~",
+    "exampleKorean": "잘 생겼다던데 정말이야?",
+    "exampleEnglish": "I heard he is handsome, is that true?"
+  },
+  {
+    "num": 78,
+    "korean": "-ㄴ/는다면",
+    "english": "if~",
+    "exampleKorean": "운동선수가 되고 싶다면 전문학원에 등록해야 돼.",
+    "exampleEnglish": "If you want to be an athlete, you need to register for a professional academy."
+  },
+  {
+    "num": 79,
+    "korean": "-ㄴ/는다면서(요)?",
+    "english": "heard~",
+    "exampleKorean": "너 영어 잘한다면서?",
+    "exampleEnglish": "I heard you are good at English?"
+  },
+  {
+    "num": 80,
+    "korean": "-나 보다",
+    "english": "seem to~",
+    "exampleKorean": "둘이 사귀나 보다.",
+    "exampleEnglish": "They seem to be dating."
+  },
+  {
+    "num": 81,
+    "korean": "-나(요)?",
+    "english": "is it?",
+    "exampleKorean": "여기서 타면 되나?",
+    "exampleEnglish": "Is it here where we ride?"
+  },
+  {
+    "num": 82,
+    "korean": "-냐고 하다",
+    "english": "ask",
+    "exampleKorean": "엄마가 시험은 언제냐고 저한테 물어봤어요.",
+    "exampleEnglish": "My mom asked me when the exam was."
+  },
+  {
+    "num": 83,
+    "korean": "-느라고",
+    "english": "for~",
+    "exampleKorean": "숙제하느라고 삼촌을 만날 시간이 없었다.",
+    "exampleEnglish": "I was busy with homework that I didn't have time to meet my uncle."
+  },
+  {
+    "num": 84,
+    "korean": "-는 (도)중에",
+    "english": "in the middle of~",
+    "exampleKorean": "연기하는 중에 기침해버렸다.",
+    "exampleEnglish": "I accidentally coughed when I was in the middle of acting."
+  },
+  {
+    "num": 85,
+    "korean": "-는 길에",
+    "english": "on the way~",
+    "exampleKorean": "집에 가는 길에 빵을 사 왔어요.",
+    "exampleEnglish": "I bought bread on my way home."
+  },
+  {
+    "num": 86,
+    "korean": "-는 대로",
+    "english": "as~",
+    "exampleKorean": "바라는 대로 이루어진다.",
+    "exampleEnglish": "You can become as you wish."
+  },
+  {
+    "num": 87,
+    "korean": "-는 대신(에)",
+    "english": "instead of~",
+    "exampleKorean": "술을 마시는 대신에 녹차를 마시자.",
+    "exampleEnglish": "Let's drink green tea instead of alcohol."
+  },
+  {
+    "num": 88,
+    "korean": "-는 덕분에",
+    "english": "thanks to~",
+    "exampleKorean": "버스가 늦게 온 덕분에 탈 수 있었다.",
+    "exampleEnglish": "I was able to ride the bus thanks to the fact that it was delayed."
+  },
+  {
+    "num": 89,
+    "korean": "-는 바람에",
+    "english": "because~",
+    "exampleKorean": "공부를 안 하는 바람에 성적이 떨어졌어요.",
+    "exampleEnglish": "My grade dropped because I did not study."
+  },
+  {
+    "num": 90,
+    "korean": "-는 사이에",
+    "english": "when~",
+    "exampleKorean": "제가 없는 사이에 택배가 오면 받아주세요.",
+    "exampleEnglish": "If the delivery comes when I am not home, please take it for me."
+  },
+  {
+    "num": 91,
+    "korean": "-는 셈 치다",
+    "english": "considering~",
+    "exampleKorean": "연습하는 셈 치고 오디션에 간다.",
+    "exampleEnglish": "I take auditions considering them as practices."
+  },
+  {
+    "num": 92,
+    "korean": "-는 수(가) 있다",
+    "english": "can~",
+    "exampleKorean": "전문가라고 해도 실패하는 수가 있어요.",
+    "exampleEnglish": "Even an expert can fail."
+  },
+  {
+    "num": 93,
+    "korean": "-는 수밖에 (없다)",
+    "english": "no other choice than~",
+    "exampleKorean": "가족으로부터 돈을 빌리는 수밖에 없다.",
+    "exampleEnglish": "There is no other choice than to borrow money from my family."
+  },
+  {
+    "num": 94,
+    "korean": "-는 중이다",
+    "english": "on the way~",
+    "exampleKorean": "지금 직장에 가는 중이에요.",
+    "exampleEnglish": "I am on the way going to my office."
+  },
+  {
+    "num": 95,
+    "korean": "-는 통에",
+    "english": "because~",
+    "exampleKorean": "아이들이 떠드는 통에 집중할 수 없었어요.",
+    "exampleEnglish": "I was not able to concentrate because the children were too noisy."
+  },
+  {
+    "num": 96,
+    "korean": "-는 편이다",
+    "english": "tend to~",
+    "exampleKorean": "저는 돈을 아끼는 편이에요.",
+    "exampleEnglish": "I tend to save money."
+  },
+  {
+    "num": 97,
+    "korean": "-는 한",
+    "english": "as far as~",
+    "exampleKorean": "내가 아는 한 그것은 사실이에요.",
+    "exampleEnglish": "As far as I know, it is true."
+  },
+  {
+    "num": 98,
+    "korean": "-는 한편",
+    "english": "also~",
+    "exampleKorean": "회사에 다니는 한편 부업도 한다.",
+    "exampleEnglish": "I am working at a company and also doing a side job."
+  },
+  {
+    "num": 99,
+    "korean": "-는/은커녕",
+    "english": "even~",
+    "exampleKorean": "술은커녕 차도 못 마셨어요.",
+    "exampleEnglish": "I could not drink alcohol, not even tea."
+  },
+  {
+    "num": 100,
+    "korean": "-는구나",
+    "english": "I see~",
+    "exampleKorean": "이 애기는 벌써 걷는구나.",
+    "exampleEnglish": "The baby is already walking."
+  },
+  {
+    "num": 101,
+    "korean": "-니/냐?",
+    "english": "do you~?",
+    "exampleKorean": "기분 나쁘니?",
+    "exampleEnglish": "Do you feel uncomfortable?"
+  },
+  {
+    "num": 102,
+    "korean": "-다(가) 보니(까)",
+    "english": "while focusing~ already~",
+    "exampleKorean": "작업하다 보니까 새벽이 됐어요.",
+    "exampleEnglish": "While I was focusing on my work, it was already morning."
+  },
+  {
+    "num": 103,
+    "korean": "-다(가) 보면",
+    "english": "when focusing~",
+    "exampleKorean": "심호흡하다 보면 마음이 차분해집니다.",
+    "exampleEnglish": "When you focus on breathing deeply, you will feel calmer."
+  },
+  {
+    "num": 104,
+    "korean": "-다가",
+    "english": "while~",
+    "exampleKorean": "스마트폰을 사용하다가 모르면 물어보세요.",
+    "exampleEnglish": "When you don't know something while using a smartphone, please come and ask."
+  },
+  {
+    "num": 105,
+    "korean": "-다시피",
+    "english": "as~",
+    "exampleKorean": "보다시피 요즘 직장인들은 바빠요.",
+    "exampleEnglish": "As you can see, employees these days are busy."
+  },
+  {
+    "num": 106,
+    "korean": "-대로",
+    "english": "as~",
+    "exampleKorean": "교수님의 말씀대로 하자.",
+    "exampleEnglish": "Let's do as the professor told us."
+  },
+  {
+    "num": 107,
+    "korean": "-더군(요)",
+    "english": "I heard~",
+    "exampleKorean": "따님에게 귀여운 이름을 지었더군요.",
+    "exampleEnglish": "I heard that you have given your daughter a very cute name."
+  },
+  {
+    "num": 108,
+    "korean": "-더니",
+    "english": "~and then",
+    "exampleKorean": "강의에 늦었더니 강사님이 야단치셨다.",
+    "exampleEnglish": "I was late for class and then the teacher scolded me."
+  },
+  {
+    "num": 109,
+    "korean": "-더라",
+    "english": "I heard~",
+    "exampleKorean": "그 남자는 경찰에 잡혔더라.",
+    "exampleEnglish": "I heard the guy was caught by the police."
+  },
+  {
+    "num": 110,
+    "korean": "-더라고(요)",
+    "english": "was~",
+    "exampleKorean": "서울은 도쿄보다 춥더라고요.",
+    "exampleEnglish": "Seoul was colder than Tokyo."
+  },
+  {
+    "num": 111,
+    "korean": "-더라도",
+    "english": "even~",
+    "exampleKorean": "힘겨운 일이 있더라도 참는다.",
+    "exampleEnglish": "I endure even when I am having a hard time."
+  },
+  {
+    "num": 112,
+    "korean": "-던",
+    "english": "used to~",
+    "exampleKorean": "내가 다니던 중학교는 지금은 없어요.",
+    "exampleEnglish": "The middle school I used to go to is not there anymore."
+  },
+  {
+    "num": 113,
+    "korean": "-던가(요)?",
+    "english": "Is~?",
+    "exampleKorean": "오늘 결혼기념일이던가?",
+    "exampleEnglish": "Is today our wedding anniversary?"
+  },
+  {
+    "num": 114,
+    "korean": "-던데",
+    "english": "I found (that)",
+    "exampleKorean": "길이 막히던데 사고라도 났나?",
+    "exampleEnglish": "I found a traffic jam. Was there an accident?"
+  },
+  {
+    "num": 115,
+    "korean": "-도록",
+    "english": "so that~",
+    "exampleKorean": "이 은혜를 갚도록 항상 최선을 다하겠습니다.",
+    "exampleEnglish": "I will try my best to return this favor."
+  },
+  {
+    "num": 116,
+    "korean": "-든지",
+    "english": "no matter~",
+    "exampleKorean": "좋든지 싫든지 수능 봐야 한다.",
+    "exampleEnglish": "No matter I wish or not, I need to take the university entrance examination."
+  },
+  {
+    "num": 117,
+    "korean": "-듯이",
+    "english": "like~",
+    "exampleKorean": "미친 듯이 춤췄다.",
+    "exampleEnglish": "I danced like a crazy person."
+  },
+  {
+    "num": 118,
+    "korean": "(이)라도",
+    "english": "rather~",
+    "exampleKorean": "이 문제지라도 풀어볼래요?",
+    "exampleEnglish": "Would you like to rather solve this problem?"
+  },
+  {
+    "num": 119,
+    "korean": "-만 못하다",
+    "english": "not as~",
+    "exampleKorean": "중고는 신제품만 못해요.",
+    "exampleEnglish": "Second-hand is not as good as a new product."
+  },
+  {
+    "num": 120,
+    "korean": "-아/어 보이다",
+    "english": "seem~",
+    "exampleKorean": "얼굴표정이 어제보다 밝아 보여요.",
+    "exampleEnglish": "You seem to feel better than yesterday."
+  },
+  {
+    "num": 121,
+    "korean": "-아/어서 그런지",
+    "english": "probably becase~",
+    "exampleKorean": "나이가 들어서 그런지 몸이 예전같지 않다.",
+    "exampleEnglish": "I feel not as strong as before probably because I am getting old."
+  },
+  {
+    "num": 122,
+    "korean": "-아/어도",
+    "english": "even~",
+    "exampleKorean": "설명 들어도 이해 못 하겠어요.",
+    "exampleEnglish": "I can't understand even after listening to the explanation."
+  },
+  {
+    "num": 123,
+    "korean": "-아/어라",
+    "english": "please~",
+    "exampleKorean": "공을 던져라.",
+    "exampleEnglish": "Please throw the ball."
+  },
+  {
+    "num": 124,
+    "korean": "-아/어야",
+    "english": "when~",
+    "exampleKorean": "술자리에는 친한 친구가 있어야 재미있다.",
+    "exampleEnglish": "Drinking is fun when you have a close friend."
+  },
+  {
+    "num": 125,
+    "korean": "-아/어야지",
+    "english": "should~",
+    "exampleKorean": "일찍 결혼해야지.",
+    "exampleEnglish": "You should marry quickly."
+  },
+  {
+    "num": 126,
+    "korean": "-아/어지다",
+    "english": "becoming~",
+    "exampleKorean": "인터넷으로 세계는 가까워지고 있어요.",
+    "exampleEnglish": "The world is becoming closer through the Internet."
+  },
+  {
+    "num": 127,
+    "korean": "-았/었더라면",
+    "english": "would have~",
+    "exampleKorean": "은행에서 돈을 찾았더라면 좋았을 텐데.",
+    "exampleEnglish": "It would have been better if I withdrew the money from a bank."
+  },
+  {
+    "num": 128,
+    "korean": "-았/었던 것 같다",
+    "english": "think~",
+    "exampleKorean": "걔는 취업했던 것 같다.",
+    "exampleEnglish": "I think he got a job."
+  },
+  {
+    "num": 129,
+    "korean": "-았/었으면 하다",
+    "english": "wish~",
+    "exampleKorean": "점심은 라면이었으면 해.",
+    "exampleEnglish": "I wish the lunch menu is ramen."
+  },
+  {
+    "num": 130,
+    "korean": "(이)야말로",
+    "english": "the~",
+    "exampleKorean": "지금이야말로 역사적인 순간입니다.",
+    "exampleEnglish": "This is the historical moment."
+  },
+  {
+    "num": 131,
+    "korean": "-에 관해(서)",
+    "english": "about~",
+    "exampleKorean": "인기 가수에 관해서 새로운 뉴스가 나왔어요.",
+    "exampleEnglish": "The latest news about a famous singer got released."
+  },
+  {
+    "num": 132,
+    "korean": "-에 대해(서)",
+    "english": "to~",
+    "exampleKorean": "부부는 서로에 대해서 배려해야 한다.",
+    "exampleEnglish": "Married couples have to show respect to each other."
+  },
+  {
+    "num": 133,
+    "korean": "-에 따라(서)",
+    "english": "depending on~",
+    "exampleKorean": "예산에 따라 여행일정도 달라져요.",
+    "exampleEnglish": "The travel plan changes depending on the budget."
+  },
+  {
+    "num": 134,
+    "korean": "-에 의해(서)",
+    "english": "by~",
+    "exampleKorean": "역경은 희망에 의해서 극복할 수 있다.",
+    "exampleEnglish": "Hardship can be overcome by hope."
+  },
+  {
+    "num": 135,
+    "korean": "-에다(가)",
+    "english": "in(to)~ / at~",
+    "exampleKorean": "우유는 냉장고에다가 넣었어요.",
+    "exampleEnglish": "I put milk into the refrigerator."
+  },
+  {
+    "num": 136,
+    "korean": "-을/를 비롯한",
+    "english": "including~",
+    "exampleKorean": "나를 비롯한 모든 사람들이 그 아이디어에 찬성한다.",
+    "exampleEnglish": "Everybody including me agreed on the idea."
+  },
+  {
+    "num": 137,
+    "korean": "-을/를 통해(서)",
+    "english": "from~",
+    "exampleKorean": "그 배우는 드라마를 통해서 알게 되었어요.",
+    "exampleEnglish": "I got to know that actor from a TV series."
+  },
+  {
+    "num": 138,
+    "korean": "-자",
+    "english": "let's",
+    "exampleKorean": "이제 문 닫자.",
+    "exampleEnglish": "Let's close the door."
+  },
+  {
+    "num": 139,
+    "korean": "-자고 하다",
+    "english": "(He/she) said to~",
+    "exampleKorean": "동료가 포기하지 말자고 했다.",
+    "exampleEnglish": "My colleague said not to give up."
+  },
+  {
+    "num": 140,
+    "korean": "-자마자",
+    "english": "as soon as~",
+    "exampleKorean": "사장님은 좋은 소식을 듣자마자 미소 지었다.",
+    "exampleEnglish": "The boss smiled as soon as he heard the good news."
+  },
+  {
+    "num": 141,
+    "korean": "-잖아(요)",
+    "english": "~right?",
+    "exampleKorean": "내가 많이 사줬잖아.",
+    "exampleEnglish": "I treated you many times, right?"
+  },
+  {
+    "num": 142,
+    "korean": "마저",
+    "english": "even~",
+    "exampleKorean": "숙제가 많은 데다가 시간마저 부족하다.",
+    "exampleEnglish": "I have a lot of homework, but even the time is running out."
+  },
+  {
+    "num": 143,
+    "korean": "만큼",
+    "english": "as~",
+    "exampleKorean": "가족만큼 중요한 것은 없다.",
+    "exampleEnglish": "There is nothing as important as family."
+  },
+  {
+    "num": 144,
+    "korean": "아무 -(이)나",
+    "english": "any~",
+    "exampleKorean": "아무 옷이나 가져오세요.",
+    "exampleEnglish": "Bring any kind of clothes."
+  },
+  {
+    "num": 145,
+    "korean": "아무 -도",
+    "english": "no~",
+    "exampleKorean": "아무 걱정도 없어요.",
+    "exampleEnglish": "I have no worries at all."
+  },
+  {
+    "num": 146,
+    "korean": "얼마나 -(으)ㄴ/는지",
+    "english": "how~",
+    "exampleKorean": "그 당시에는 얼마나 가난했는지 몰라요.",
+    "exampleEnglish": "You can't imagine how poor we were at the time."
+  },
+  {
+    "num": 147,
+    "korean": "조차",
+    "english": "even~",
+    "exampleKorean": "기다림조차 설렙니다.",
+    "exampleEnglish": "Even the waiting time is exciting for me."
+  },
+  {
+    "num": 148,
+    "korean": "치고(는)",
+    "english": "for~",
+    "exampleKorean": "아이돌치고는 나이가 많다.",
+    "exampleEnglish": "He is old for an idol."
+  }
+]

@@ -96,6 +96,25 @@ export function removeCustomWord(id: string) {
   );
 }
 
+export function updateCustomWord(
+  id: string,
+  word: Pick<CustomWord, "korean" | "english" | "khmer">,
+): CustomWord | null {
+  const items = getCustomWords();
+  const index = items.findIndex((w) => w.id === id);
+  if (index === -1) return null;
+  const updated: CustomWord = {
+    ...items[index],
+    korean: word.korean.trim(),
+    english: word.english.trim(),
+    khmer: word.khmer.trim(),
+  };
+  const next = [...items];
+  next[index] = updated;
+  writeJson(WORDS_KEY, next);
+  return updated;
+}
+
 export function searchCustomWords(query: string, items = getCustomWords()) {
   const q = query.trim().toLowerCase();
   if (!q) return items;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -11,47 +11,67 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import { translateEnglishToKhmer } from "@/lib/translate-en-km";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { translateKoreanWord } from "@/lib/translate-korean";
+
+type WordValue = { korean: string; english: string; khmer: string };
 
 type AddWordDialogProps = {
   open: boolean;
   onClose: () => void;
-  onSave: (word: { korean: string; english: string; khmer: string }) => void;
+  onSave: (word: WordValue) => void;
+  initial?: WordValue | null;
 };
 
-export function AddWordDialog({ open, onClose, onSave }: AddWordDialogProps) {
+export function AddWordDialog({
+  open,
+  onClose,
+  onSave,
+  initial,
+}: AddWordDialogProps) {
+  const isEdit = Boolean(initial);
   const [korean, setKorean] = useState("");
   const [english, setEnglish] = useState("");
   const [khmer, setKhmer] = useState("");
   const [error, setError] = useState("");
   const [translating, setTranslating] = useState(false);
 
+  useEffect(() => {
+    if (!open) return;
+    setKorean(initial?.korean ?? "");
+    setEnglish(initial?.english ?? "");
+    setKhmer(initial?.khmer ?? "");
+    setError("");
+    setTranslating(false);
+  }, [open, initial]);
+
   const reset = () => {
     setKorean("");
     setEnglish("");
     setKhmer("");
     setError("");
+    setTranslating(false);
+  };
+
+  const handleTranslate = async () => {
+    const trimmed = korean.trim();
+    if (!trimmed || translating) return;
+    setError("");
+    setTranslating(true);
+    try {
+      const result = await translateKoreanWord(trimmed);
+      setEnglish(result.english);
+      setKhmer(result.khmer);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Translation failed");
+    } finally {
+      setTranslating(false);
+    }
   };
 
   const handleClose = () => {
     reset();
     onClose();
-  };
-
-  const handleTranslateKhmer = async () => {
-    if (!english.trim()) {
-      setError("Enter English first, then translate.");
-      return;
-    }
-    setError("");
-    setTranslating(true);
-    try {
-      setKhmer(await translateEnglishToKhmer(english));
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not translate.");
-    } finally {
-      setTranslating(false);
-    }
   };
 
   const handleSave = () => {
@@ -70,7 +90,7 @@ export function AddWordDialog({ open, onClose, onSave }: AddWordDialogProps) {
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
-      <DialogTitle>Add your word</DialogTitle>
+      <DialogTitle>{isEdit ? "Edit your word" : "Add your word"}</DialogTitle>
       <DialogContent dividers className="scrollbar-styled-slim">
         <Stack spacing={2} sx={{ mt: 0.5 }}>
           <TextField
@@ -81,6 +101,23 @@ export function AddWordDialog({ open, onClose, onSave }: AddWordDialogProps) {
             autoFocus
             fullWidth
           />
+          <Box>
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={handleTranslate}
+              disabled={!korean.trim() || translating}
+              startIcon={
+                translating ? (
+                  <CircularProgress size={14} />
+                ) : (
+                  <AutoAwesomeIcon fontSize="small" />
+                )
+              }
+            >
+              {translating ? "Translating…" : "Translate from Korean"}
+            </Button>
+          </Box>
           <TextField
             label="English"
             value={english}
@@ -120,7 +157,7 @@ export function AddWordDialog({ open, onClose, onSave }: AddWordDialogProps) {
       <DialogActions sx={{ px: 3, pb: 2 }}>
         <Button onClick={handleClose}>Cancel</Button>
         <Button variant="contained" onClick={handleSave}>
-          Save word
+          {isEdit ? "Save changes" : "Save word"}
         </Button>
       </DialogActions>
     </Dialog>

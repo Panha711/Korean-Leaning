@@ -112,7 +112,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 11,
     korean: "어느",
     english: "which",
-    khmer: "មួយណា",
+    khmer: "ណាមួយ",
     lesson: 1,
   },
   {
@@ -168,7 +168,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 18,
     korean: "소방관",
     english: "firefighter",
-    khmer: "អ្នកពន្លត់អគ្គីភ័យ",
+    khmer: "អ្នកពន្លត់អគ្គិភ័យ",
     lesson: 1,
   },
   {
@@ -184,7 +184,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 20,
     korean: "점원",
     english: "store clerk",
-    khmer: "អ្នកលក់",
+    khmer: "អ្នកលក់ដូរ",
     lesson: 1,
   },
   {
@@ -192,7 +192,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 21,
     korean: "의사",
     english: "doctor",
-    khmer: "គ្រូពេទ្យ",
+    khmer: "វេជ្ជបណ្ឌិត/គ្រូពេទ្យ",
     lesson: 1,
   },
   {
@@ -248,7 +248,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 28,
     korean: "어부",
     english: "fisherman",
-    khmer: "នេសាទ",
+    khmer: "អ្នកនេសាទ",
     lesson: 1,
   },
   {
@@ -256,7 +256,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 29,
     korean: "씨",
     english: "Mr./Ms. (title)",
-    khmer: "លោក",
+    khmer: "លោក/អ្នកស្រី (ប្រើដាក់ក្រោយឈ្មោះ)",
     lesson: 1,
   },
   {
@@ -264,7 +264,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 30,
     korean: "저",
     english: "I (humble)",
-    khmer: "ខ្ញុំ",
+    khmer: "ខ្ញុំ (ពាក្យគួរសម/បន្ទាបខ្លួន)",
     lesson: 1,
   },
   {
@@ -280,7 +280,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 32,
     korean: "네",
     english: "yes",
-    khmer: "បាទ",
+    khmer: "បាទ/ចាស",
     lesson: 1,
   },
   {
@@ -296,7 +296,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 34,
     korean: "물건",
     english: "thing / object",
-    khmer: "របស់",
+    khmer: "របស់របរ/វត្ថុ",
     lesson: 2,
   },
   {
@@ -312,7 +312,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 36,
     korean: "저것",
     english: "that (far from listener)",
-    khmer: "នោះ",
+    khmer: "នោះ (ឆ្ងាយពីទាំងពីរនាក់)",
     lesson: 2,
   },
   {
@@ -320,7 +320,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 37,
     korean: "그것",
     english: "that (near listener)",
-    khmer: "នោះ",
+    khmer: "នោះ (ជិតអ្នកស្ដាប់)",
     lesson: 2,
   },
   {
@@ -416,7 +416,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 49,
     korean: "컵",
     english: "cup",
-    khmer: "ពែង",
+    khmer: "ពែង/កែវ",
     lesson: 2,
   },
   {
@@ -424,7 +424,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 50,
     korean: "휴지",
     english: "tissue",
-    khmer: "ក្រដាសអនាម័យ",
+    khmer: "ក្រដាសអនាម័យ/ប្រដាសជូតមាត់",
     lesson: 2,
   },
   {
@@ -832,7 +832,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 101,
     korean: "운동하다",
     english: "to exercise",
-    khmer: "ហាត់ប្រាណ",
+    khmer: "ហាត់ប្រាណ/លេងកីឡា",
     lesson: 4,
   },
   {
@@ -840,7 +840,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 102,
     korean: "전화하다",
     english: "to call",
-    khmer: "ទូរស័ព្ទ",
+    khmer: "ឡាយទូរស័ព្ទ/តេ",
     lesson: 4,
   },
   {
@@ -848,7 +848,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 103,
     korean: "요리하다",
     english: "to cook",
-    khmer: "ចម្អិន",
+    khmer: "ធ្វើម្ហូប",
     lesson: 4,
   },
   {
@@ -856,7 +856,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 104,
     korean: "쇼핑하다",
     english: "to shop",
-    khmer: "ទិញអីវ៉ាន់",
+    khmer: "ដើរទិញអីវ៉ាន់",
     lesson: 4,
   },
   {
@@ -904,7 +904,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 110,
     korean: "먹다",
     english: "to eat",
-    khmer: "ញ៉ាំ",
+    khmer: "ញ៉ាំ/ពិសា",
     lesson: 4,
   },
   {
@@ -936,7 +936,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 114,
     korean: "과자",
     english: "snack",
-    khmer: "នំ",
+    khmer: "នំ/អាហារសម្រន់",
     lesson: 4,
   },
   {
@@ -944,7 +944,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 115,
     korean: "마시다",
     english: "to drink",
-    khmer: "ផឹក",
+    khmer: "ផឹក/ពិសា",
     lesson: 4,
   },
   {
@@ -1000,7 +1000,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 122,
     korean: "영화",
     english: "movie",
-    khmer: "ភាពយន្ត",
+    khmer: "ភាពយន្ត/កុន",
     lesson: 4,
   },
   {
@@ -1032,7 +1032,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 126,
     korean: "지금",
     english: "now",
-    khmer: "ឥឡូវ",
+    khmer: "ឥឡូវនេះ",
     lesson: 4,
   },
   {
@@ -1120,7 +1120,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 137,
     korean: "내일",
     english: "tomorrow",
-    khmer: "ថ្ងៃស្អែក",
+    khmer: "ស្អែក",
     lesson: 4,
   },
   {
@@ -1128,7 +1128,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 138,
     korean: "평일",
     english: "weekday",
-    khmer: "ថ្ងៃធ្វើការ",
+    khmer: "ថ្ងៃធ្វើការ (ច័ន្ទ-សុក្រ)",
     lesson: 4,
   },
   {
@@ -1136,7 +1136,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 139,
     korean: "주말",
     english: "weekend",
-    khmer: "ចុងសប្តាហ៍",
+    khmer: "ចុងសប្តាហ៍ (សៅរ៍-អាទិត្យ)",
     lesson: 4,
   },
   {
@@ -1152,7 +1152,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 141,
     korean: "무슨",
     english: "what kind of",
-    khmer: "ប្រភេទអ្វី",
+    khmer: "ប្រភេទណា/អ្វី",
     lesson: 5,
   },
   {

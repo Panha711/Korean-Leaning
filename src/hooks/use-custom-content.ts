@@ -11,6 +11,7 @@ import {
   removeCustomDialogue,
   removeCustomGrammar,
   removeCustomWord,
+  updateCustomWord,
   type CustomDialogue,
   type CustomDialogueInput,
   type CustomGrammar,
@@ -54,7 +55,22 @@ export function useCustomWords() {
     [refresh],
   );
 
-  return { words: items, addWord: add, removeWord: removeItem, refresh };
+  const update = useCallback(
+    (id: string, word: Pick<CustomWord, "korean" | "english" | "khmer">) => {
+      const entry = updateCustomWord(id, word);
+      refresh();
+      return entry;
+    },
+    [refresh],
+  );
+
+  return {
+    words: items,
+    addWord: add,
+    updateWord: update,
+    removeWord: removeItem,
+    refresh,
+  };
 }
 
 export function useCustomGrammar() {

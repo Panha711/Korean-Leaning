@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && next dev",
     "build": "next build",
     "start": "next start",
     "db:generate": "prisma generate",
@@ -12,6 +13,7 @@
     "db:studio": "prisma studio",
     "db:seed": "tsx prisma/seed.ts",
     "db:create-admin": "tsx prisma/create-admin.ts",
+    "fix:khmer": "node scripts/gemini-fix-khmer.mjs",
     "postinstall": "prisma generate"
   },
   "prisma": {
@@ -20,6 +22,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@google/genai": "^2.6.0",
     "@hookform/resolvers": "^5.2.2",
     "@mui/icons-material": "^9.0.1",
     "@mui/material": "^9.0.1",

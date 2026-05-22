@@ -12,7 +12,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
-import { Trash2 } from "lucide-react";
+import { Pencil, Trash2 } from "lucide-react";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { AddWordDialog } from "@/components/custom/AddWordDialog";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
@@ -53,7 +53,14 @@ export default function VocabularyPage() {
   const [deck, setDeck] = useState<VocabDeck>("eps");
   const [query, setQuery] = useState("");
   const [addOpen, setAddOpen] = useState(false);
-  const { words: customWords, addWord, removeWord } = useCustomWords();
+  const [editId, setEditId] = useState<string | null>(null);
+  const { words: customWords, addWord, updateWord, removeWord } =
+    useCustomWords();
+
+  const editingWord = useMemo(
+    () => customWords.find((w) => w.id === editId) ?? null,
+    [customWords, editId],
+  );
 
   const filtered: DisplayWord[] = useMemo(() => {
     if (deck === "mine") {
@@ -284,14 +291,26 @@ export default function VocabularyPage() {
                         </Typography>
                       </Box>
                       {w.isCustom ? (
-                        <IconButton
-                          size="small"
-                          aria-label="Delete word"
-                          onClick={() => removeWord(w.id)}
+                        <Stack
+                          direction="row"
+                          spacing={0.5}
                           sx={{ alignSelf: "flex-start", flexShrink: 0 }}
                         >
-                          <Trash2 size={16} />
-                        </IconButton>
+                          <IconButton
+                            size="small"
+                            aria-label="Edit word"
+                            onClick={() => setEditId(w.id)}
+                          >
+                            <Pencil size={16} />
+                          </IconButton>
+                          <IconButton
+                            size="small"
+                            aria-label="Delete word"
+                            onClick={() => removeWord(w.id)}
+                          >
+                            <Trash2 size={16} />
+                          </IconButton>
+                        </Stack>
                       ) : null}
                     </Paper>
                   </Grid>
@@ -309,6 +328,23 @@ export default function VocabularyPage() {
           addWord(word);
           setDeck("mine");
         }}
+      />
+
+      <AddWordDialog
+        open={editingWord !== null}
+        onClose={() => setEditId(null)}
+        onSave={(word) => {
+          if (editId) updateWord(editId, word);
+        }}
+        initial={
+          editingWord
+            ? {
+                korean: editingWord.korean,
+                english: editingWord.english,
+                khmer: editingWord.khmer,
+              }
+            : null
+        }
       />
     </Box>
   );

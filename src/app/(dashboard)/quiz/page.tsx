@@ -168,19 +168,6 @@ export default function QuizPage() {
             <Button variant="text" onClick={exitQuiz} sx={{ minWidth: 0, px: 1 }}>
               ← Back
             </Button>
-            <Button
-              variant="outlined"
-              color="inherit"
-              startIcon={<CloseIcon />}
-              onClick={exitQuiz}
-              sx={{
-                borderRadius: 999,
-                textTransform: "none",
-                fontWeight: 600,
-              }}
-            >
-              Exit
-            </Button>
           </Stack>
           <Typography variant="h4" component="h2" sx={{ fontWeight: 700 }}>
             {activeQuiz.title}
@@ -289,13 +276,10 @@ export default function QuizPage() {
           <Button
             variant="outlined"
             color="inherit"
+            size="large"
             startIcon={<CloseIcon />}
             onClick={exitQuiz}
-            sx={{
-              borderRadius: 999,
-              textTransform: "none",
-              fontWeight: 600,
-            }}
+            sx={{ minWidth: 100, py: 1.25 }}
           >
             Exit
           </Button>

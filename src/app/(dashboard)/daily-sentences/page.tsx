@@ -17,7 +17,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
-import { Trash2 } from "lucide-react";
+import { Pencil, Trash2 } from "lucide-react";
 import type SvgIcon from "@mui/material/SvgIcon";
 import AppsIcon from "@mui/icons-material/Apps";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
@@ -40,6 +40,15 @@ import StoreIcon from "@mui/icons-material/Store";
 import StoreMallDirectoryIcon from "@mui/icons-material/StoreMallDirectory";
 import ChatIcon from "@mui/icons-material/Chat";
 import { AddDialogueDialog } from "@/components/custom/AddDialogueDialog";
+import {
+  EditDialogueLineDialog,
+  type DialogueLineEdit,
+} from "@/components/custom/EditDialogueLineDialog";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import {
+  dialogueLineKey,
+  useGlobalDialogueLineOverrides,
+} from "@/hooks/use-global-dialogue-line-overrides";
 import { getEasyReadLineStyles } from "@/lib/dialogue-readability-styles";
 import {
   dailySentenceGroups,
@@ -167,11 +176,17 @@ export default function DailySentencesPage() {
   const [place, setPlace] = useState<FilterId>("all");
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [addOpen, setAddOpen] = useState(false);
+  const [editingLine, setEditingLine] = useState<DialogueLineEdit | null>(null);
   const {
     dialogues: customDialogues,
     addDialogue,
     removeDialogue,
   } = useCustomDialogues();
+  const { isAdmin } = useCurrentUser();
+  const {
+    overrides: lineOverrides,
+    setOverride: setLineOverride,
+  } = useGlobalDialogueLineOverrides();
 
   const allGroups = useMemo(
     () => mergeDialogueGroups(dailySentenceGroups, customDialogues),
@@ -619,9 +634,14 @@ export default function DailySentencesPage() {
                           >
                             {g.lines.map((line, i) => {
                               const isB = line.speaker === "B";
+                              const override =
+                                lineOverrides[dialogueLineKey(g.id, i)];
+                              const korean = override?.korean ?? line.korean;
+                              const english = override?.english ?? line.english;
                               const khmer =
-                                line.khmer?.trim() ||
-                                getDailySentenceLineKhmer(g.id, i);
+                                override?.khmer ??
+                                (line.khmer?.trim() ||
+                                  getDailySentenceLineKhmer(g.id, i));
 
                               return (
                                 <Box
@@ -640,6 +660,7 @@ export default function DailySentencesPage() {
                                       : "background.paper",
                                     px: 1.25,
                                     py: 0.875,
+                                    position: "relative",
                                   }}
                                 >
                                   <Typography
@@ -649,7 +670,7 @@ export default function DailySentencesPage() {
                                       ...lineStyles.korean,
                                     }}
                                   >
-                                    {line.korean}
+                                    {korean}
                                   </Typography>
                                   <Typography
                                     component="p"
@@ -659,7 +680,7 @@ export default function DailySentencesPage() {
                                       ...lineStyles.english,
                                     }}
                                   >
-                                    {line.english}
+                                    {english}
                                   </Typography>
                                   {khmer ? (
                                     <Typography
@@ -673,6 +694,29 @@ export default function DailySentencesPage() {
                                     >
                                       {normalizeKhmer(khmer)}
                                     </Typography>
+                                  ) : null}
+                                  {isAdmin && !isCustom ? (
+                                    <IconButton
+                                      size="small"
+                                      aria-label="Edit line"
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        setEditingLine({
+                                          dialogueId: g.id,
+                                          lineIndex: i,
+                                          korean,
+                                          english,
+                                          khmer: khmer ?? "",
+                                        });
+                                      }}
+                                      sx={{
+                                        position: "absolute",
+                                        top: 4,
+                                        right: 4,
+                                      }}
+                                    >
+                                      <Pencil size={14} />
+                                    </IconButton>
                                   ) : null}
                                 </Box>
                               );
@@ -695,6 +739,16 @@ export default function DailySentencesPage() {
         onSave={(dialogue) => {
           const entry = addDialogue(dialogue);
           setExpandedId(entry.id);
+        }}
+      />
+
+      <EditDialogueLineDialog
+        open={editingLine !== null}
+        line={editingLine}
+        onClose={() => setEditingLine(null)}
+        onSave={async (next) => {
+          if (!editingLine) return;
+          await setLineOverride(editingLine.dialogueId, editingLine.lineIndex, next);
         }}
       />
     </Box>

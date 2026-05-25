@@ -454,7 +454,7 @@ export const topikIVocabulary: TopikVocabWord[] = [
   { id: "topik-398", num: 398, korean: "댁", english: "house", khmer: "ផ្ទះ", deck: 10 },
   { id: "topik-399", num: 399, korean: "더", english: "more", khmer: "ទៀត", deck: 10 },
   { id: "topik-400", num: 400, korean: "더럽다", english: "dirty", khmer: "កខ្វក់", deck: 10 },
-  { id: "topik-401", num: 401, korean: "더운물", english: "hot water", khmer: "ទឹកក្ត", deck: 11 },
+  { id: "topik-401", num: 401, korean: "더운물", english: "hot water", khmer: "ទឹកក្ដៅ", deck: 11 },
   { id: "topik-402", num: 402, korean: "덕분", english: "thanks for, thanks to", khmer: "ដោយសារ", deck: 11 },
   { id: "topik-403", num: 403, korean: "덥다", english: "hot", khmer: "ក្តៅ", deck: 11 },
   { id: "topik-404", num: 404, korean: "덮다", english: "cover", khmer: "គ្រប", deck: 11 },

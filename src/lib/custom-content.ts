@@ -9,6 +9,7 @@ import {
 } from "@/data/daily-sentences";
 
 const WORDS_KEY = "learnnova-custom-words";
+const WORD_OVERRIDES_KEY = "learnnova-word-overrides";
 const GRAMMAR_KEY = "learnnova-custom-grammar";
 const DIALOGUES_KEY = "learnnova-custom-dialogues";
 
@@ -113,6 +114,63 @@ export function updateCustomWord(
   next[index] = updated;
   writeJson(WORDS_KEY, next);
   return updated;
+}
+
+// ─── Word overrides ──────────────────────────────────────────────────────────
+// Personal edits to built-in EPS/TOPIK words, stored per-browser in localStorage.
+
+export type WordOverride = {
+  korean?: string;
+  english?: string;
+  khmer?: string;
+};
+
+export type WordOverrides = Record<string, WordOverride>;
+
+function readWordOverrides(): WordOverrides {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = localStorage.getItem(WORD_OVERRIDES_KEY);
+    return raw ? (JSON.parse(raw) as WordOverrides) : {};
+  } catch {
+    return {};
+  }
+}
+
+export function getWordOverrides(): WordOverrides {
+  return readWordOverrides();
+}
+
+export function setWordOverride(id: string, override: WordOverride): WordOverrides {
+  const all = readWordOverrides();
+  const next: WordOverride = {};
+  if (override.korean?.trim()) next.korean = override.korean.trim();
+  if (override.english?.trim()) next.english = override.english.trim();
+  if (override.khmer?.trim()) next.khmer = override.khmer.trim();
+  all[id] = next;
+  localStorage.setItem(WORD_OVERRIDES_KEY, JSON.stringify(all));
+  return all;
+}
+
+export function removeWordOverride(id: string): WordOverrides {
+  const all = readWordOverrides();
+  delete all[id];
+  localStorage.setItem(WORD_OVERRIDES_KEY, JSON.stringify(all));
+  return all;
+}
+
+export function applyWordOverride<T extends { id: string; korean: string; english: string; khmer: string }>(
+  word: T,
+  overrides: WordOverrides,
+): T {
+  const o = overrides[word.id];
+  if (!o) return word;
+  return {
+    ...word,
+    korean: o.korean ?? word.korean,
+    english: o.english ?? word.english,
+    khmer: o.khmer ?? word.khmer,
+  };
 }
 
 export function searchCustomWords(query: string, items = getCustomWords()) {

@@ -7,12 +7,14 @@ import {
   BookOpen,
   Languages,
   ClipboardList,
+  Flag,
   MessageSquare,
   Sparkles,
   Menu,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { useCurrentUser } from "@/hooks/use-current-user";
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -23,14 +25,24 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { alpha, useTheme, useMediaQuery } from "@mui/material";
+import { SidebarUser } from "./SidebarUser";
 
-const navItems = [
+type NavItem = {
+  href: string;
+  label: string;
+  icon: typeof LayoutDashboard;
+  exact?: boolean;
+  adminLabel?: string;
+};
+
+const navItems: NavItem[] = [
   { href: "/", label: "Home", icon: LayoutDashboard, exact: true },
   { href: "/vocabulary", label: "Words", icon: BookOpen },
   { href: "/grammar", label: "Grammar", icon: Languages },
   { href: "/daily-sentences", label: "Daily Sentences", icon: MessageSquare },
   { href: "/quiz", label: "Quizzes", icon: ClipboardList },
-] as const;
+  { href: "/reports", label: "My reports", icon: Flag, adminLabel: "Reports" },
+];
 
 const DRAWER_WIDTH = 260;
 const DRAWER_COLLAPSED = 76;
@@ -58,15 +70,16 @@ function SidebarNav({
 }) {
   const pathname = usePathname();
   const colors = useSidebarColors();
+  const { isAdmin } = useCurrentUser();
 
   return (
     <List disablePadding sx={{ flex: 1, px: collapsed ? 0.75 : 1.25, py: 0.5 }}>
       {navItems.map((item) => {
-        const isActive =
-          "exact" in item && item.exact
-            ? pathname === item.href
-            : pathname === item.href || pathname.startsWith(`${item.href}/`);
+        const isActive = item.exact
+          ? pathname === item.href
+          : pathname === item.href || pathname.startsWith(`${item.href}/`);
         const Icon = item.icon;
+        const label = isAdmin && item.adminLabel ? item.adminLabel : item.label;
 
         return (
           <ListItemButton
@@ -75,7 +88,7 @@ function SidebarNav({
             href={item.href}
             prefetch={false}
             onClick={onNavigate}
-            title={collapsed ? item.label : undefined}
+            title={collapsed ? label : undefined}
             sx={{
               borderRadius: 999,
               mb: 0.75,
@@ -103,7 +116,7 @@ function SidebarNav({
             </ListItemIcon>
             {!collapsed ? (
               <ListItemText
-                primary={item.label}
+                primary={label}
                 slotProps={{
                   primary: {
                     sx: {
@@ -252,6 +265,13 @@ function SidebarContent({
       ) : null}
 
       <SidebarNav collapsed={collapsed} onNavigate={onNavigate} />
+
+      <SidebarUser
+        collapsed={collapsed}
+        textPrimary={colors.textPrimary}
+        textMuted={colors.textMuted}
+        railBorder={colors.railBorder}
+      />
     </Box>
   );
 }

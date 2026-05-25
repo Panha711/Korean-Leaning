@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -13,34 +13,53 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { translateEnglishToKhmer } from "@/lib/translate-en-km";
 
+export type GrammarValue = {
+  korean: string;
+  english: string;
+  patternKhmer?: string;
+  exampleKorean: string;
+  exampleEnglish: string;
+  exampleKhmer: string;
+};
+
 type AddGrammarDialogProps = {
   open: boolean;
   onClose: () => void;
-  onSave: (item: {
-    korean: string;
-    english: string;
-    exampleKorean: string;
-    exampleEnglish: string;
-    exampleKhmer: string;
-  }) => void;
+  onSave: (item: GrammarValue) => void;
+  initial?: GrammarValue | null;
 };
 
 export function AddGrammarDialog({
   open,
   onClose,
   onSave,
+  initial,
 }: AddGrammarDialogProps) {
+  const isEdit = Boolean(initial);
   const [korean, setKorean] = useState("");
   const [english, setEnglish] = useState("");
+  const [patternKhmer, setPatternKhmer] = useState("");
   const [exampleKorean, setExampleKorean] = useState("");
   const [exampleEnglish, setExampleEnglish] = useState("");
   const [exampleKhmer, setExampleKhmer] = useState("");
   const [error, setError] = useState("");
   const [translating, setTranslating] = useState(false);
 
+  useEffect(() => {
+    if (!open) return;
+    setKorean(initial?.korean ?? "");
+    setEnglish(initial?.english ?? "");
+    setPatternKhmer(initial?.patternKhmer ?? "");
+    setExampleKorean(initial?.exampleKorean ?? "");
+    setExampleEnglish(initial?.exampleEnglish ?? "");
+    setExampleKhmer(initial?.exampleKhmer ?? "");
+    setError("");
+  }, [open, initial]);
+
   const reset = () => {
     setKorean("");
     setEnglish("");
+    setPatternKhmer("");
     setExampleKorean("");
     setExampleEnglish("");
     setExampleKhmer("");
@@ -76,6 +95,7 @@ export function AddGrammarDialog({
     onSave({
       korean: korean.trim(),
       english: english.trim(),
+      patternKhmer: patternKhmer.trim() || undefined,
       exampleKorean: exampleKorean.trim(),
       exampleEnglish: exampleEnglish.trim(),
       exampleKhmer: exampleKhmer.trim(),
@@ -86,7 +106,7 @@ export function AddGrammarDialog({
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
-      <DialogTitle>Add your grammar pattern</DialogTitle>
+      <DialogTitle>{isEdit ? "Edit grammar pattern" : "Add your grammar pattern"}</DialogTitle>
       <DialogContent dividers className="scrollbar-styled-slim">
         <Stack spacing={2} sx={{ mt: 0.5 }}>
           <TextField
@@ -105,6 +125,13 @@ export function AddGrammarDialog({
             required
             fullWidth
             placeholder="e.g. want to (do)"
+          />
+          <TextField
+            label="Pattern (Khmer)"
+            value={patternKhmer}
+            onChange={(e) => setPatternKhmer(e.target.value)}
+            fullWidth
+            slotProps={{ inputLabel: { shrink: true } }}
           />
           <TextField
             label="Example sentence (Korean)"
@@ -156,7 +183,7 @@ export function AddGrammarDialog({
       <DialogActions sx={{ px: 3, pb: 2 }}>
         <Button onClick={handleClose}>Cancel</Button>
         <Button variant="contained" onClick={handleSave}>
-          Save pattern
+          {isEdit ? "Save changes" : "Save pattern"}
         </Button>
       </DialogActions>
     </Dialog>

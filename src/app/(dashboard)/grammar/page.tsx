@@ -12,9 +12,14 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
-import { Trash2 } from "lucide-react";
+import { Pencil, Trash2 } from "lucide-react";
 import TranslateIcon from "@mui/icons-material/Translate";
 import { AddGrammarDialog } from "@/components/custom/AddGrammarDialog";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import {
+  applyGlobalGrammarOverride,
+  useGlobalGrammarOverrides,
+} from "@/hooks/use-global-grammar-overrides";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
 import { DeckFilterChips } from "@/components/layout/DeckFilterChips";
 import { StudyPageHeader } from "@/components/layout/StudyPageHeader";
@@ -50,11 +55,15 @@ export default function GrammarPage() {
   const [deck, setDeck] = useState<GrammarDeck>("topik");
   const [query, setQuery] = useState("");
   const [addOpen, setAddOpen] = useState(false);
+  const [editing, setEditing] = useState<DisplayGrammar | null>(null);
   const {
     grammar: customGrammar,
     addGrammar,
     removeGrammar,
   } = useCustomGrammar();
+  const { overrides: globalGrammarOverrides, setOverride: setGlobalGrammarOverride } =
+    useGlobalGrammarOverrides();
+  const { isAdmin } = useCurrentUser();
 
   const filtered: DisplayGrammar[] = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -63,11 +72,25 @@ export default function GrammarPage() {
       return customGrammarToDisplay(searchCustomGrammar(query, customGrammar));
     }
 
+    const applyOverride = <
+      T extends {
+        id: string;
+        korean: string;
+        english: string;
+        patternKhmer?: string;
+        exampleKorean?: string;
+        exampleEnglish?: string;
+        exampleKhmer?: string;
+      },
+    >(g: T): T => applyGlobalGrammarOverride(g, globalGrammarOverrides);
+
     if (deck === "eps") {
-      const pool = epsTopikGrammar.map((g) => ({
-        ...g,
-        patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
-      }));
+      const pool = epsTopikGrammar.map((g) =>
+        applyOverride({
+          ...g,
+          patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
+        }),
+      );
       const list = q
         ? pool.filter(
             (g) =>
@@ -87,20 +110,24 @@ export default function GrammarPage() {
     }
 
     if (deck === "haeyo") {
-      return searchHaeyoFormGrammar(query).map(haeyoFormToDisplay);
+      return searchHaeyoFormGrammar(query)
+        .map(haeyoFormToDisplay)
+        .map(applyOverride);
     }
 
     if (deck === "topik2") {
-      const pool = topikIIGrammar.map((g) => ({
-        id: g.id,
-        num: g.num,
-        korean: g.korean,
-        english: g.english,
-        patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
-        exampleKorean: g.exampleKorean,
-        exampleEnglish: g.exampleEnglish,
-        exampleKhmer: getGrammarExampleKhmer(g.id) || undefined,
-      }));
+      const pool = topikIIGrammar.map((g) =>
+        applyOverride({
+          id: g.id,
+          num: g.num,
+          korean: g.korean,
+          english: g.english,
+          patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
+          exampleKorean: g.exampleKorean,
+          exampleEnglish: g.exampleEnglish,
+          exampleKhmer: getGrammarExampleKhmer(g.id) || undefined,
+        }),
+      );
       const list = q
         ? pool.filter(
             (g) =>
@@ -116,11 +143,13 @@ export default function GrammarPage() {
       return list;
     }
 
-    const pool = topikIGrammar.map((g) => ({
-      ...g,
-      patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
-      exampleKhmer: getGrammarExampleKhmer(g.id) || undefined,
-    }));
+    const pool = topikIGrammar.map((g) =>
+      applyOverride({
+        ...g,
+        patternKhmer: getGrammarPatternKhmer(g.id, g.korean) || undefined,
+        exampleKhmer: getGrammarExampleKhmer(g.id) || undefined,
+      }),
+    );
     const list = q
       ? pool.filter(
           (g) =>
@@ -143,7 +172,7 @@ export default function GrammarPage() {
       exampleEnglish: g.exampleEnglish,
       exampleKhmer: g.exampleKhmer,
     }));
-  }, [deck, query, customGrammar]);
+  }, [deck, query, customGrammar, globalGrammarOverrides]);
 
   const switchDeck = (next: GrammarDeck) => {
     setDeck(next);
@@ -352,15 +381,31 @@ export default function GrammarPage() {
                             </Typography>
                           ) : null}
                         </Box>
-                        {g.isCustom ? (
-                          <IconButton
-                            size="small"
-                            aria-label="Delete pattern"
-                            onClick={() => removeGrammar(g.id)}
-                            sx={{ flexShrink: 0 }}
+                        {g.isCustom || isAdmin ? (
+                          <Stack
+                            direction="row"
+                            spacing={0.5}
+                            sx={{ flexShrink: 0, alignSelf: "flex-start" }}
                           >
-                            <Trash2 size={16} />
-                          </IconButton>
+                            {g.isCustom || isAdmin ? (
+                              <IconButton
+                                size="small"
+                                aria-label="Edit pattern"
+                                onClick={() => setEditing(g)}
+                              >
+                                <Pencil size={16} />
+                              </IconButton>
+                            ) : null}
+                            {g.isCustom ? (
+                              <IconButton
+                                size="small"
+                                aria-label="Delete pattern"
+                                onClick={() => removeGrammar(g.id)}
+                              >
+                                <Trash2 size={16} />
+                              </IconButton>
+                            ) : null}
+                          </Stack>
                         ) : null}
                       </Stack>
                       {g.exampleKorean ? (
@@ -427,6 +472,41 @@ export default function GrammarPage() {
           addGrammar(item);
           setDeck("mine");
         }}
+      />
+
+      <AddGrammarDialog
+        open={editing !== null}
+        onClose={() => setEditing(null)}
+        onSave={(item) => {
+          if (!editing) return;
+          if (editing.isCustom) {
+            // Custom grammar edits aren't implemented yet — keep the existing add flow.
+            // Future: addGrammar handles new only; updateGrammar would handle edits.
+            return;
+          }
+          if (isAdmin) {
+            void setGlobalGrammarOverride(editing.id, {
+              korean: item.korean,
+              english: item.english,
+              patternKhmer: item.patternKhmer,
+              exampleKorean: item.exampleKorean,
+              exampleEnglish: item.exampleEnglish,
+              exampleKhmer: item.exampleKhmer,
+            }).catch((err) => alert(err instanceof Error ? err.message : "Save failed"));
+          }
+        }}
+        initial={
+          editing
+            ? {
+                korean: editing.korean,
+                english: editing.english,
+                patternKhmer: editing.patternKhmer,
+                exampleKorean: editing.exampleKorean ?? "",
+                exampleEnglish: editing.exampleEnglish ?? "",
+                exampleKhmer: editing.exampleKhmer ?? "",
+              }
+            : null
+        }
       />
     </Box>
   );

@@ -129,6 +129,53 @@ model User {
   aiMessages     AIMessage[]
   quizAttempts   QuizAttempt[]
   studySessions  StudySession[]
+  wordReports    WordReport[]
+}
+
+model GlobalWordOverride {
+  wordId    String   @id // e.g. "topik-435" or "eps-12"
+  korean    String?
+  english   String?
+  khmer     String?
+  createdBy String   // admin user id
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GlobalGrammarOverride {
+  grammarId       String   @id // e.g. "topik-grammar-1" or "eps-grammar-12"
+  korean          String?  // pattern
+  english         String?  // meaning
+  patternKhmer    String?
+  exampleKorean   String?
+  exampleEnglish  String?
+  exampleKhmer    String?
+  createdBy       String   // admin user id
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model WordReport {
+  id              String   @id @default(cuid())
+  userId          String
+  wordId          String   // e.g. "topik-435" or "eps-12"
+  wordKorean      String
+  wordEnglish     String
+  wordKhmer       String
+  suggestedKorean String?
+  suggestedEnglish String?
+  suggestedKhmer  String?
+  reason          String   @default("")
+  status          String   @default("PENDING") // PENDING | RESOLVED | REJECTED
+  adminNote       String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  resolvedAt      DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([userId, createdAt])
 }
 
 model UserCourseProgress {

@@ -12,9 +12,11 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
-import { Pencil, Trash2 } from "lucide-react";
+import { Flag, Pencil, Trash2 } from "lucide-react";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { AddWordDialog } from "@/components/custom/AddWordDialog";
+import { MyReportsDialog } from "@/components/custom/MyReportsDialog";
+import { ReportWordDialog, type ReportWord } from "@/components/custom/ReportWordDialog";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
 import { DeckFilterChips } from "@/components/layout/DeckFilterChips";
 import { StudyPageHeader } from "@/components/layout/StudyPageHeader";
@@ -30,8 +32,14 @@ import {
   topikIIVocabulary,
   searchTopikIIVocabulary,
 } from "@/data/topik-ii-vocabulary";
-import { useCustomWords } from "@/hooks/use-custom-content";
+import { useCustomWords, useWordOverrides } from "@/hooks/use-custom-content";
+import { useCurrentUser } from "@/hooks/use-current-user";
 import {
+  applyGlobalOverride,
+  useGlobalWordOverrides,
+} from "@/hooks/use-global-word-overrides";
+import {
+  applyWordOverride,
   customWordsToDisplay,
   searchCustomWords,
   type DisplayWord,
@@ -53,45 +61,46 @@ export default function VocabularyPage() {
   const [deck, setDeck] = useState<VocabDeck>("eps");
   const [query, setQuery] = useState("");
   const [addOpen, setAddOpen] = useState(false);
-  const [editId, setEditId] = useState<string | null>(null);
+  const [editing, setEditing] = useState<DisplayWord | null>(null);
+  const [reporting, setReporting] = useState<ReportWord | null>(null);
+  const [myReportsOpen, setMyReportsOpen] = useState(false);
   const { words: customWords, addWord, updateWord, removeWord } =
     useCustomWords();
-
-  const editingWord = useMemo(
-    () => customWords.find((w) => w.id === editId) ?? null,
-    [customWords, editId],
-  );
+  const { overrides, setOverride } = useWordOverrides();
+  const { overrides: globalOverrides, setOverride: setGlobalOverride } =
+    useGlobalWordOverrides();
+  const { isAdmin } = useCurrentUser();
 
   const filtered: DisplayWord[] = useMemo(() => {
     if (deck === "mine") {
       return customWordsToDisplay(searchCustomWords(query, customWords));
     }
+    const toDisplay = (w: {
+      id: string;
+      num: number;
+      korean: string;
+      english: string;
+      khmer: string;
+    }): DisplayWord => {
+      // Global (DB) override applies first, then any personal override on top.
+      const withGlobal = applyGlobalOverride(w, globalOverrides);
+      const merged = applyWordOverride(withGlobal, overrides);
+      return {
+        id: merged.id,
+        num: merged.num,
+        korean: merged.korean,
+        english: merged.english,
+        khmer: merged.khmer,
+      };
+    };
     if (deck === "eps") {
-      return searchEpsVocabulary(query).map((w) => ({
-        id: w.id,
-        num: w.num,
-        korean: w.korean,
-        english: w.english,
-        khmer: w.khmer,
-      }));
+      return searchEpsVocabulary(query).map(toDisplay);
     }
     if (deck === "topik2") {
-      return searchTopikIIVocabulary(query).map((w) => ({
-        id: w.id,
-        num: w.num,
-        korean: w.korean,
-        english: w.english,
-        khmer: w.khmer,
-      }));
+      return searchTopikIIVocabulary(query).map(toDisplay);
     }
-    return searchTopikVocabulary(query).map((w) => ({
-      id: w.id,
-      num: w.num,
-      korean: w.korean,
-      english: w.english,
-      khmer: w.khmer,
-    }));
-  }, [deck, query, customWords]);
+    return searchTopikVocabulary(query).map(toDisplay);
+  }, [deck, query, customWords, overrides, globalOverrides]);
 
   const switchDeck = (next: VocabDeck) => {
     setDeck(next);
@@ -144,6 +153,22 @@ export default function VocabularyPage() {
                 listRef.current?.scrollTo({ top: 0, behavior: "instant" })
               }
             />
+            {!isAdmin ? (
+              <Button
+                variant="outlined"
+                size="small"
+                onClick={() => setMyReportsOpen(true)}
+                sx={{
+                  flexShrink: 0,
+                  whiteSpace: "nowrap",
+                  borderRadius: 10,
+                  textTransform: "none",
+                  fontWeight: 600,
+                }}
+              >
+                My reports
+              </Button>
+            ) : null}
             <Button
               variant="contained"
               startIcon={<AddIcon />}
@@ -290,19 +315,37 @@ export default function VocabularyPage() {
                           {w.english}
                         </Typography>
                       </Box>
-                      {w.isCustom ? (
-                        <Stack
-                          direction="row"
-                          spacing={0.5}
-                          sx={{ alignSelf: "flex-start", flexShrink: 0 }}
-                        >
+                      <Stack
+                        direction="row"
+                        spacing={0.5}
+                        sx={{ alignSelf: "flex-start", flexShrink: 0 }}
+                      >
+                        {w.isCustom || isAdmin ? (
                           <IconButton
                             size="small"
                             aria-label="Edit word"
-                            onClick={() => setEditId(w.id)}
+                            onClick={() => setEditing(w)}
                           >
                             <Pencil size={16} />
                           </IconButton>
+                        ) : null}
+                        {!w.isCustom && !isAdmin ? (
+                          <IconButton
+                            size="small"
+                            aria-label="Report wrong translation"
+                            onClick={() =>
+                              setReporting({
+                                id: w.id,
+                                korean: w.korean,
+                                english: w.english,
+                                khmer: w.khmer,
+                              })
+                            }
+                          >
+                            <Flag size={16} />
+                          </IconButton>
+                        ) : null}
+                        {w.isCustom ? (
                           <IconButton
                             size="small"
                             aria-label="Delete word"
@@ -310,8 +353,8 @@ export default function VocabularyPage() {
                           >
                             <Trash2 size={16} />
                           </IconButton>
-                        </Stack>
-                      ) : null}
+                        ) : null}
+                      </Stack>
                     </Paper>
                   </Grid>
                 ))}
@@ -331,21 +374,40 @@ export default function VocabularyPage() {
       />
 
       <AddWordDialog
-        open={editingWord !== null}
-        onClose={() => setEditId(null)}
+        open={editing !== null}
+        onClose={() => setEditing(null)}
         onSave={(word) => {
-          if (editId) updateWord(editId, word);
+          if (!editing) return;
+          if (editing.isCustom) {
+            updateWord(editing.id, word);
+          } else if (isAdmin) {
+            // Admin edits save to DB so all users see the fix
+            void setGlobalOverride(editing.id, word).catch(() => {
+              // fall back to local override if the API fails
+              setOverride(editing.id, word);
+            });
+          } else {
+            setOverride(editing.id, word);
+          }
         }}
         initial={
-          editingWord
+          editing
             ? {
-                korean: editingWord.korean,
-                english: editingWord.english,
-                khmer: editingWord.khmer,
+                korean: editing.korean,
+                english: editing.english,
+                khmer: editing.khmer,
               }
             : null
         }
       />
+
+      <ReportWordDialog
+        open={reporting !== null}
+        word={reporting}
+        onClose={() => setReporting(null)}
+      />
+
+      <MyReportsDialog open={myReportsOpen} onClose={() => setMyReportsOpen(false)} />
     </Box>
   );
 }

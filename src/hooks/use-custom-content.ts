@@ -8,14 +8,19 @@ import {
   getCustomDialogues,
   getCustomGrammar,
   getCustomWords,
+  getWordOverrides,
   removeCustomDialogue,
   removeCustomGrammar,
   removeCustomWord,
+  removeWordOverride,
+  setWordOverride,
   updateCustomWord,
   type CustomDialogue,
   type CustomDialogueInput,
   type CustomGrammar,
   type CustomWord,
+  type WordOverride,
+  type WordOverrides,
 } from "@/lib/custom-content";
 
 function useStoredList<T>(
@@ -71,6 +76,33 @@ export function useCustomWords() {
     removeWord: removeItem,
     refresh,
   };
+}
+
+export function useWordOverrides() {
+  const [overrides, setOverrides] = useState<WordOverrides>({});
+
+  const refresh = useCallback(() => {
+    setOverrides(getWordOverrides());
+  }, []);
+
+  useEffect(() => {
+    refresh();
+  }, [refresh]);
+
+  const set = useCallback(
+    (id: string, override: WordOverride) => {
+      const next = setWordOverride(id, override);
+      setOverrides({ ...next });
+    },
+    [],
+  );
+
+  const remove = useCallback((id: string) => {
+    const next = removeWordOverride(id);
+    setOverrides({ ...next });
+  }, []);
+
+  return { overrides, setOverride: set, removeOverride: remove, refresh };
 }
 
 export function useCustomGrammar() {

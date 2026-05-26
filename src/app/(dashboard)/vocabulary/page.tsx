@@ -307,8 +307,8 @@ export default function VocabularyPage() {
                       sx={{
                         display: "flex",
                         gap: { xs: 1, sm: 1.5 },
-                        p: { xs: 1.75, sm: 2.5 },
-                        minHeight: { xs: 96, sm: 120 },
+                        p: { xs: 1.25, sm: 2.5 },
+                        minHeight: { xs: 76, sm: 120 },
                         height: "100%",
                         alignItems: "stretch",
                         borderColor: w.isCustom ? "primary.main" : "divider",

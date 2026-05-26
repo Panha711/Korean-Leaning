@@ -76,8 +76,8 @@ export default function QuizPage() {
 
   if (!activeQuiz) {
     return (
-      <Stack spacing={3}>
-        <Box>
+      <Stack spacing={{ xs: 1.5, sm: 3 }}>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <Typography variant="h5" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
             Quizzes
           </Typography>
@@ -89,7 +89,7 @@ export default function QuizPage() {
             mocks — 10–15 questions each with answer review.
           </Typography>
         </Box>
-        <Grid container spacing={3}>
+        <Grid container spacing={{ xs: 1.25, sm: 3 }}>
           {quizzes.map((quiz) => (
             <Grid key={quiz.id} size={{ xs: 12, sm: 6, lg: 4 }}>
               <QuizCard quiz={quiz} onStart={() => startQuiz(quiz)} />

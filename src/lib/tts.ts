@@ -1,4 +1,5 @@
 let ttsAudio: HTMLAudioElement | null = null;
+let ttsPlayPromise: Promise<void> | null = null;
 
 export function speakKorean(text: string) {
   const trimmed = text.trim();
@@ -6,14 +7,28 @@ export function speakKorean(text: string) {
   if (typeof window === "undefined") return;
 
   if (ttsAudio) {
-    ttsAudio.pause();
+    const prev = ttsAudio;
+    const prevPlay = ttsPlayPromise;
     ttsAudio = null;
+    ttsPlayPromise = null;
+    // Wait for the previous play() to settle before pausing — otherwise
+    // Chrome rejects its play promise with AbortError.
+    if (prevPlay) {
+      prevPlay.then(() => prev.pause()).catch(() => {});
+    } else {
+      prev.pause();
+    }
   }
+
   const audio = new Audio(
     `/api/tts?lang=ko&voice=Seoyeon&v=3&text=${encodeURIComponent(trimmed)}`,
   );
   ttsAudio = audio;
-  audio.play().catch((err) => {
+  const playPromise = audio.play();
+  ttsPlayPromise = playPromise;
+  playPromise.catch((err: unknown) => {
+    // AbortError fires when another speak() interrupts this clip — expected.
+    if (err instanceof DOMException && err.name === "AbortError") return;
     console.error("[TTS] playback failed:", err);
   });
 }

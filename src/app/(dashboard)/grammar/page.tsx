@@ -207,11 +207,11 @@ export default function GrammarPage() {
             value={deck}
             onChange={switchDeck}
             options={[
-              { id: "eps", label: `EPS-TOPIK (${epsTopikGrammar.length})` },
-              { id: "topik", label: `TOPIK I (${topikIGrammar.length})` },
-              { id: "topik2", label: `TOPIK II (${topikIIGrammar.length})` },
-              { id: "haeyo", label: `해요 form (${haeyoFormGrammar.length})` },
-              { id: "mine", label: `My patterns (${customGrammar.length})` },
+              { id: "eps", label: `EPS ${epsTopikGrammar.length}` },
+              { id: "topik", label: `TOPIK I ${topikIGrammar.length}` },
+              { id: "topik2", label: `TOPIK II ${topikIIGrammar.length}` },
+              { id: "haeyo", label: `해요 ${haeyoFormGrammar.length}` },
+              { id: "mine", label: `Mine ${customGrammar.length}` },
             ]}
           />
 

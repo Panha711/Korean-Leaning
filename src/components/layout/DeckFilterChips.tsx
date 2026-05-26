@@ -24,7 +24,23 @@ export function DeckFilterChips<T extends string>({
   const isDark = theme.palette.mode === "dark";
 
   return (
-    <Stack direction="row" sx={{ flexWrap: "wrap", gap: 1 }}>
+    <Stack
+      direction="row"
+      sx={{
+        gap: 1,
+        flexWrap: { xs: "nowrap", sm: "wrap" },
+        overflowX: { xs: "auto", sm: "visible" },
+        overflowY: "hidden",
+        mx: { xs: -1.25, sm: 0 },
+        px: { xs: 1.25, sm: 0 },
+        pb: 0,
+        scrollSnapType: { xs: "x proximity", sm: "none" },
+        WebkitOverflowScrolling: "touch",
+        scrollbarWidth: "none",
+        msOverflowStyle: "none",
+        "&::-webkit-scrollbar": { display: "none", height: 0, width: 0 },
+      }}
+    >
       {options.map((opt) => {
         const active = value === opt.id;
         return (
@@ -34,10 +50,13 @@ export function DeckFilterChips<T extends string>({
             onClick={() => onChange(opt.id as T)}
             clickable
             sx={{
+              flexShrink: 0,
+              scrollSnapAlign: "start",
               fontWeight: 600,
-              fontSize: "0.8125rem",
+              fontSize: { xs: "0.75rem", sm: "0.8125rem" },
               borderRadius: 999,
-              height: 34,
+              height: { xs: 30, sm: 34 },
+              "& .MuiChip-label": { px: { xs: 1, sm: 1.5 } },
               bgcolor: active
                 ? "primary.main"
                 : isDark

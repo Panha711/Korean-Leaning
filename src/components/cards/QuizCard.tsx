@@ -34,21 +34,50 @@ export function QuizCard({ quiz, onStart }: QuizCardProps) {
         },
       }}
     >
-      <CardContent sx={{ p: 2.5, flex: 1, display: "flex", flexDirection: "column" }}>
-        <Stack direction="row" sx={{ mb: 1.5, justifyContent: "space-between", alignItems: "flex-start" }}>
+      <CardContent
+        sx={{
+          p: { xs: 1.75, sm: 2.5 },
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          "&:last-child": { pb: { xs: 1.75, sm: 2.5 } },
+        }}
+      >
+        <Stack
+          direction="row"
+          sx={{
+            mb: { xs: 1, sm: 1.5 },
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            gap: 1,
+          }}
+        >
           <Stack direction="row" spacing={0.75} sx={{ flexWrap: "wrap" }}>
             <Chip label={quiz.subject} size="small" color="primary" />
             {quiz.level ? (
               <Chip label={quiz.level} size="small" variant="outlined" />
             ) : null}
           </Stack>
-          <Stack direction="row" spacing={0.5} sx={{ color: "text.secondary", flexShrink: 0, alignItems: "center" }}>
+          <Stack
+            direction="row"
+            spacing={0.5}
+            sx={{ color: "text.secondary", flexShrink: 0, alignItems: "center" }}
+          >
             <AccessTimeIcon sx={{ fontSize: 16 }} />
             <Typography variant="caption">{minutes} min</Typography>
           </Stack>
         </Stack>
 
-        <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
+        <Typography
+          variant="h6"
+          component="h3"
+          sx={{
+            mb: 0.5,
+            fontWeight: 700,
+            fontSize: { xs: "1.05rem", sm: "1.25rem" },
+            lineHeight: 1.25,
+          }}
+        >
           {quiz.title}
         </Typography>
 
@@ -57,7 +86,9 @@ export function QuizCard({ quiz, onStart }: QuizCardProps) {
             variant="body2"
             color="text.secondary"
             sx={{
-              mb: 1.5,
+              mb: { xs: 1, sm: 1.5 },
+              fontSize: { xs: "0.8125rem", sm: "0.875rem" },
+              lineHeight: 1.45,
               display: "-webkit-box",
               WebkitLineClamp: 2,
               WebkitBoxOrient: "vertical",
@@ -68,9 +99,18 @@ export function QuizCard({ quiz, onStart }: QuizCardProps) {
           </Typography>
         ) : null}
 
-        <Stack direction="row" spacing={0.5} sx={{ color: "text.secondary", mt: "auto", mb: 2, alignItems: "center" }}>
-          <HelpIcon sx={{ fontSize: 18 }} />
-          <Typography variant="body2">
+        <Stack
+          direction="row"
+          spacing={0.5}
+          sx={{
+            color: "text.secondary",
+            mt: "auto",
+            mb: { xs: 1, sm: 2 },
+            alignItems: "center",
+          }}
+        >
+          <HelpIcon sx={{ fontSize: 16 }} />
+          <Typography variant="body2" sx={{ fontSize: { xs: "0.8125rem", sm: "0.875rem" } }}>
             {quiz.questionCount ?? quiz.questions.length} questions
           </Typography>
         </Stack>
@@ -78,9 +118,17 @@ export function QuizCard({ quiz, onStart }: QuizCardProps) {
         <Button
           variant="contained"
           fullWidth
+          size="small"
           onClick={(e) => {
             e.stopPropagation();
             onStart?.();
+          }}
+          sx={{
+            py: { xs: 1, sm: 1.25 },
+            borderRadius: 2,
+            textTransform: "none",
+            fontWeight: 700,
+            fontSize: { xs: "0.875rem", sm: "0.95rem" },
           }}
         >
           Start Quiz

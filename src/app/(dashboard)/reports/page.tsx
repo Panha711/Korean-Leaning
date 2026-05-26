@@ -137,10 +137,10 @@ export default function ReportsPage() {
           value={filter}
           onChange={setFilter}
           options={[
-            { id: "PENDING", label: `Pending (${counts.PENDING})` },
-            { id: "RESOLVED", label: `Resolved (${counts.RESOLVED})` },
-            { id: "REJECTED", label: `Rejected (${counts.REJECTED})` },
-            { id: "all", label: `All (${counts.all})` },
+            { id: "PENDING", label: `Pending ${counts.PENDING}` },
+            { id: "RESOLVED", label: `Resolved ${counts.RESOLVED}` },
+            { id: "REJECTED", label: `Rejected ${counts.REJECTED}` },
+            { id: "all", label: `All ${counts.all}` },
           ]}
         />
       </Stack>

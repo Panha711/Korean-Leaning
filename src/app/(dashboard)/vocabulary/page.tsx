@@ -131,10 +131,10 @@ export default function VocabularyPage() {
             value={deck}
             onChange={switchDeck}
             options={[
-              { id: "eps", label: `EPS-TOPIK (${epsTopikVocabulary.length})` },
-              { id: "topik", label: `TOPIK I (${topikIVocabulary.length})` },
-              { id: "topik2", label: `TOPIK II (${topikIIVocabulary.length})` },
-              { id: "mine", label: `My words (${customWords.length})` },
+              { id: "eps", label: `EPS ${epsTopikVocabulary.length}` },
+              { id: "topik", label: `TOPIK I ${topikIVocabulary.length}` },
+              { id: "topik2", label: `TOPIK II ${topikIIVocabulary.length}` },
+              { id: "mine", label: `Mine ${customWords.length}` },
             ]}
           />
 
@@ -247,8 +247,8 @@ export default function VocabularyPage() {
             ) : (
               <Grid
                 container
-                spacing={1.5}
-                sx={{ p: 1.5 }}
+                spacing={{ xs: 1, sm: 1.5 }}
+                sx={{ p: { xs: 1, sm: 1.5 } }}
                 key={`${deck}-${query}`}
               >
                 {filtered.map((w) => (
@@ -266,8 +266,8 @@ export default function VocabularyPage() {
                     >
                       <Box
                         sx={{
-                          width: 32,
-                          height: 32,
+                          width: { xs: 26, sm: 32 },
+                          height: { xs: 26, sm: 32 },
                           flexShrink: 0,
                           display: "flex",
                           alignItems: "center",
@@ -280,7 +280,7 @@ export default function VocabularyPage() {
                             ? "primary.contrastText"
                             : "inherit",
                           fontWeight: 700,
-                          fontSize: "0.875rem",
+                          fontSize: { xs: "0.75rem", sm: "0.875rem" },
                           fontVariantNumeric: "tabular-nums",
                         }}
                       >
@@ -292,8 +292,8 @@ export default function VocabularyPage() {
                           sx={{
                             fontFamily: KOREAN_FONT,
                             fontWeight: 700,
-                            fontSize: { xs: "1.5rem", sm: "1.625rem" },
-                            lineHeight: 1.35,
+                            fontSize: { xs: "1.25rem", sm: "1.625rem" },
+                            lineHeight: 1.3,
                             color: "text.primary",
                             letterSpacing: "0.01em",
                           }}
@@ -303,7 +303,7 @@ export default function VocabularyPage() {
                             component="p"
                             sx={{
                               m: 0,
-                              mt: 0.5,
+                              mt: { xs: 0.25, sm: 0.5 },
                               fontFamily: KHMER_FONT,
                               ...lineStyles.khmer,
                             }}
@@ -315,7 +315,7 @@ export default function VocabularyPage() {
                           component="p"
                           sx={{
                             m: 0,
-                            mt: 0.5,
+                            mt: { xs: 0.25, sm: 0.5 },
                             ...lineStyles.english,
                           }}
                         >

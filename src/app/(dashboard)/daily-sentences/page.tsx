@@ -111,17 +111,61 @@ function FilterButton({
       ? AppsIcon
       : (PLACE_ICONS[id as DailySentencePlace] ?? PlaceIcon);
 
+  if (compact) {
+    return (
+      <Box
+        component="button"
+        type="button"
+        onClick={onClick}
+        sx={{
+          flexShrink: 0,
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 0.75,
+          height: 32,
+          px: 1.25,
+          borderRadius: 999,
+          border: 1,
+          borderColor: active ? "primary.main" : "divider",
+          bgcolor: active ? "primary.main" : "transparent",
+          color: active ? "primary.contrastText" : "text.primary",
+          cursor: "pointer",
+          fontWeight: 600,
+          fontSize: "0.8125rem",
+          whiteSpace: "nowrap",
+          transition:
+            "background-color 0.15s, color 0.15s, border-color 0.15s",
+          "&:hover": {
+            bgcolor: active ? "primary.dark" : "action.hover",
+          },
+        }}
+      >
+        <Icon sx={{ fontSize: 16 }} />
+        <span>{label}</span>
+        <Box
+          component="span"
+          sx={{
+            fontWeight: 700,
+            fontSize: "0.7rem",
+            opacity: 0.85,
+          }}
+        >
+          {count}
+        </Box>
+      </Box>
+    );
+  }
+
   return (
     <ListItemButton
       onClick={onClick}
       selected={active}
       sx={{
         borderRadius: 2,
-        mb: compact ? 0 : 0.5,
-        flexShrink: compact ? 0 : undefined,
-        width: compact ? "auto" : 1,
-        px: compact ? 2 : 1.5,
-        py: compact ? 1 : 1.25,
+        mb: 0.5,
+        width: 1,
+        px: 1.5,
+        py: 1.25,
       }}
     >
       <Box
@@ -140,31 +184,17 @@ function FilterButton({
       >
         <Icon sx={{ fontSize: 18 }} />
       </Box>
-      <Box sx={{ minWidth: 0, flex: compact ? "0 1 auto" : 1 }}>
-        <Typography variant="body2" noWrap={compact} sx={{ fontWeight: 500 }}>
+      <Box sx={{ minWidth: 0, flex: 1 }}>
+        <Typography variant="body2" sx={{ fontWeight: 500 }}>
           {label}
         </Typography>
-        {!compact ? (
-          <Typography
-            variant="caption"
-            color={active ? "primary.contrastText" : "text.secondary"}
-          >
-            {count} dialogues
-          </Typography>
-        ) : null}
-      </Box>
-      {compact ? (
         <Typography
           variant="caption"
-          sx={{
-            ml: 1,
-            color: active ? "primary.contrastText" : "text.secondary",
-            fontWeight: 600,
-          }}
+          color={active ? "primary.contrastText" : "text.secondary"}
         >
-          {count}
+          {count} dialogues
         </Typography>
-      ) : null}
+      </Box>
     </ListItemButton>
   );
 }
@@ -233,22 +263,25 @@ export default function DailySentencesPage() {
         display: "flex",
         flexDirection: "column",
         minHeight: "28rem",
-        height: { xs: "auto", lg: "calc(100dvh - 11rem)" },
+        height: {
+          xs: "calc(100dvh - 6.5rem)",
+          lg: "calc(100dvh - 11rem)",
+        },
         maxHeight: { lg: "calc(100dvh - 11rem)" },
-        overflow: { lg: "hidden" },
+        overflow: { xs: "hidden", lg: "hidden" },
       }}
     >
       <Stack
-        direction={{ xs: "column", sm: "row" }}
+        direction={{ xs: "row", sm: "row" }}
         spacing={1}
         sx={{
-          mb: 2,
+          mb: { xs: 1.5, sm: 2 },
           flexShrink: 0,
           justifyContent: "space-between",
-          alignItems: { sm: "flex-end" },
+          alignItems: { xs: "center", sm: "flex-end" },
         }}
       >
-        <Box>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <Typography
             variant="h5"
             component="h1"
@@ -276,21 +309,42 @@ export default function DailySentencesPage() {
             Daily Sentences
           </Typography>
         </Box>
-        <Stack direction="row" spacing={1} sx={{ flexWrap: "wrap" }}>
-          <Chip label={`${allGroups.length} dialogues`} color="default" />
-          {customDialogues.length > 0 ? (
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            flexWrap: "wrap",
+            alignItems: "center",
+            width: { xs: 1, sm: "auto" },
+            justifyContent: { xs: "space-between", sm: "flex-end" },
+          }}
+        >
+          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
             <Chip
-              label={`${customDialogues.length} yours`}
+              label={`${allGroups.length} dialogues`}
+              color="default"
               size="small"
-              color="primary"
-              variant="outlined"
             />
-          ) : null}
+            {customDialogues.length > 0 ? (
+              <Chip
+                label={`${customDialogues.length} yours`}
+                size="small"
+                color="primary"
+                variant="outlined"
+              />
+            ) : null}
+          </Stack>
           <Button
             variant="contained"
             size="small"
             startIcon={<AddIcon />}
             onClick={() => setAddOpen(true)}
+            sx={{
+              borderRadius: 999,
+              textTransform: "none",
+              fontWeight: 700,
+              whiteSpace: "nowrap",
+            }}
           >
             Add dialogue
           </Button>
@@ -301,12 +355,13 @@ export default function DailySentencesPage() {
         sx={{
           flex: 1,
           minHeight: 0,
-          height: { lg: "100%" },
-          overflow: { lg: "hidden" },
-          display: "grid",
-          gridTemplateColumns: { xs: "1fr", lg: "minmax(260px, 1fr) minmax(0, 3fr)" },
+          height: { xs: "auto", lg: "100%" },
+          overflow: "hidden",
+          display: { xs: "flex", lg: "grid" },
+          flexDirection: { xs: "column", lg: "row" },
+          gridTemplateColumns: { lg: "minmax(260px, 1fr) minmax(0, 3fr)" },
           gridTemplateRows: { lg: "1fr" },
-          gap: 2,
+          gap: { xs: 1.25, lg: 2 },
           alignItems: "stretch",
         }}
       >
@@ -380,14 +435,14 @@ export default function DailySentencesPage() {
           </CardContent>
         </Card>
 
-        <Box sx={{ display: { lg: "none" }, minWidth: 0 }}>
+        <Box sx={{ display: { lg: "none" }, minWidth: 0, flexShrink: 0 }}>
           <TextField
             size="small"
             fullWidth
             placeholder="Search…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            sx={{ mb: 1.5 }}
+            sx={{ mb: 1 }}
             slotProps={{
               input: {
                 startAdornment: (
@@ -401,12 +456,15 @@ export default function DailySentencesPage() {
           <Stack
             direction="row"
             spacing={1}
-            className="scrollbar-styled"
             sx={{
               overflowX: "auto",
-              pb: 0.5,
+              overflowY: "hidden",
+              pb: 0,
               mx: -0.5,
               px: 0.5,
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              "&::-webkit-scrollbar": { display: "none", height: 0, width: 0 },
             }}
           >
             {filters.map((f) => (
@@ -424,16 +482,17 @@ export default function DailySentencesPage() {
         </Box>
 
         <Stack
-          spacing={1.5}
+          spacing={1}
           sx={{
             minWidth: 0,
             minHeight: 0,
+            flex: { xs: 1, lg: "initial" },
             height: { lg: "100%" },
             maxHeight: { lg: "100%" },
-            overflow: { lg: "hidden" },
+            overflow: "hidden",
             display: "flex",
             flexDirection: "column",
-            gridColumn: { xs: "1", lg: "2" },
+            gridColumn: { lg: "2" },
             gridRow: { lg: "1" },
           }}
         >
@@ -480,8 +539,8 @@ export default function DailySentencesPage() {
             className="scrollbar-styled"
             sx={{
               flex: 1,
-              minHeight: { xs: 280, lg: 0 },
-              maxHeight: { xs: "65dvh", lg: "100%" },
+              minHeight: 0,
+              maxHeight: "100%",
               overflowY: "auto",
               bgcolor: "action.hover",
             }}

@@ -616,7 +616,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 74,
     korean: "세탁기",
     english: "washing machine",
-    khmer: "ម៉ាស៊ីនបោកខោអាវ",
+    khmer: "ម៉ាស៊ីនបោកគក់",
     lesson: 3,
   },
   {
@@ -688,7 +688,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 83,
     korean: "슈퍼마켓",
     english: "supermarket",
-    khmer: "ស៊ុបភើម៉ាកឃីត",
+    khmer: "ផ្សារទំនើប",
     lesson: 3,
   },
   {
@@ -2624,7 +2624,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 327,
     korean: "세탁기",
     english: "washing machine",
-    khmer: "ម៉ាស៊ីនបោកខោអាវ",
+    khmer: "ម៉ាស៊ីនបោកគក់",
     lesson: 9,
   },
   {
@@ -2632,7 +2632,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 328,
     korean: "세탁기를 돌리다",
     english: "to run the washing machine",
-    khmer: "បើកម៉ាស៊ីនបោកខោអាវ",
+    khmer: "បើកម៉ាស៊ីនបោកគក់",
     lesson: 9,
   },
   {
@@ -2640,7 +2640,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 329,
     korean: "빨래를 널다",
     english: "to hang laundry",
-    khmer: "ព្យួរខោអាវ",
+    khmer: "ហាលខោអាវ",
     lesson: 10,
   },
   {
@@ -2808,7 +2808,7 @@ export const epsTopikVocabulary: EpsVocabWord[] = [
     num: 351,
     korean: "세탁세제",
     english: "laundry detergent",
-    khmer: "ម្សៅបោកខោអាវ / សាប៊ូបោកខោអាវ",
+    khmer: "ម្សៅបោកគក់ / សាប៊ូបោកគក់",
     lesson: 10,
   },
   {

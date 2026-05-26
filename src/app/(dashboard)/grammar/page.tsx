@@ -185,20 +185,22 @@ export default function GrammarPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "calc(100dvh - 10.5rem)",
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
         minHeight: "28rem",
       }}
     >
-      <Stack spacing={2} sx={{ mb: 2, flexShrink: 0 }}>
-        <StudyPageHeader
-          icon={TranslateIcon}
-          title="Grammar"
-          accent="#2563eb"
-        />
+      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <StudyPageHeader
+            icon={TranslateIcon}
+            title="Grammar"
+            accent="#2563eb"
+          />
+        </Box>
 
         <Stack
           direction={{ xs: "column", lg: "row" }}
-          spacing={2}
+          spacing={{ xs: 1.5, lg: 2 }}
           sx={{ justifyContent: "space-between", alignItems: { lg: "center" } }}
         >
           <DeckFilterChips
@@ -214,7 +216,7 @@ export default function GrammarPage() {
           />
 
           <Stack
-            direction="row"
+            direction={{ xs: "column", sm: "row" }}
             spacing={1}
             sx={{
               width: { xs: 1, lg: "auto" },

@@ -11,8 +11,6 @@ import { alpha, useTheme } from "@mui/material/styles";
 import type { SvgIconComponent } from "@mui/icons-material";
 
 const KHMER_FONT = "var(--font-noto-khmer), 'Noto Sans Khmer', sans-serif";
-const KOREAN_FONT =
-  "var(--font-noto-sans-kr), 'Noto Sans KR', 'Malgun Gothic', sans-serif";
 
 export interface StudyModuleCardProps {
   href: string;
@@ -87,15 +85,22 @@ export function StudyModuleCard({
           },
         }}
       >
-        <Stack spacing={2} sx={{ p: { xs: 2.25, sm: 2.75 }, flex: 1, position: "relative" }}>
-          <Stack direction="row" spacing={2} sx={{ alignItems: "flex-start" }}>
+        <Stack
+          spacing={{ xs: 1.25, sm: 2 }}
+          sx={{ p: { xs: 1.75, sm: 2.75 }, flex: 1, position: "relative" }}
+        >
+          <Stack
+            direction="row"
+            spacing={{ xs: 1.5, sm: 2 }}
+            sx={{ alignItems: "center" }}
+          >
             <Box
               className="module-icon-wrap"
               sx={{
                 flexShrink: 0,
-                width: 56,
-                height: 56,
-                borderRadius: 2.5,
+                width: { xs: 44, sm: 56 },
+                height: { xs: 44, sm: 56 },
+                borderRadius: { xs: 2, sm: 2.5 },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -104,14 +109,14 @@ export function StudyModuleCard({
                 transition: "transform 0.22s ease",
               }}
             >
-              <Icon sx={{ fontSize: 28, color: "#fff" }} />
+              <Icon sx={{ fontSize: { xs: 22, sm: 28 }, color: "#fff" }} />
             </Box>
-            <Box sx={{ minWidth: 0, flex: 1, pt: 0.25 }}>
+            <Box sx={{ minWidth: 0, flex: 1 }}>
               <Typography
                 component="h2"
                 sx={{
                   fontWeight: 800,
-                  fontSize: { xs: "1.2rem", sm: "1.35rem" },
+                  fontSize: { xs: "1.05rem", sm: "1.35rem" },
                   lineHeight: 1.2,
                   letterSpacing: "-0.02em",
                 }}
@@ -120,23 +125,40 @@ export function StudyModuleCard({
               </Typography>
               <Typography
                 sx={{
-                  mt: 0.35,
+                  mt: 0.25,
                   fontFamily: KHMER_FONT,
-                  fontSize: "0.95rem",
+                  fontSize: { xs: "0.8125rem", sm: "0.95rem" },
                   fontWeight: 600,
-                  lineHeight: 1.35,
+                  lineHeight: 1.3,
                   color: khmerColor,
                 }}
               >
                 {titleKhmer}
               </Typography>
             </Box>
+            <Chip
+              label={countLabel}
+              size="small"
+              sx={{
+                display: { xs: "inline-flex", sm: "none" },
+                alignSelf: "center",
+                height: 24,
+                fontWeight: 700,
+                fontSize: "0.7rem",
+                bgcolor: alpha(accent, isDark ? 0.22 : 0.1),
+                color: accent,
+                border: 1,
+                borderColor: alpha(accent, 0.25),
+                "& .MuiChip-label": { px: 1 },
+              }}
+            />
           </Stack>
 
           <Chip
             label={countLabel}
             size="small"
             sx={{
+              display: { xs: "none", sm: "inline-flex" },
               alignSelf: "flex-start",
               height: 28,
               fontWeight: 700,
@@ -150,17 +172,17 @@ export function StudyModuleCard({
           />
 
           {breakdown.length > 0 ? (
-            <Stack direction="row" sx={{ flexWrap: "wrap", gap: 0.75 }}>
+            <Stack direction="row" sx={{ flexWrap: "wrap", gap: 0.5 }}>
               {breakdown.map((label) => (
                 <Typography
                   key={label}
                   variant="caption"
                   sx={{
-                    px: 1,
-                    py: 0.35,
+                    px: { xs: 0.75, sm: 1 },
+                    py: { xs: 0.25, sm: 0.35 },
                     borderRadius: 1,
                     fontWeight: 600,
-                    fontSize: "0.68rem",
+                    fontSize: { xs: "0.65rem", sm: "0.68rem" },
                     letterSpacing: "0.02em",
                     textTransform: "uppercase",
                     bgcolor: alpha(theme.palette.text.primary, 0.06),
@@ -177,9 +199,13 @@ export function StudyModuleCard({
             variant="body2"
             sx={{
               flex: 1,
-              lineHeight: 1.6,
+              lineHeight: { xs: 1.45, sm: 1.6 },
               color: "text.secondary",
-              fontSize: "0.9rem",
+              fontSize: { xs: "0.8125rem", sm: "0.9rem" },
+              display: { xs: "-webkit-box", sm: "block" },
+              WebkitLineClamp: { xs: 2, sm: "unset" },
+              WebkitBoxOrient: "vertical",
+              overflow: { xs: "hidden", sm: "visible" },
             }}
           >
             {description}
@@ -192,19 +218,19 @@ export function StudyModuleCard({
               alignItems: "center",
               gap: 0.5,
               alignSelf: "flex-start",
-              mt: 0.5,
-              px: 2,
-              py: 0.85,
+              mt: { xs: 0, sm: 0.5 },
+              px: { xs: 1.5, sm: 2 },
+              py: { xs: 0.6, sm: 0.85 },
               borderRadius: 2,
               fontWeight: 700,
-              fontSize: "0.875rem",
+              fontSize: { xs: "0.8125rem", sm: "0.875rem" },
               bgcolor: alpha(accent, isDark ? 0.2 : 0.12),
               color: englishMuted,
               transition: "background-color 0.22s ease, color 0.22s ease",
             }}
           >
             Open
-            <ArrowForwardIcon sx={{ fontSize: 18 }} />
+            <ArrowForwardIcon sx={{ fontSize: { xs: 16, sm: 18 } }} />
           </Box>
         </Stack>
       </Card>

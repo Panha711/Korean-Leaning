@@ -113,16 +113,18 @@ export default function VocabularyPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "calc(100dvh - 10.5rem)",
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
         minHeight: "28rem",
       }}
     >
-      <Stack spacing={2} sx={{ mb: 2, flexShrink: 0 }}>
-        <StudyPageHeader icon={MenuBookIcon} title="Words" accent="#7c3aed" />
+      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <StudyPageHeader icon={MenuBookIcon} title="Words" accent="#7c3aed" />
+        </Box>
 
         <Stack
           direction={{ xs: "column", lg: "row" }}
-          spacing={2}
+          spacing={{ xs: 1.5, lg: 2 }}
           sx={{ justifyContent: "space-between", alignItems: { lg: "center" } }}
         >
           <DeckFilterChips
@@ -137,7 +139,7 @@ export default function VocabularyPage() {
           />
 
           <Stack
-            direction="row"
+            direction={{ xs: "column", sm: "row" }}
             spacing={1}
             sx={{
               width: { xs: 1, lg: "auto" },
@@ -154,38 +156,44 @@ export default function VocabularyPage() {
                 listRef.current?.scrollTo({ top: 0, behavior: "instant" })
               }
             />
-            {!isAdmin ? (
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{ width: { xs: 1, sm: "auto" }, flexShrink: 0 }}
+            >
+              {!isAdmin ? (
+                <Button
+                  variant="outlined"
+                  size="small"
+                  onClick={() => setMyReportsOpen(true)}
+                  sx={{
+                    flex: { xs: 1, sm: "0 0 auto" },
+                    whiteSpace: "nowrap",
+                    borderRadius: 10,
+                    textTransform: "none",
+                    fontWeight: 600,
+                  }}
+                >
+                  My reports
+                </Button>
+              ) : null}
               <Button
-                variant="outlined"
-                size="small"
-                onClick={() => setMyReportsOpen(true)}
+                variant="contained"
+                startIcon={<AddIcon />}
+                onClick={() => setAddOpen(true)}
                 sx={{
-                  flexShrink: 0,
+                  flex: { xs: 1, sm: "0 0 auto" },
                   whiteSpace: "nowrap",
                   borderRadius: 10,
+                  px: 2.0,
+                  fontWeight: 800,
                   textTransform: "none",
-                  fontWeight: 600,
+                  boxShadow: (t) => `0 2px 10px ${t.palette.primary.main}66`,
                 }}
               >
-                My reports
+                Add word
               </Button>
-            ) : null}
-            <Button
-              variant="contained"
-              startIcon={<AddIcon />}
-              onClick={() => setAddOpen(true)}
-              sx={{
-                flexShrink: 0,
-                whiteSpace: "nowrap",
-                borderRadius: 10,
-                px: 2.0,
-                fontWeight: 800,
-                textTransform: "none",
-                boxShadow: (t) => `0 2px 10px ${t.palette.primary.main}66`,
-              }}
-            >
-              Add word
-            </Button>
+            </Stack>
           </Stack>
         </Stack>
       </Stack>
@@ -249,8 +257,8 @@ export default function VocabularyPage() {
                       variant="outlined"
                       sx={{
                         display: "flex",
-                        gap: 1.5,
-                        p: 2,
+                        gap: { xs: 1, sm: 1.5 },
+                        p: { xs: 1.5, sm: 2 },
                         borderColor: w.isCustom ? "primary.main" : "divider",
                         transition: "background-color 0.2s",
                         "&:hover": { bgcolor: "action.hover" },

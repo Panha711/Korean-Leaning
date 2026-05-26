@@ -304,9 +304,12 @@ export function Sidebar() {
           aria-label="Open menu"
           sx={{
             position: "fixed",
-            top: 16,
-            left: 16,
+            top: 10,
+            left: 12,
             zIndex: 1300,
+            width: 40,
+            height: 40,
+            borderRadius: 2,
             bgcolor: colors.railBg,
             color: colors.textPrimary,
             border: 1,
@@ -315,7 +318,7 @@ export function Sidebar() {
             "&:hover": { bgcolor: alpha(colors.railBg, 0.9) },
           }}
         >
-          <Menu size={20} />
+          <Menu size={22} />
         </IconButton>
       ) : null}
 

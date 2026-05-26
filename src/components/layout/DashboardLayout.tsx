@@ -59,7 +59,14 @@ export function DashboardLayout({ children, title }: DashboardLayoutProps) {
           <Toolbar sx={{ minHeight: 56, px: { xs: 2, sm: 3 } }}>
             <Typography
               variant="h6"
-              sx={{ flex: 1, pl: { xs: 5, lg: 0 }, fontWeight: 600 }}
+              sx={{
+                flex: 1,
+                pl: { xs: 7, lg: 0 },
+                fontWeight: 700,
+                fontSize: { xs: "1.125rem", sm: "1.25rem" },
+                lineHeight: 1.2,
+                letterSpacing: "-0.01em",
+              }}
               noWrap
             >
               {pageTitle}
@@ -69,7 +76,7 @@ export function DashboardLayout({ children, title }: DashboardLayoutProps) {
         </AppBar>
         <Box component="main" sx={{ flex: 1, overflowY: "auto" }}>
           <NavigationProgress />
-          <Container maxWidth="xl" sx={{ py: { xs: 2, sm: 3 } }}>
+          <Container maxWidth="xl" sx={{ py: { xs: 1.25, sm: 3 } }}>
             {children}
           </Container>
         </Box>

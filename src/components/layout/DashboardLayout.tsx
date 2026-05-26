@@ -16,6 +16,7 @@ const pageTitles: Record<string, string> = {
   "/grammar": "Grammar",
   "/daily-sentences": "Daily Sentences",
   "/quiz": "Quizzes",
+  "/reports": "Reports",
 };
 
 interface DashboardLayoutProps {

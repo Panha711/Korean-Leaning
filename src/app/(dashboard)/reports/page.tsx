@@ -121,16 +121,18 @@ export default function ReportsPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "calc(100dvh - 10.5rem)",
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
         minHeight: "28rem",
       }}
     >
-      <Stack spacing={2} sx={{ mb: 2, flexShrink: 0 }}>
-        <StudyPageHeader
-          icon={FlagIcon}
-          title={isAdmin ? "Reports" : "My reports"}
-          accent="#dc2626"
-        />
+      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <StudyPageHeader
+            icon={FlagIcon}
+            title={isAdmin ? "Reports" : "My reports"}
+            accent="#dc2626"
+          />
+        </Box>
         <DeckFilterChips
           value={filter}
           onChange={setFilter}

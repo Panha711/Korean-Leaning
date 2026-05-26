@@ -241,6 +241,7 @@ export default function GrammarPage() {
                 flexShrink: 0,
                 whiteSpace: "nowrap",
                 borderRadius: 999,
+                minHeight: 44,
                 px: 2.25,
                 fontWeight: 700,
                 textTransform: "none",

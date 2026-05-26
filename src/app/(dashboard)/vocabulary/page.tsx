@@ -164,12 +164,12 @@ export default function VocabularyPage() {
               {!isAdmin ? (
                 <Button
                   variant="outlined"
-                  size="small"
                   onClick={() => setMyReportsOpen(true)}
                   sx={{
                     flex: { xs: 1, sm: "0 0 auto" },
                     whiteSpace: "nowrap",
-                    borderRadius: 10,
+                    borderRadius: 999,
+                    minHeight: 44,
                     textTransform: "none",
                     fontWeight: 600,
                   }}
@@ -184,8 +184,9 @@ export default function VocabularyPage() {
                 sx={{
                   flex: { xs: 1, sm: "0 0 auto" },
                   whiteSpace: "nowrap",
-                  borderRadius: 10,
-                  px: 2.0,
+                  borderRadius: 999,
+                  minHeight: 44,
+                  px: 2.25,
                   fontWeight: 800,
                   textTransform: "none",
                   boxShadow: (t) => `0 2px 10px ${t.palette.primary.main}66`,

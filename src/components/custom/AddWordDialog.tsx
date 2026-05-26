@@ -7,11 +7,11 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { DialogTitleWithClose } from "@/components/common/DialogTitleWithClose";
 import { translateKoreanWord } from "@/lib/translate-korean";
 
 type WordValue = { korean: string; english: string; khmer: string };
@@ -90,7 +90,9 @@ export function AddWordDialog({
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
-      <DialogTitle>{isEdit ? "Edit your word" : "Add your word"}</DialogTitle>
+      <DialogTitleWithClose onClose={handleClose}>
+        {isEdit ? "Edit your word" : "Add your word"}
+      </DialogTitleWithClose>
       <DialogContent dividers className="scrollbar-styled-slim">
         <Stack spacing={2} sx={{ mt: 0.5 }}>
           <TextField

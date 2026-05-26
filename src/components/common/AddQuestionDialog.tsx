@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import Stack from "@mui/material/Stack";
@@ -11,6 +10,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { DialogTitleWithClose } from "@/components/common/DialogTitleWithClose";
 import type { ExerciseCategory } from "@/data/practice-exercises";
 
 export interface NewQuestionPayload {
@@ -130,7 +130,9 @@ export function AddQuestionDialog({
     >
       {step === "confirm" ? (
         <>
-          <DialogTitle sx={titleSx}>All questions completed</DialogTitle>
+          <DialogTitleWithClose onClose={handleClose} sx={titleSx}>
+            All questions completed
+          </DialogTitleWithClose>
           <DialogContent sx={contentSx}>
             <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
               You finished every question in{" "}
@@ -151,7 +153,9 @@ export function AddQuestionDialog({
         </>
       ) : (
         <>
-          <DialogTitle sx={titleSx}>Add a question — {contextLabel}</DialogTitle>
+          <DialogTitleWithClose onClose={handleClose} sx={titleSx}>
+            Add a question — {contextLabel}
+          </DialogTitleWithClose>
           <DialogContent dividers sx={contentSx}>
             <Stack spacing={3}>
               <TextField

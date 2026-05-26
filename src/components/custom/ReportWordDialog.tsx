@@ -6,10 +6,10 @@ import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import { DialogTitleWithClose } from "@/components/common/DialogTitleWithClose";
 
 export type ReportWord = {
   id: string;
@@ -87,7 +87,7 @@ export function ReportWordDialog({
 
   return (
     <Dialog open={open && word !== null} onClose={onClose} fullWidth maxWidth="sm">
-      <DialogTitle>Report wrong translation</DialogTitle>
+      <DialogTitleWithClose onClose={onClose}>Report wrong translation</DialogTitleWithClose>
       <DialogContent dividers className="scrollbar-styled-slim">
         <Stack spacing={2} sx={{ mt: 0.5 }}>
           {word ? (

@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import FormControl from "@mui/material/FormControl";
 import IconButton from "@mui/material/IconButton";
 import InputLabel from "@mui/material/InputLabel";
@@ -18,6 +17,7 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import type { DailySentenceLine, DailySentencePlace } from "@/data/daily-sentences";
+import { DialogTitleWithClose } from "@/components/common/DialogTitleWithClose";
 import { DAILY_PLACE_OPTIONS } from "@/lib/custom-content";
 import { translateEnglishToKhmer } from "@/lib/translate-en-km";
 
@@ -114,7 +114,7 @@ export function AddDialogueDialog({ open, onClose, onSave }: AddDialogueDialogPr
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
-      <DialogTitle>Add your dialogue</DialogTitle>
+      <DialogTitleWithClose onClose={handleClose}>Add your dialogue</DialogTitleWithClose>
       <DialogContent dividers className="scrollbar-styled-slim">
         <Stack spacing={2} sx={{ mt: 0.5 }}>
           <TextField

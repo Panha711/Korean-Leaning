@@ -323,27 +323,28 @@ export default function DailySentencesPage() {
             <Chip
               label={`${allGroups.length} dialogues`}
               color="default"
-              size="small"
+              sx={{ height: 36, borderRadius: 999, fontWeight: 600 }}
             />
             {customDialogues.length > 0 ? (
               <Chip
                 label={`${customDialogues.length} yours`}
-                size="small"
                 color="primary"
                 variant="outlined"
+                sx={{ height: 36, borderRadius: 999, fontWeight: 600 }}
               />
             ) : null}
           </Stack>
           <Button
             variant="contained"
-            size="small"
             startIcon={<AddIcon />}
             onClick={() => setAddOpen(true)}
             sx={{
+              height: 36,
               borderRadius: 999,
               textTransform: "none",
               fontWeight: 700,
               whiteSpace: "nowrap",
+              px: 2.25,
             }}
           >
             Add dialogue

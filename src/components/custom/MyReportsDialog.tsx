@@ -7,9 +7,9 @@ import Chip from "@mui/material/Chip";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { DialogTitleWithClose } from "@/components/common/DialogTitleWithClose";
 
 type ReportStatus = "PENDING" | "RESOLVED" | "REJECTED";
 
@@ -55,7 +55,7 @@ export function MyReportsDialog({ open, onClose }: MyReportsDialogProps) {
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="sm">
-      <DialogTitle>My reports</DialogTitle>
+      <DialogTitleWithClose onClose={onClose}>My reports</DialogTitleWithClose>
       <DialogContent dividers className="scrollbar-styled-slim">
         {loading ? (
           <Typography sx={{ py: 4, textAlign: "center" }} color="text.secondary">

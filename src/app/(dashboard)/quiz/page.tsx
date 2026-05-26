@@ -15,23 +15,31 @@ import { QuizCard } from "@/components/cards/QuizCard";
 import { QuizResultsView } from "@/components/quiz/QuizResultsView";
 import { SpeakKoreanIconButton } from "@/components/common/SpeakableKorean";
 import { quizzes } from "@/data/quizzes";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import { useFavoriteWords } from "@/hooks/use-custom-content";
 import { getCustomQuizQuestions } from "@/lib/custom-questions";
 import { buildGrammarQuizQuestions } from "@/lib/grammar-quiz";
 import { buildTopikIQuizQuestions } from "@/lib/topik-i-quiz";
 import { buildTopikIIQuizQuestions } from "@/lib/topik-ii-quiz";
-import { buildRandomVocabQuizQuestions } from "@/lib/vocab-quiz";
+import {
+  buildFavoritesQuizQuestions,
+  buildRandomVocabQuizQuestions,
+} from "@/lib/vocab-quiz";
 import type { Quiz, QuizQuestion } from "@/types";
 
 const DAILY_VOCAB_QUIZ_ID = "quiz-vocab-1";
 const GRAMMAR_QUIZ_ID = "quiz-grammar-1";
 const TOPIK_I_QUIZ_ID = "quiz-topik-1-mock";
 const TOPIK_II_QUIZ_ID = "quiz-topik-2-mock";
+const FAVORITES_QUIZ_ID = "quiz-favorites";
 const DAILY_VOCAB_QUESTION_COUNT = 10;
 const GRAMMAR_QUESTION_COUNT = 10;
 const TOPIK_I_QUESTION_COUNT = 15;
 const TOPIK_II_QUESTION_COUNT = 15;
 
 export default function QuizPage() {
+  const { user } = useCurrentUser();
+  const { favorites } = useFavoriteWords(user?.id ?? null);
   const [activeQuiz, setActiveQuiz] = useState<Quiz | null>(null);
   const [quizQuestions, setQuizQuestions] = useState<QuizQuestion[]>([]);
   const [currentQ, setCurrentQ] = useState(0);
@@ -63,7 +71,9 @@ export default function QuizPage() {
             ? buildTopikIQuizQuestions(TOPIK_I_QUESTION_COUNT)
             : quiz.id === TOPIK_II_QUIZ_ID
               ? buildTopikIIQuizQuestions(TOPIK_II_QUESTION_COUNT)
-              : quiz.questions;
+              : quiz.id === FAVORITES_QUIZ_ID
+                ? buildFavoritesQuizQuestions(favorites)
+                : quiz.questions;
     setQuizQuestions([...baseQuestions, ...custom]);
     setActiveQuiz(quiz);
     setCurrentQ(0);
@@ -90,11 +100,17 @@ export default function QuizPage() {
           </Typography>
         </Box>
         <Grid container spacing={{ xs: 1.25, sm: 3 }}>
-          {quizzes.map((quiz) => (
-            <Grid key={quiz.id} size={{ xs: 12, sm: 6, lg: 4 }}>
-              <QuizCard quiz={quiz} onStart={() => startQuiz(quiz)} />
-            </Grid>
-          ))}
+          {quizzes.map((quiz) => {
+            const display =
+              quiz.id === FAVORITES_QUIZ_ID
+                ? { ...quiz, questionCount: favorites.length }
+                : quiz;
+            return (
+              <Grid key={quiz.id} size={{ xs: 12, sm: 6, lg: 4 }}>
+                <QuizCard quiz={display} onStart={() => startQuiz(display)} />
+              </Grid>
+            );
+          })}
         </Grid>
       </Stack>
     );

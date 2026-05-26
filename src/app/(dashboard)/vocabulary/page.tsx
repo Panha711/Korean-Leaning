@@ -12,7 +12,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
-import { Flag, Pencil, Trash2 } from "lucide-react";
+import { Flag, Heart, Pencil, Trash2 } from "lucide-react";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { AddWordDialog } from "@/components/custom/AddWordDialog";
 import { MyReportsDialog } from "@/components/custom/MyReportsDialog";
@@ -33,7 +33,11 @@ import {
   topikIIVocabulary,
   searchTopikIIVocabulary,
 } from "@/data/topik-ii-vocabulary";
-import { useCustomWords, useWordOverrides } from "@/hooks/use-custom-content";
+import {
+  useCustomWords,
+  useFavoriteWords,
+  useWordOverrides,
+} from "@/hooks/use-custom-content";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import {
   applyGlobalOverride,
@@ -48,7 +52,7 @@ import {
 import { getEasyReadLineStyles } from "@/lib/dialogue-readability-styles";
 import { normalizeKhmer } from "@/lib/khmer-text";
 
-type VocabDeck = "eps" | "topik" | "topik2" | "mine";
+type VocabDeck = "eps" | "topik" | "topik2" | "mine" | "favorites";
 
 const KOREAN_FONT =
   "var(--font-noto-sans-kr), 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif";
@@ -70,11 +74,18 @@ export default function VocabularyPage() {
   const { overrides, setOverride } = useWordOverrides();
   const { overrides: globalOverrides, setOverride: setGlobalOverride } =
     useGlobalWordOverrides();
-  const { isAdmin } = useCurrentUser();
+  const { user, isAdmin } = useCurrentUser();
+  const { favorites, toggleFavorite, isFavorite } = useFavoriteWords(
+    user?.id ?? null,
+  );
 
   const filtered: DisplayWord[] = useMemo(() => {
+    const favoriteIds = new Set(favorites.map((f) => f.id));
     if (deck === "mine") {
-      return customWordsToDisplay(searchCustomWords(query, customWords));
+      const list = searchCustomWords(query, customWords).filter(
+        (w) => !favoriteIds.has(w.id),
+      );
+      return customWordsToDisplay(list);
     }
     const toDisplay = (w: {
       id: string;
@@ -94,14 +105,35 @@ export default function VocabularyPage() {
         khmer: merged.khmer,
       };
     };
+    if (deck === "favorites") {
+      const q = query.trim().toLowerCase();
+      const matches = q
+        ? favorites.filter(
+            (w) =>
+              w.korean.toLowerCase().includes(q) ||
+              w.english.toLowerCase().includes(q) ||
+              w.khmer.toLowerCase().includes(q),
+          )
+        : favorites;
+      return matches.map((w, i) => ({
+        id: w.id,
+        num: i + 1,
+        korean: w.korean,
+        english: w.english,
+        khmer: w.khmer,
+        isCustom: w.id.startsWith("custom-"),
+      }));
+    }
+    const excludeFavorites = <T extends { id: string }>(arr: T[]) =>
+      arr.filter((w) => !favoriteIds.has(w.id));
     if (deck === "eps") {
-      return searchEpsVocabulary(query).map(toDisplay);
+      return excludeFavorites(searchEpsVocabulary(query)).map(toDisplay);
     }
     if (deck === "topik2") {
-      return searchTopikIIVocabulary(query).map(toDisplay);
+      return excludeFavorites(searchTopikIIVocabulary(query)).map(toDisplay);
     }
-    return searchTopikVocabulary(query).map(toDisplay);
-  }, [deck, query, customWords, overrides, globalOverrides]);
+    return excludeFavorites(searchTopikVocabulary(query)).map(toDisplay);
+  }, [deck, query, customWords, overrides, globalOverrides, favorites]);
 
   const switchDeck = (next: VocabDeck) => {
     setDeck(next);
@@ -135,6 +167,7 @@ export default function VocabularyPage() {
               { id: "topik", label: `TOPIK I ${topikIVocabulary.length}` },
               { id: "topik2", label: `TOPIK II ${topikIIVocabulary.length}` },
               { id: "mine", label: `Mine ${customWords.length}` },
+              { id: "favorites", label: `Favorites ${favorites.length}` },
             ]}
           />
 
@@ -243,7 +276,9 @@ export default function VocabularyPage() {
               >
                 {deck === "mine"
                   ? "No custom words yet. Tap Add word to create one."
-                  : "No words match your search."}
+                  : deck === "favorites"
+                    ? "No favorite words yet. Tap the heart icon on a word to add it here."
+                    : "No words match your search."}
               </Typography>
             ) : (
               <Grid
@@ -328,6 +363,30 @@ export default function VocabularyPage() {
                         spacing={0.5}
                         sx={{ alignSelf: "flex-start", flexShrink: 0 }}
                       >
+                        <IconButton
+                          size="small"
+                          aria-label={
+                            isFavorite(w.id)
+                              ? "Remove from favorites"
+                              : "Add to favorites"
+                          }
+                          onClick={() =>
+                            toggleFavorite({
+                              id: w.id,
+                              korean: w.korean,
+                              english: w.english,
+                              khmer: w.khmer,
+                            })
+                          }
+                          sx={{
+                            color: isFavorite(w.id) ? "#e11d48" : "inherit",
+                          }}
+                        >
+                          <Heart
+                            size={16}
+                            fill={isFavorite(w.id) ? "currentColor" : "none"}
+                          />
+                        </IconButton>
                         {w.isCustom || isAdmin ? (
                           <IconButton
                             size="small"

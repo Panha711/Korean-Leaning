@@ -10,6 +10,7 @@ import {
 
 const WORDS_KEY = "learnnova-custom-words";
 const WORD_OVERRIDES_KEY = "learnnova-word-overrides";
+const WORD_FAVORITES_KEY = "learnnova-word-favorites";
 const GRAMMAR_KEY = "learnnova-custom-grammar";
 const DIALOGUES_KEY = "learnnova-custom-dialogues";
 
@@ -202,6 +203,51 @@ export function customWordsToDisplay(items: CustomWord[]): DisplayWord[] {
     khmer: w.khmer,
     isCustom: true,
   }));
+}
+
+// ─── Word favorites ──────────────────────────────────────────────────────────
+
+export interface FavoriteWord {
+  id: string;
+  korean: string;
+  english: string;
+  khmer: string;
+  favoritedAt: number;
+}
+
+function favoritesKey(userId: string): string {
+  return `${WORD_FAVORITES_KEY}:${userId}`;
+}
+
+export function getFavoriteWords(userId: string | null): FavoriteWord[] {
+  if (!userId) return [];
+  return readJson<FavoriteWord>(favoritesKey(userId));
+}
+
+export function isFavoriteWord(userId: string | null, id: string): boolean {
+  return getFavoriteWords(userId).some((w) => w.id === id);
+}
+
+export function toggleFavoriteWord(
+  userId: string,
+  word: Pick<FavoriteWord, "id" | "korean" | "english" | "khmer">,
+): FavoriteWord[] {
+  const items = getFavoriteWords(userId);
+  const exists = items.some((w) => w.id === word.id);
+  const next = exists
+    ? items.filter((w) => w.id !== word.id)
+    : [
+        ...items,
+        {
+          id: word.id,
+          korean: word.korean,
+          english: word.english,
+          khmer: word.khmer,
+          favoritedAt: Date.now(),
+        },
+      ];
+  writeJson(favoritesKey(userId), next);
+  return next;
 }
 
 // ─── Grammar ─────────────────────────────────────────────────────────────────

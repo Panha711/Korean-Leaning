@@ -8,17 +8,19 @@ import {
   getCustomDialogues,
   getCustomGrammar,
   getCustomWords,
+  getFavoriteWords,
   getWordOverrides,
   removeCustomDialogue,
   removeCustomGrammar,
   removeCustomWord,
   removeWordOverride,
   setWordOverride,
+  toggleFavoriteWord,
   updateCustomWord,
-  type CustomDialogue,
   type CustomDialogueInput,
   type CustomGrammar,
   type CustomWord,
+  type FavoriteWord,
   type WordOverride,
   type WordOverrides,
 } from "@/lib/custom-content";
@@ -76,6 +78,29 @@ export function useCustomWords() {
     removeWord: removeItem,
     refresh,
   };
+}
+
+export function useFavoriteWords(userId: string | null) {
+  const [favorites, setFavorites] = useState<FavoriteWord[]>([]);
+
+  useEffect(() => {
+    setFavorites(getFavoriteWords(userId));
+  }, [userId]);
+
+  const toggle = useCallback(
+    (word: Pick<FavoriteWord, "id" | "korean" | "english" | "khmer">) => {
+      if (!userId) return;
+      setFavorites(toggleFavoriteWord(userId, word));
+    },
+    [userId],
+  );
+
+  const isFavorite = useCallback(
+    (id: string) => favorites.some((w) => w.id === id),
+    [favorites],
+  );
+
+  return { favorites, toggleFavorite: toggle, isFavorite };
 }
 
 export function useWordOverrides() {

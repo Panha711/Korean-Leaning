@@ -115,6 +115,17 @@ export const quizzes: Quiz[] = [
     questionCount: 15,
     questions: [],
   },
+  {
+    id: "quiz-favorites",
+    title: "My Favorites",
+    subject: "Korean",
+    level: "Personal",
+    description:
+      "Quiz built from every word you favorited. Add favorites from the Words page.",
+    timeLimit: 900,
+    questionCount: 0,
+    questions: [],
+  },
 ];
 
 export function getQuizById(id: string): Quiz | undefined {

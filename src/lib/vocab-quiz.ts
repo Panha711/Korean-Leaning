@@ -1,4 +1,5 @@
 import { epsTopikVocabulary, type EpsVocabWord } from "@/data/eps-topik-vocabulary";
+import type { FavoriteWord } from "@/lib/custom-content";
 import type { QuizQuestion } from "@/types";
 
 function shuffle<T>(items: T[]): T[] {
@@ -44,6 +45,40 @@ export function buildRandomVocabQuizQuestions(count = 10): QuizQuestion[] {
 
     return {
       id: `vocab-${word.id}-${index}`,
+      question: `${word.korean} means…`,
+      options,
+      correctIndex: correctIndex >= 0 ? correctIndex : 0,
+      explanation: `${word.korean} = ${word.english}.`,
+    };
+  });
+}
+
+/** Build a quiz from the user's favorited words. Asks every favorite. */
+export function buildFavoritesQuizQuestions(
+  favorites: FavoriteWord[],
+): QuizQuestion[] {
+  if (favorites.length === 0) return [];
+
+  const distractorPool = [
+    ...favorites.map((f) => f.english),
+    ...epsTopikVocabulary.map((w) => w.english),
+  ];
+
+  return shuffle(favorites).map((word, index) => {
+    const used = new Set([word.english.toLowerCase()]);
+    const distractors: string[] = [];
+    for (const candidate of shuffle(distractorPool)) {
+      const key = candidate.toLowerCase();
+      if (used.has(key)) continue;
+      used.add(key);
+      distractors.push(candidate);
+      if (distractors.length >= 3) break;
+    }
+    const options = shuffle([word.english, ...distractors]);
+    const correctIndex = options.indexOf(word.english);
+
+    return {
+      id: `fav-${word.id}-${index}`,
       question: `${word.korean} means…`,
       options,
       correctIndex: correctIndex >= 0 ? correctIndex : 0,

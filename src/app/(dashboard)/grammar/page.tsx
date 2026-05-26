@@ -39,7 +39,10 @@ import {
   searchCustomGrammar,
   type DisplayGrammar,
 } from "@/lib/custom-content";
-import { getGrammarExampleKhmer, getGrammarPatternKhmer } from "@/lib/grammar-khmer";
+import {
+  getGrammarExampleKhmer,
+  getGrammarPatternKhmer,
+} from "@/lib/grammar-khmer";
 import { normalizeKhmer } from "@/lib/khmer-text";
 
 type GrammarDeck = "eps" | "topik" | "topik2" | "haeyo" | "mine";
@@ -62,8 +65,10 @@ export default function GrammarPage() {
     addGrammar,
     removeGrammar,
   } = useCustomGrammar();
-  const { overrides: globalGrammarOverrides, setOverride: setGlobalGrammarOverride } =
-    useGlobalGrammarOverrides();
+  const {
+    overrides: globalGrammarOverrides,
+    setOverride: setGlobalGrammarOverride,
+  } = useGlobalGrammarOverrides();
   const { isAdmin } = useCurrentUser();
 
   const filtered: DisplayGrammar[] = useMemo(() => {
@@ -83,7 +88,9 @@ export default function GrammarPage() {
         exampleEnglish?: string;
         exampleKhmer?: string;
       },
-    >(g: T): T => applyGlobalGrammarOverride(g, globalGrammarOverrides);
+    >(
+      g: T,
+    ): T => applyGlobalGrammarOverride(g, globalGrammarOverrides);
 
     if (deck === "eps") {
       const pool = epsTopikGrammar.map((g) =>
@@ -185,11 +192,14 @@ export default function GrammarPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 8rem)" },
         minHeight: "28rem",
       }}
     >
-      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+      <Stack
+        spacing={{ xs: 1.5, sm: 2 }}
+        sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}
+      >
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <StudyPageHeader
             icon={TranslateIcon}
@@ -493,7 +503,9 @@ export default function GrammarPage() {
               exampleKorean: item.exampleKorean,
               exampleEnglish: item.exampleEnglish,
               exampleKhmer: item.exampleKhmer,
-            }).catch((err) => alert(err instanceof Error ? err.message : "Save failed"));
+            }).catch((err) =>
+              alert(err instanceof Error ? err.message : "Save failed"),
+            );
           }
         }}
         initial={

@@ -16,7 +16,10 @@ import { Flag, Heart, Pencil, Trash2 } from "lucide-react";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { AddWordDialog } from "@/components/custom/AddWordDialog";
 import { MyReportsDialog } from "@/components/custom/MyReportsDialog";
-import { ReportWordDialog, type ReportWord } from "@/components/custom/ReportWordDialog";
+import {
+  ReportWordDialog,
+  type ReportWord,
+} from "@/components/custom/ReportWordDialog";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
 import { SpeakableKorean } from "@/components/common/SpeakableKorean";
 import { DeckFilterChips } from "@/components/layout/DeckFilterChips";
@@ -69,8 +72,12 @@ export default function VocabularyPage() {
   const [editing, setEditing] = useState<DisplayWord | null>(null);
   const [reporting, setReporting] = useState<ReportWord | null>(null);
   const [myReportsOpen, setMyReportsOpen] = useState(false);
-  const { words: customWords, addWord, updateWord, removeWord } =
-    useCustomWords();
+  const {
+    words: customWords,
+    addWord,
+    updateWord,
+    removeWord,
+  } = useCustomWords();
   const { overrides, setOverride } = useWordOverrides();
   const { overrides: globalOverrides, setOverride: setGlobalOverride } =
     useGlobalWordOverrides();
@@ -145,11 +152,14 @@ export default function VocabularyPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
-        minHeight: "28rem",
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 8rem)" },
+        minHeight: "34rem",
       }}
     >
-      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+      <Stack
+        spacing={{ xs: 1.5, sm: 2 }}
+        sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}
+      >
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <StudyPageHeader icon={MenuBookIcon} title="Words" accent="#7c3aed" />
         </Box>
@@ -288,13 +298,19 @@ export default function VocabularyPage() {
                 key={`${deck}-${query}`}
               >
                 {filtered.map((w) => (
-                  <Grid key={`${w.id}-${w.num}`} size={{ xs: 12, sm: 6, xl: 4 }}>
+                  <Grid
+                    key={`${w.id}-${w.num}`}
+                    size={{ xs: 12, sm: 6, xl: 4 }}
+                  >
                     <Paper
                       variant="outlined"
                       sx={{
                         display: "flex",
                         gap: { xs: 1, sm: 1.5 },
-                        p: { xs: 1.5, sm: 2 },
+                        p: { xs: 1.75, sm: 2.5 },
+                        minHeight: { xs: 96, sm: 120 },
+                        height: "100%",
+                        alignItems: "stretch",
                         borderColor: w.isCustom ? "primary.main" : "divider",
                         transition: "background-color 0.2s",
                         "&:hover": { bgcolor: "action.hover" },
@@ -474,7 +490,10 @@ export default function VocabularyPage() {
         onClose={() => setReporting(null)}
       />
 
-      <MyReportsDialog open={myReportsOpen} onClose={() => setMyReportsOpen(false)} />
+      <MyReportsDialog
+        open={myReportsOpen}
+        onClose={() => setMyReportsOpen(false)}
+      />
     </Box>
   );
 }

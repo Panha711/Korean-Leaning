@@ -92,7 +92,9 @@ export default function ReportsPage() {
         },
       );
       if (!res.ok) {
-        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        const data = (await res.json().catch(() => null)) as {
+          error?: string;
+        } | null;
         throw new Error(data?.error ?? "Failed to apply override");
       }
       await fetch(`/api/word-reports/${r.id}`, {
@@ -108,7 +110,9 @@ export default function ReportsPage() {
     }
   };
 
-  const visible = reports.filter((r) => filter === "all" || r.status === filter);
+  const visible = reports.filter(
+    (r) => filter === "all" || r.status === filter,
+  );
   const counts = {
     all: reports.length,
     PENDING: reports.filter((r) => r.status === "PENDING").length,
@@ -121,11 +125,14 @@ export default function ReportsPage() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 10.5rem)" },
+        height: { xs: "calc(100dvh - 7rem)", sm: "calc(100dvh - 8rem)" },
         minHeight: "28rem",
       }}
     >
-      <Stack spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}>
+      <Stack
+        spacing={{ xs: 1.5, sm: 2 }}
+        sx={{ mb: { xs: 1.5, sm: 2 }, flexShrink: 0 }}
+      >
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <StudyPageHeader
             icon={FlagIcon}
@@ -145,20 +152,38 @@ export default function ReportsPage() {
         />
       </Stack>
 
-      <Card sx={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0, overflow: "hidden" }}>
-        <CardContent sx={{ flex: 1, minHeight: 0, p: 0, "&:last-child": { pb: 0 } }}>
+      <Card
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+          minHeight: 0,
+          overflow: "hidden",
+        }}
+      >
+        <CardContent
+          sx={{ flex: 1, minHeight: 0, p: 0, "&:last-child": { pb: 0 } }}
+        >
           <Box
             className="scrollbar-styled-slim"
-            sx={{ height: "100%", overflow: "auto", overscrollBehavior: "contain" }}
+            sx={{
+              height: "100%",
+              overflow: "auto",
+              overscrollBehavior: "contain",
+            }}
           >
             {loading ? (
-              <Typography sx={{ py: 8, textAlign: "center" }} color="text.secondary">
+              <Typography
+                sx={{ py: 8, textAlign: "center" }}
+                color="text.secondary"
+              >
                 Loading reports…
               </Typography>
             ) : visible.length === 0 ? (
               <Stack spacing={2} sx={{ py: 8, alignItems: "center" }}>
                 <Typography color="text.secondary">
-                  No reports {filter === "all" ? "yet" : `with status ${filter}`}.
+                  No reports{" "}
+                  {filter === "all" ? "yet" : `with status ${filter}`}.
                 </Typography>
               </Stack>
             ) : (
@@ -172,23 +197,39 @@ export default function ReportsPage() {
                         sx={{ justifyContent: "space-between" }}
                       >
                         <Box sx={{ flex: 1, minWidth: 0 }}>
-                          <Stack direction="row" spacing={1} sx={{ alignItems: "center", mb: 1 }}>
+                          <Stack
+                            direction="row"
+                            spacing={1}
+                            sx={{ alignItems: "center", mb: 1 }}
+                          >
                             <Chip
                               size="small"
                               label={r.status}
                               color={statusColor[r.status]}
-                              variant={r.status === "PENDING" ? "filled" : "outlined"}
+                              variant={
+                                r.status === "PENDING" ? "filled" : "outlined"
+                              }
                             />
-                            <Typography variant="caption" color="text.secondary">
+                            <Typography
+                              variant="caption"
+                              color="text.secondary"
+                            >
                               #{r.wordId}
-                              {r.user ? ` · ${r.user.name} (${r.user.email})` : ""}
+                              {r.user
+                                ? ` · ${r.user.name} (${r.user.email})`
+                                : ""}
                             </Typography>
-                            <Typography variant="caption" color="text.secondary">
+                            <Typography
+                              variant="caption"
+                              color="text.secondary"
+                            >
                               {new Date(r.createdAt).toLocaleString()}
                             </Typography>
                           </Stack>
 
-                          <Typography sx={{ fontWeight: 700, fontSize: "1.125rem" }}>
+                          <Typography
+                            sx={{ fontWeight: 700, fontSize: "1.125rem" }}
+                          >
                             {r.wordKorean}
                           </Typography>
                           <Typography variant="body2" color="text.secondary">
@@ -197,17 +238,32 @@ export default function ReportsPage() {
                           </Typography>
 
                           {r.reason ? (
-                            <Box sx={{ mt: 1.5, p: 1.25, borderRadius: 1, bgcolor: theme.palette.action.hover }}>
-                              <Typography variant="caption" color="text.secondary">
+                            <Box
+                              sx={{
+                                mt: 1.5,
+                                p: 1.25,
+                                borderRadius: 1,
+                                bgcolor: theme.palette.action.hover,
+                              }}
+                            >
+                              <Typography
+                                variant="caption"
+                                color="text.secondary"
+                              >
                                 Reason
                               </Typography>
-                              <Typography variant="body2" sx={{ whiteSpace: "pre-wrap" }}>
+                              <Typography
+                                variant="body2"
+                                sx={{ whiteSpace: "pre-wrap" }}
+                              >
                                 {r.reason}
                               </Typography>
                             </Box>
                           ) : null}
 
-                          {r.suggestedKorean || r.suggestedEnglish || r.suggestedKhmer ? (
+                          {r.suggestedKorean ||
+                          r.suggestedEnglish ||
+                          r.suggestedKhmer ? (
                             <Box
                               sx={{
                                 mt: 1,
@@ -222,13 +278,19 @@ export default function ReportsPage() {
                                 Suggested correction
                               </Typography>
                               {r.suggestedKorean ? (
-                                <Typography variant="body2">Korean: {r.suggestedKorean}</Typography>
+                                <Typography variant="body2">
+                                  Korean: {r.suggestedKorean}
+                                </Typography>
                               ) : null}
                               {r.suggestedEnglish ? (
-                                <Typography variant="body2">English: {r.suggestedEnglish}</Typography>
+                                <Typography variant="body2">
+                                  English: {r.suggestedEnglish}
+                                </Typography>
                               ) : null}
                               {r.suggestedKhmer ? (
-                                <Typography variant="body2">Khmer: {r.suggestedKhmer}</Typography>
+                                <Typography variant="body2">
+                                  Khmer: {r.suggestedKhmer}
+                                </Typography>
                               ) : null}
                             </Box>
                           ) : null}
@@ -238,10 +300,16 @@ export default function ReportsPage() {
                           <Stack
                             direction="row"
                             spacing={1}
-                            sx={{ flexShrink: 0, alignItems: "flex-start", flexWrap: "wrap" }}
+                            sx={{
+                              flexShrink: 0,
+                              alignItems: "flex-start",
+                              flexWrap: "wrap",
+                            }}
                           >
                             {r.status !== "RESOLVED" &&
-                            (r.suggestedKorean || r.suggestedEnglish || r.suggestedKhmer) ? (
+                            (r.suggestedKorean ||
+                              r.suggestedEnglish ||
+                              r.suggestedKhmer) ? (
                               <Button
                                 size="small"
                                 variant="contained"

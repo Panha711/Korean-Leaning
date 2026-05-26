@@ -133,8 +133,7 @@ function FilterButton({
           fontWeight: 600,
           fontSize: "0.8125rem",
           whiteSpace: "nowrap",
-          transition:
-            "background-color 0.15s, color 0.15s, border-color 0.15s",
+          transition: "background-color 0.15s, color 0.15s, border-color 0.15s",
           "&:hover": {
             bgcolor: active ? "primary.dark" : "action.hover",
           },
@@ -214,10 +213,8 @@ export default function DailySentencesPage() {
     removeDialogue,
   } = useCustomDialogues();
   const { isAdmin } = useCurrentUser();
-  const {
-    overrides: lineOverrides,
-    setOverride: setLineOverride,
-  } = useGlobalDialogueLineOverrides();
+  const { overrides: lineOverrides, setOverride: setLineOverride } =
+    useGlobalDialogueLineOverrides();
 
   const allGroups = useMemo(
     () => mergeDialogueGroups(dailySentenceGroups, customDialogues),
@@ -225,7 +222,11 @@ export default function DailySentencesPage() {
   );
 
   const filtered = useMemo(() => {
-    let list = searchDialogueGroups(query, allGroups, getDailySentenceLineKhmer);
+    let list = searchDialogueGroups(
+      query,
+      allGroups,
+      getDailySentenceLineKhmer,
+    );
     list = filterDailySentencesByPlace(list, place);
     return list;
   }, [query, place, allGroups]);
@@ -265,9 +266,9 @@ export default function DailySentencesPage() {
         minHeight: "28rem",
         height: {
           xs: "calc(100dvh - 6.5rem)",
-          lg: "calc(100dvh - 11rem)",
+          lg: "calc(100dvh - 8rem)",
         },
-        maxHeight: { lg: "calc(100dvh - 11rem)" },
+        maxHeight: { lg: "calc(100dvh - 8rem)" },
         overflow: { xs: "hidden", lg: "hidden" },
       }}
     >
@@ -807,7 +808,11 @@ export default function DailySentencesPage() {
         onClose={() => setEditingLine(null)}
         onSave={async (next) => {
           if (!editingLine) return;
-          await setLineOverride(editingLine.dialogueId, editingLine.lineIndex, next);
+          await setLineOverride(
+            editingLine.dialogueId,
+            editingLine.lineIndex,
+            next,
+          );
         }}
       />
     </Box>

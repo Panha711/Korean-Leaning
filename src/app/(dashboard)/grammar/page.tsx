@@ -21,6 +21,7 @@ import {
   useGlobalGrammarOverrides,
 } from "@/hooks/use-global-grammar-overrides";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
+import { SpeakableKorean } from "@/components/common/SpeakableKorean";
 import { DeckFilterChips } from "@/components/layout/DeckFilterChips";
 import { StudyPageHeader } from "@/components/layout/StudyPageHeader";
 import { getEasyReadLineStyles } from "@/lib/dialogue-readability-styles";
@@ -347,16 +348,15 @@ export default function GrammarPage() {
                           {g.isCustom ? "★" : g.num}
                         </Box>
                         <Box sx={{ minWidth: 0, flex: 1 }}>
-                          <Typography
+                          <SpeakableKorean
+                            text={g.korean}
                             sx={{
                               fontFamily: KOREAN_FONT,
                               fontWeight: 700,
                               fontSize: { xs: "1.125rem", sm: "1.25rem" },
                               lineHeight: 1.35,
                             }}
-                          >
-                            {g.korean}
-                          </Typography>
+                          />
                           <Typography
                             component="p"
                             sx={{
@@ -419,16 +419,14 @@ export default function GrammarPage() {
                             py: 1,
                           }}
                         >
-                          <Typography
-                            component="p"
+                          <SpeakableKorean
+                            text={g.exampleKorean}
                             sx={{
                               m: 0,
                               fontFamily: KOREAN_FONT,
                               ...lineStyles.korean,
                             }}
-                          >
-                            {g.exampleKorean}
-                          </Typography>
+                          />
                           {g.exampleEnglish ? (
                             <Typography
                               component="p"

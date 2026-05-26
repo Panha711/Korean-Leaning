@@ -18,6 +18,7 @@ import { AddWordDialog } from "@/components/custom/AddWordDialog";
 import { MyReportsDialog } from "@/components/custom/MyReportsDialog";
 import { ReportWordDialog, type ReportWord } from "@/components/custom/ReportWordDialog";
 import { SearchFieldWithClear } from "@/components/common/SearchFieldWithClear";
+import { SpeakableKorean } from "@/components/common/SpeakableKorean";
 import { DeckFilterChips } from "@/components/layout/DeckFilterChips";
 import { StudyPageHeader } from "@/components/layout/StudyPageHeader";
 import {
@@ -278,8 +279,8 @@ export default function VocabularyPage() {
                         {w.isCustom ? "★" : w.num}
                       </Box>
                       <Box sx={{ minWidth: 0, flex: 1 }}>
-                        <Typography
-                          component="p"
+                        <SpeakableKorean
+                          text={w.korean}
                           sx={{
                             fontFamily: KOREAN_FONT,
                             fontWeight: 700,
@@ -288,9 +289,7 @@ export default function VocabularyPage() {
                             color: "text.primary",
                             letterSpacing: "0.01em",
                           }}
-                        >
-                          {w.korean}
-                        </Typography>
+                        />
                         {w.khmer ? (
                           <Typography
                             component="p"

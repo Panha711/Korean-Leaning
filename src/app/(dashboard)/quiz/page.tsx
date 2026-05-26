@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import { QuizCard } from "@/components/cards/QuizCard";
 import { QuizResultsView } from "@/components/quiz/QuizResultsView";
+import { SpeakKoreanIconButton } from "@/components/common/SpeakableKorean";
 import { quizzes } from "@/data/quizzes";
 import { getCustomQuizQuestions } from "@/lib/custom-questions";
 import { buildGrammarQuizQuestions } from "@/lib/grammar-quiz";
@@ -209,19 +210,27 @@ export default function QuizPage() {
                         p: { xs: 2.5, sm: 3 },
                       }}
                     >
-                      <Typography
-                        variant="caption"
-                        color="primary"
+                      <Stack
+                        direction="row"
                         sx={{
-                          fontWeight: 700,
-                          textTransform: "uppercase",
-                          letterSpacing: 1,
-                          display: "block",
+                          alignItems: "center",
+                          justifyContent: "space-between",
                           mb: 1,
                         }}
                       >
-                        Read this
-                      </Typography>
+                        <Typography
+                          variant="caption"
+                          color="primary"
+                          sx={{
+                            fontWeight: 700,
+                            textTransform: "uppercase",
+                            letterSpacing: 1,
+                          }}
+                        >
+                          Read this
+                        </Typography>
+                        <SpeakKoreanIconButton text={question.passage} />
+                      </Stack>
                       <Typography
                         variant="h6"
                         component="p"
@@ -231,35 +240,56 @@ export default function QuizPage() {
                       </Typography>
                     </Box>
                   ) : null}
-                  <Typography variant="h6" component="p" sx={{ fontWeight: 700, lineHeight: 1.4 }}>
-                    {question.question}
-                  </Typography>
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    sx={{ alignItems: "flex-start" }}
+                  >
+                    <Typography
+                      variant="h6"
+                      component="p"
+                      sx={{ fontWeight: 700, lineHeight: 1.4, flex: 1 }}
+                    >
+                      {question.question}
+                    </Typography>
+                    <SpeakKoreanIconButton text={question.question} />
+                  </Stack>
                   <Stack spacing={1.5}>
                     {question.options.map((opt, i) => (
-                      <Button
+                      <Stack
                         key={`${question.id}-${opt}`}
-                        variant={selected === i ? "contained" : "outlined"}
-                        onClick={() => setSelected(i)}
-                        sx={{
-                          justifyContent: "flex-start",
-                          textAlign: "left",
-                          py: { xs: 1.5, sm: 2 },
-                          px: { xs: 2, sm: 2.5 },
-                          textTransform: "none",
-                          borderColor: selected === i ? "primary.main" : "divider",
-                        }}
+                        direction="row"
+                        spacing={0.5}
+                        sx={{ alignItems: "stretch" }}
                       >
-                        <Typography
-                          component="span"
-                          color={selected === i ? "inherit" : "primary"}
-                          sx={{ fontWeight: 700, mr: 1.5 }}
+                        <Button
+                          variant={selected === i ? "contained" : "outlined"}
+                          onClick={() => setSelected(i)}
+                          sx={{
+                            flex: 1,
+                            justifyContent: "flex-start",
+                            textAlign: "left",
+                            py: { xs: 1.5, sm: 2 },
+                            px: { xs: 2, sm: 2.5 },
+                            textTransform: "none",
+                            borderColor: selected === i ? "primary.main" : "divider",
+                          }}
                         >
-                          {String.fromCharCode(65 + i)}.
-                        </Typography>
-                        <Typography component="span" variant="body1" sx={{ lineHeight: 1.5 }}>
-                          {opt}
-                        </Typography>
-                      </Button>
+                          <Typography
+                            component="span"
+                            color={selected === i ? "inherit" : "primary"}
+                            sx={{ fontWeight: 700, mr: 1.5 }}
+                          >
+                            {String.fromCharCode(65 + i)}.
+                          </Typography>
+                          <Typography component="span" variant="body1" sx={{ lineHeight: 1.5 }}>
+                            {opt}
+                          </Typography>
+                        </Button>
+                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                          <SpeakKoreanIconButton text={opt} />
+                        </Box>
+                      </Stack>
                     ))}
                   </Stack>
                 </Stack>

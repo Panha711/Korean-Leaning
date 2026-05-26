@@ -18,6 +18,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { SpeakKoreanIconButton } from "@/components/common/SpeakableKorean";
 import type { QuizQuestion } from "@/types";
 
 function getScoreInfo(percentage: number) {
@@ -274,41 +275,60 @@ export function QuizResultsView({
                           )}
                           <Box sx={{ minWidth: 0, flex: 1 }}>
                             {q.passage && (
+                              <Stack
+                                direction="row"
+                                spacing={0.5}
+                                sx={{ alignItems: "flex-start", mb: 1 }}
+                              >
+                                <Typography
+                                  variant="caption"
+                                  color="text.secondary"
+                                  component="p"
+                                  sx={{ whiteSpace: "pre-wrap", display: "block", flex: 1, m: 0 }}
+                                >
+                                  {q.passage}
+                                </Typography>
+                                <SpeakKoreanIconButton text={q.passage} />
+                              </Stack>
+                            )}
+                            <Stack direction="row" spacing={0.5} sx={{ alignItems: "flex-start" }}>
+                              <Typography variant="body2" sx={{ fontWeight: 600, flex: 1 }}>
+                                {i + 1}. {q.question}
+                              </Typography>
+                              <SpeakKoreanIconButton text={q.question} />
+                            </Stack>
+                            {!isCorrect && userAnswer !== undefined && (
+                              <Stack direction="row" spacing={0.5} sx={{ alignItems: "center", mt: 0.75 }}>
+                                <Typography
+                                  variant="caption"
+                                  color="error.main"
+                                  sx={{ flex: 1 }}
+                                >
+                                  Your answer: {q.options[userAnswer]}
+                                </Typography>
+                                <SpeakKoreanIconButton text={q.options[userAnswer]} />
+                              </Stack>
+                            )}
+                            <Stack direction="row" spacing={0.5} sx={{ alignItems: "center", mt: 0.5 }}>
+                              <Typography
+                                variant="caption"
+                                color="success.main"
+                                sx={{ flex: 1 }}
+                              >
+                                Correct: {q.options[q.correctIndex]}
+                              </Typography>
+                              <SpeakKoreanIconButton text={q.options[q.correctIndex]} />
+                            </Stack>
+                            <Stack direction="row" spacing={0.5} sx={{ alignItems: "center", mt: 0.5 }}>
                               <Typography
                                 variant="caption"
                                 color="text.secondary"
-                                component="p"
-                                sx={{ mb: 1, whiteSpace: "pre-wrap", display: "block" }}
+                                sx={{ flex: 1 }}
                               >
-                                {q.passage}
+                                {q.explanation}
                               </Typography>
-                            )}
-                            <Typography variant="body2" sx={{ fontWeight: 600 }}>
-                              {i + 1}. {q.question}
-                            </Typography>
-                            {!isCorrect && userAnswer !== undefined && (
-                              <Typography
-                                variant="caption"
-                                color="error.main"
-                                sx={{ display: "block", mt: 0.75 }}
-                              >
-                                Your answer: {q.options[userAnswer]}
-                              </Typography>
-                            )}
-                            <Typography
-                              variant="caption"
-                              color="success.main"
-                              sx={{ display: "block", mt: 0.5 }}
-                            >
-                              Correct: {q.options[q.correctIndex]}
-                            </Typography>
-                            <Typography
-                              variant="caption"
-                              color="text.secondary"
-                              sx={{ display: "block", mt: 0.5 }}
-                            >
-                              {q.explanation}
-                            </Typography>
+                              <SpeakKoreanIconButton text={q.explanation} />
+                            </Stack>
                           </Box>
                         </Stack>
                       </Paper>

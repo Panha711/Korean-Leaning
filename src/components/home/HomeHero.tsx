@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
+import { SpeakableKorean } from "@/components/common/SpeakableKorean";
 
 const KHMER_FONT = "var(--font-noto-khmer), 'Noto Sans Khmer', sans-serif";
 const KOREAN_FONT =
@@ -29,8 +30,8 @@ export function HomeHero() {
       }}
     >
       <Stack spacing={1} sx={{ position: "relative", maxWidth: 560 }}>
-        <Typography
-          component="h1"
+        <SpeakableKorean
+          text="한국어 연습"
           sx={{
             fontFamily: KOREAN_FONT,
             fontWeight: 800,
@@ -38,9 +39,7 @@ export function HomeHero() {
             lineHeight: 1.2,
             letterSpacing: "-0.03em",
           }}
-        >
-          한국어 연습
-        </Typography>
+        />
         <Typography
           sx={{
             fontFamily: KHMER_FONT,

@@ -64,6 +64,7 @@ import {
   mergeDialogueGroups,
   searchDialogueGroups,
 } from "@/lib/custom-content";
+import { SpeakableKorean } from "@/components/common/SpeakableKorean";
 import { getDailySentenceLineKhmer } from "@/lib/daily-sentence-khmer";
 import { normalizeKhmer } from "@/lib/khmer-text";
 
@@ -663,15 +664,13 @@ export default function DailySentencesPage() {
                                     position: "relative",
                                   }}
                                 >
-                                  <Typography
-                                    component="p"
+                                  <SpeakableKorean
+                                    text={korean}
                                     sx={{
                                       m: 0,
                                       ...lineStyles.korean,
                                     }}
-                                  >
-                                    {korean}
-                                  </Typography>
+                                  />
                                   <Typography
                                     component="p"
                                     sx={{

@@ -60,7 +60,41 @@ export async function POST(request: NextRequest) {
       khmer: parsed.khmer?.trim() ?? "",
     });
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Translation failed";
-    return NextResponse.json({ error: message }, { status: 502 });
+    const raw = err instanceof Error ? err.message : "";
+    const { status, message } = friendlyTranslateError(raw);
+    return NextResponse.json({ error: message }, { status });
   }
+}
+
+function friendlyTranslateError(raw: string): {
+  status: number;
+  message: string;
+} {
+  // Gemini SDK errors arrive as a JSON string like
+  //   {"error":{"code":429,"status":"RESOURCE_EXHAUSTED","message":"..."}}
+  // Strip that wrapper so users don't see the raw payload in the UI.
+  let code: number | undefined;
+  let status: string | undefined;
+  try {
+    const parsed = JSON.parse(raw) as {
+      error?: { code?: number; status?: string };
+    };
+    code = parsed.error?.code;
+    status = parsed.error?.status;
+  } catch {
+    // raw was not JSON — fall through to text heuristics
+  }
+
+  const isQuota =
+    code === 429 ||
+    status === "RESOURCE_EXHAUSTED" ||
+    /quota|rate.?limit|resource_exhausted/i.test(raw);
+  if (isQuota) {
+    return {
+      status: 429,
+      message:
+        "The translation service is busy right now (daily free-tier limit reached). Please try again later or enter the translation manually.",
+    };
+  }
+  return { status: 502, message: "Translation failed. Please try again." };
 }

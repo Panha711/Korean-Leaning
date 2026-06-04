@@ -11,6 +11,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { QuizCard } from "@/components/cards/QuizCard";
 import { QuizResultsView } from "@/components/quiz/QuizResultsView";
 import { SpeakKoreanIconButton } from "@/components/common/SpeakableKorean";
@@ -135,6 +136,25 @@ export default function QuizPage() {
     } else {
       setCurrentQ((q) => q + 1);
     }
+  };
+
+  // Go back to the previous question, restoring whatever was answered there.
+  const goPrev = () => {
+    if (currentQ === 0) return;
+    const prevQuestion = quizQuestions[currentQ - 1];
+    setCurrentQ((q) => q - 1);
+    setSelected(prevQuestion ? answers[prevQuestion.id] ?? null : null);
+  };
+
+  // Stop the quiz early: keep the answers given so far (including the current
+  // selection, if any) and jump straight to the results screen.
+  const stopQuiz = () => {
+    if (question && selected !== null) {
+      setAnswers((prev) => ({ ...prev, [question.id]: selected }));
+    }
+    setSelected(null);
+    setSubmitted(true);
+    setShowResult(true);
   };
 
   const score = submitted
@@ -317,14 +337,26 @@ export default function QuizPage() {
         <Stack
           direction="row"
           spacing={1.5}
-          sx={{ justifyContent: "flex-end", alignItems: "center" }}
+          sx={{ justifyContent: "space-between", alignItems: "center" }}
         >
           <Button
             variant="outlined"
             color="inherit"
             size="large"
+            startIcon={<ArrowBackIcon />}
+            onClick={goPrev}
+            disabled={currentQ === 0}
+            sx={{ minWidth: 100, py: 1.25 }}
+          >
+            Back
+          </Button>
+          <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }}>
+          <Button
+            variant="outlined"
+            color="inherit"
+            size="large"
             startIcon={<CloseIcon />}
-            onClick={exitQuiz}
+            onClick={stopQuiz}
             sx={{ minWidth: 100, py: 1.25 }}
           >
             Exit
@@ -338,6 +370,7 @@ export default function QuizPage() {
           >
             {isLast ? "Submit Quiz" : "Next Question"}
           </Button>
+          </Stack>
         </Stack>
       </Stack>
     </Box>

@@ -149,7 +149,16 @@ export default function QuizPage() {
   // Stop the quiz early: keep the answers given so far (including the current
   // selection, if any) and jump straight to the results screen.
   const stopQuiz = () => {
-    if (question && selected !== null) {
+    const hasCurrentAnswer = question !== undefined && selected !== null;
+    const answeredCount = quizQuestions.filter(
+      (q) => answers[q.id] !== undefined,
+    ).length;
+    // Nothing answered yet — just leave the quiz instead of a "0 of 0" result.
+    if (!hasCurrentAnswer && answeredCount === 0) {
+      exitQuiz();
+      return;
+    }
+    if (hasCurrentAnswer) {
       setAnswers((prev) => ({ ...prev, [question.id]: selected }));
     }
     setSelected(null);
@@ -157,21 +166,25 @@ export default function QuizPage() {
     setShowResult(true);
   };
 
-  const score = submitted
-    ? quizQuestions.filter((q) => answers[q.id] === q.correctIndex).length
-    : 0;
-  const percentage =
-    quizQuestions.length > 0
-      ? Math.round((score / quizQuestions.length) * 100)
-      : 0;
+  // Only score the questions that were actually answered. On a full submit this
+  // is every question; on an early exit it's just the ones attempted, so the
+  // result reflects "x of <answered>" rather than penalising unseen questions.
+  const answeredQuestions = quizQuestions.filter(
+    (q) => answers[q.id] !== undefined,
+  );
+  const score = answeredQuestions.filter(
+    (q) => answers[q.id] === q.correctIndex,
+  ).length;
+  const total = answeredQuestions.length;
+  const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
 
   if (showResult && submitted) {
     return (
       <QuizResultsView
         percentage={percentage}
         score={score}
-        total={quizQuestions.length}
-        questions={quizQuestions}
+        total={total}
+        questions={answeredQuestions}
         answers={answers}
         showAnswerReview={showAnswerReview}
         onToggleAnswerReview={() => setShowAnswerReview((v) => !v)}

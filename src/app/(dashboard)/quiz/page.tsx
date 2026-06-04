@@ -335,42 +335,49 @@ export default function QuizPage() {
         </AnimatePresence>
 
         <Stack
-          direction="row"
+          direction={{ xs: "column", sm: "row" }}
           spacing={1.5}
-          sx={{ justifyContent: "space-between", alignItems: "center" }}
+          sx={{
+            justifyContent: "space-between",
+            alignItems: { sm: "center" },
+          }}
         >
-          <Button
-            variant="outlined"
-            color="inherit"
-            size="large"
-            startIcon={<ArrowBackIcon />}
-            onClick={goPrev}
-            disabled={currentQ === 0}
-            sx={{ minWidth: 100, py: 1.25 }}
+          <Stack
+            direction="row"
+            spacing={1.5}
+            sx={{ width: { xs: 1, sm: "auto" } }}
           >
-            Back
-          </Button>
-          <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }}>
-          <Button
-            variant="outlined"
-            color="inherit"
-            size="large"
-            startIcon={<CloseIcon />}
-            onClick={stopQuiz}
-            sx={{ minWidth: 100, py: 1.25 }}
-          >
-            Exit
-          </Button>
+            <Button
+              variant="outlined"
+              color="inherit"
+              size="large"
+              startIcon={<ArrowBackIcon />}
+              onClick={goPrev}
+              disabled={currentQ === 0}
+              sx={{ flex: { xs: 1, sm: "none" }, minWidth: { sm: 100 }, py: 1.25 }}
+            >
+              Back
+            </Button>
+            <Button
+              variant="outlined"
+              color="inherit"
+              size="large"
+              startIcon={<CloseIcon />}
+              onClick={stopQuiz}
+              sx={{ flex: { xs: 1, sm: "none" }, minWidth: { sm: 100 }, py: 1.25 }}
+            >
+              Exit
+            </Button>
+          </Stack>
           <Button
             variant="contained"
             size="large"
             onClick={handleNext}
             disabled={selected === null}
-            sx={{ minWidth: 160, py: 1.25 }}
+            sx={{ width: { xs: 1, sm: "auto" }, minWidth: { sm: 160 }, py: 1.25 }}
           >
             {isLast ? "Submit Quiz" : "Next Question"}
           </Button>
-          </Stack>
         </Stack>
       </Stack>
     </Box>

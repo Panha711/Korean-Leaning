@@ -142,6 +142,20 @@ export default function VocabularyPage() {
     return excludeFavorites(searchTopikVocabulary(query)).map(toDisplay);
   }, [deck, query, customWords, overrides, globalOverrides, favorites]);
 
+  // Favorited words are pulled out of their source deck and into "Favorites",
+  // so each deck's chip count should drop by the favorites it contains.
+  const deckCounts = useMemo(() => {
+    const favoriteIds = new Set(favorites.map((f) => f.id));
+    const available = <T extends { id: string }>(arr: T[]) =>
+      arr.reduce((n, w) => (favoriteIds.has(w.id) ? n : n + 1), 0);
+    return {
+      eps: available(epsTopikVocabulary),
+      topik: available(topikIVocabulary),
+      topik2: available(topikIIVocabulary),
+      mine: available(customWords),
+    };
+  }, [favorites, customWords]);
+
   const switchDeck = (next: VocabDeck) => {
     setDeck(next);
     setQuery("");
@@ -173,10 +187,10 @@ export default function VocabularyPage() {
             value={deck}
             onChange={switchDeck}
             options={[
-              { id: "eps", label: `EPS ${epsTopikVocabulary.length}` },
-              { id: "topik", label: `TOPIK I ${topikIVocabulary.length}` },
-              { id: "topik2", label: `TOPIK II ${topikIIVocabulary.length}` },
-              { id: "mine", label: `Mine ${customWords.length}` },
+              { id: "eps", label: `EPS ${deckCounts.eps}` },
+              { id: "topik", label: `TOPIK I ${deckCounts.topik}` },
+              { id: "topik2", label: `TOPIK II ${deckCounts.topik2}` },
+              { id: "mine", label: `Mine ${deckCounts.mine}` },
               { id: "favorites", label: `Favorites ${favorites.length}` },
             ]}
           />

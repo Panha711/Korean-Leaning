@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -57,6 +57,14 @@ import { normalizeKhmer } from "@/lib/khmer-text";
 
 type VocabDeck = "eps" | "topik" | "topik2" | "mine" | "favorites";
 
+// Map a word id back to the deck it lives in, from its id prefix.
+function deckOfId(id: string): VocabDeck {
+  if (id.startsWith("custom-")) return "mine";
+  if (id.startsWith("topik2-")) return "topik2";
+  if (id.startsWith("topik-")) return "topik";
+  return "eps";
+}
+
 const KOREAN_FONT =
   "var(--font-noto-sans-kr), 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif";
 const KHMER_FONT = "var(--font-noto-khmer), 'Noto Sans Khmer', sans-serif";
@@ -68,6 +76,10 @@ export default function VocabularyPage() {
   const listRef = useRef<HTMLDivElement>(null);
   const [deck, setDeck] = useState<VocabDeck>("eps");
   const [query, setQuery] = useState("");
+  // The text input updates `query` on every keystroke for instant feedback,
+  // but the expensive filtering (scanning thousands of words) runs against a
+  // deferred copy so typing and backspacing stay smooth.
+  const deferredQuery = useDeferredValue(query);
   const [addOpen, setAddOpen] = useState(false);
   const [editing, setEditing] = useState<DisplayWord | null>(null);
   const [reporting, setReporting] = useState<ReportWord | null>(null);
@@ -88,12 +100,6 @@ export default function VocabularyPage() {
 
   const filtered: DisplayWord[] = useMemo(() => {
     const favoriteIds = new Set(favorites.map((f) => f.id));
-    if (deck === "mine") {
-      const list = searchCustomWords(query, customWords).filter(
-        (w) => !favoriteIds.has(w.id),
-      );
-      return customWordsToDisplay(list);
-    }
     const toDisplay = (w: {
       id: string;
       num: number;
@@ -112,17 +118,34 @@ export default function VocabularyPage() {
         khmer: merged.khmer,
       };
     };
+
+    // Unified search: once the user types a query, search across every
+    // category at once (EPS, TOPIK I, TOPIK II, and custom words) rather than
+    // only the active tab. Custom matches come first so they win on dedup.
+    const q = deferredQuery.trim();
+    if (q) {
+      const deckMatches = [
+        ...searchEpsVocabulary(q),
+        ...searchTopikVocabulary(q),
+        ...searchTopikIIVocabulary(q),
+      ].map(toDisplay);
+      const customMatches = customWordsToDisplay(
+        searchCustomWords(q, customWords),
+      );
+      const seen = new Set<string>();
+      return [...customMatches, ...deckMatches].filter((w) => {
+        if (seen.has(w.id)) return false;
+        seen.add(w.id);
+        return true;
+      });
+    }
+
+    if (deck === "mine") {
+      const list = customWords.filter((w) => !favoriteIds.has(w.id));
+      return customWordsToDisplay(list);
+    }
     if (deck === "favorites") {
-      const q = query.trim().toLowerCase();
-      const matches = q
-        ? favorites.filter(
-            (w) =>
-              w.korean.toLowerCase().includes(q) ||
-              w.english.toLowerCase().includes(q) ||
-              w.khmer.toLowerCase().includes(q),
-          )
-        : favorites;
-      return matches.map((w, i) => ({
+      return favorites.map((w, i) => ({
         id: w.id,
         num: i + 1,
         korean: w.korean,
@@ -134,13 +157,27 @@ export default function VocabularyPage() {
     const excludeFavorites = <T extends { id: string }>(arr: T[]) =>
       arr.filter((w) => !favoriteIds.has(w.id));
     if (deck === "eps") {
-      return excludeFavorites(searchEpsVocabulary(query)).map(toDisplay);
+      return excludeFavorites(epsTopikVocabulary).map(toDisplay);
     }
     if (deck === "topik2") {
-      return excludeFavorites(searchTopikIIVocabulary(query)).map(toDisplay);
+      return excludeFavorites(topikIIVocabulary).map(toDisplay);
     }
-    return excludeFavorites(searchTopikVocabulary(query)).map(toDisplay);
-  }, [deck, query, customWords, overrides, globalOverrides, favorites]);
+    return excludeFavorites(topikIVocabulary).map(toDisplay);
+  }, [deck, deferredQuery, customWords, overrides, globalOverrides, favorites]);
+
+  // When a search narrows to a single category, move the active tab to it so
+  // the highlighted tab reflects where the matches live (and clearing the
+  // search lands you in that category). Results spanning multiple categories
+  // are left alone to avoid an arbitrary jump.
+  useEffect(() => {
+    if (!deferredQuery.trim()) return;
+    const categories = new Set<VocabDeck>();
+    for (const w of filtered) categories.add(deckOfId(w.id));
+    if (categories.size === 1) {
+      const only = categories.values().next().value as VocabDeck;
+      setDeck((d) => (d === only ? d : only));
+    }
+  }, [deferredQuery, filtered]);
 
   // Favorited words are pulled out of their source deck and into "Favorites",
   // so each deck's chip count should drop by the favorites it contains.
@@ -265,7 +302,7 @@ export default function VocabularyPage() {
           overflow: "hidden",
         }}
       >
-        {query.trim() ? (
+        {deferredQuery.trim() ? (
           <Box
             sx={{
               px: 2,
@@ -298,18 +335,20 @@ export default function VocabularyPage() {
                 color="text.secondary"
                 sx={{ py: 8, textAlign: "center" }}
               >
-                {deck === "mine"
-                  ? "No custom words yet. Tap Add word to create one."
-                  : deck === "favorites"
-                    ? "No favorite words yet. Tap the heart icon on a word to add it here."
-                    : "No words match your search."}
+                {deferredQuery.trim()
+                  ? "No words match your search."
+                  : deck === "mine"
+                    ? "No custom words yet. Tap Add word to create one."
+                    : deck === "favorites"
+                      ? "No favorite words yet. Tap the heart icon on a word to add it here."
+                      : "No words match your search."}
               </Typography>
             ) : (
               <Grid
                 container
                 spacing={{ xs: 1, sm: 1.5 }}
                 sx={{ p: { xs: 1, sm: 1.5 } }}
-                key={`${deck}-${query}`}
+                key={deck}
               >
                 {filtered.map((w) => (
                   <Grid
